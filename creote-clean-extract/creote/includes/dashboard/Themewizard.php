@@ -1065,7 +1065,7 @@ public function welcome_step() {
             <p><?php _e('This wizard will guide you through:', 'creote'); ?></p>
             <ol>
                 <li><?php _e('Installing and activating essential plugins', 'creote'); ?></li>
-                <li><?php _e('Creating a child theme (optional but recom-mended)', 'creote'); ?></li>
+                <li><?php _e('Creating a child theme (optional but recommended)', 'creote'); ?></li>
                 <li><?php _e('Importing demo content to match our theme demos', 'creote'); ?></li>
             </ol>
         </div>
@@ -1073,7 +1073,7 @@ public function welcome_step() {
         <p><?php _e('The setup should only take a few minutes to complete.', 'creote'); ?></p>
         
         <div class="notice notice-info">
-            <p><?php _e('Using a child theme is recom-mended if you plan to customize your site. Demo content import is optional and can be skipped if you prefer to start with a blank site.', 'creote'); ?></p>
+            <p><?php _e('Using a child theme is recommended if you plan to customize your site. Demo content import is optional and can be skipped if you prefer to start with a blank site.', 'creote'); ?></p>
         </div>
         
         <?php 
@@ -1401,7 +1401,7 @@ public function plugins_step() {
                                 <?php if ($plugin['required']) : ?>
                                     <span class="required-label"><?php _e('(Required)', 'creote'); ?></span>
                                 <?php else : ?>
-                                    <span class="recom-mended-label"><?php _e('(recom-mended)', 'creote'); ?></span>
+                                    <span class="recommended-label"><?php _e('(Recommended)', 'creote'); ?></span>
                                 <?php endif; ?>
                             </td>
                             <td class="plugin-status <?php echo esc_attr($plugin_status); ?>">
@@ -1956,4 +1956,6 @@ public function ajax_deactivate_plugin() {
 }
 
 // Initialize the class
-new Integrated_Theme_Setup_Wizard();
+add_action( 'init', function() {
+	new Integrated_Theme_Setup_Wizard();
+} );

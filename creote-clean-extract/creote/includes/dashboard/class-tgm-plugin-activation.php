@@ -344,10 +344,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     'This theme requires the following plugins: %1$s.',
                     'creote'
                 ),
-                'notice_can_install_recom-mended'  => _n_noop(
+                'notice_can_install_recommended'  => _n_noop(
                 /* translators: 1: plugin name(s). */
-                    'This theme rcreotemends the following plugin: %1$s.',
-                    'This theme rcreotemends the following plugins: %1$s.',
+                    'This theme recommends the following plugin: %1$s.',
+                    'This theme recommends the following plugins: %1$s.',
                     'creote'
                 ),
                 'notice_ask_to_update'            => _n_noop(
@@ -368,10 +368,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     'The following required plugins are currently inactive: %1$s.',
                     'creote'
                 ),
-                'notice_can_activate_recom-mended' => _n_noop(
+                'notice_can_activate_recommended' => _n_noop(
                 /* translators: 1: plugin name(s). */
-                    'The following recom-mended plugin is currently inactive: %1$s.',
-                    'The following recom-mended plugins are currently inactive: %1$s.',
+                    'The following recommended plugin is currently inactive: %1$s.',
+                    'The following recommended plugins are currently inactive: %1$s.',
                     'creote'
                 ),
                 'install_link'                    => _n_noop(
@@ -400,7 +400,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                 /* translators: 1: dashboard link. */
                 'complete'                        => esc_html__( 'All plugins installed and activated successfully. %1$s', 'creote' ),
                 'dismiss'                         => esc_html__( 'Dismiss this notice', 'creote' ),
-                'notice_cannot_install_activate'  => esc_html__( 'There are one or more required or recom-mended plugins to install, update or activate.', 'creote' ),
+                'notice_cannot_install_activate'  => esc_html__( 'There are one or more required or recommended plugins to install, update or activate.', 'creote' ),
                 'contact_admin'                   => esc_html__( 'Please contact the administrator of this site for help.', 'creote' ),
             );
 
@@ -1130,7 +1130,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                         if ( true === $plugin['required'] ) {
                             $message['notice_can_install_required'][] = $slug;
                         } else {
-                            $message['notice_can_install_recom-mended'][] = $slug;
+                            $message['notice_can_install_recommended'][] = $slug;
                         }
                     }
                     if ( true === $plugin['required'] ) {
@@ -1144,7 +1144,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                             if ( true === $plugin['required'] ) {
                                 $message['notice_can_activate_required'][] = $slug;
                             } else {
-                                $message['notice_can_activate_recom-mended'][] = $slug;
+                                $message['notice_can_activate_recommended'][] = $slug;
                             }
                         }
                         if ( true === $plugin['required'] ) {
@@ -2358,7 +2358,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 return esc_html__( 'Required', 'creote' );
             }
 
-            return esc_html__( 'recom-mended', 'creote' );
+            return esc_html__( 'Recommended', 'creote' );
         }
 
         /**
@@ -2415,7 +2415,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 $update_status = esc_html__( 'Requires Update', 'creote' );
 
             } elseif ( false !== $this->tgmpa->does_plugin_have_update( $slug ) ) {
-                $update_status = esc_html__( 'Update recom-mended', 'creote' );
+                $update_status = esc_html__( 'Update recommended', 'creote' );
             }
 
             if ( '' === $update_status ) {

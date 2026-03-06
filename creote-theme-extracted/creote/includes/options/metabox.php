@@ -337,7 +337,6 @@ function creote_register_meta_boxes($meta_boxes)
                 'name' => esc_html__('Icon Image', 'creote') ,
                 'id' => 'service_icon_image',
                 'type' => 'image',
-                'name' => esc_html__('Icon Image', 'creote') ,
                 'srcset' => 'large.jpg 1920w, medium.jpg 960w, small.jpg 480w' ,
                 'sizes' => array(), 
                 'image_meta' => array(),
@@ -465,17 +464,26 @@ function creote_register_meta_boxes($meta_boxes)
                 'name' => esc_html__('Client', 'creote') ,
                 'id' => 'client_id',
                 'type' => 'text',
-                'class' => 'clint',
+                'class' => 'client',
                 'placeholder'  =>  esc_html__('The Sixmothers Group', 'creote') ,
             ) ,
         
 
             array(
-                'name' => esc_html__('date', 'creote') ,
+                'name' => esc_html__('Date', 'creote') ,
                 'id' => 'date_id',
-                'type' => 'text',
+                'type' => 'date',
                 'class' => 'dte',
                 'placeholder'  =>  esc_html__('February 14, 2021', 'creote') ,
+            ) ,
+
+            array(
+                'name' => esc_html__('Project File (Zip)', 'creote') ,
+                'id' => 'project_zip_file',
+                'type' => 'file_advanced',
+                'max_file_uploads' => 1,
+                'mime_type' => 'application/zip',
+                'desc'  =>  esc_html__('Upload a zip file for this project.', 'creote') ,
             ) ,
  
          
@@ -483,13 +491,13 @@ function creote_register_meta_boxes($meta_boxes)
             
             array(
                 'name' => esc_html__('Transitions Effect Timing', 'creote') ,
-                'id' => 'trans_effect_timing_post',
+                'id' => 'trans_effect_timing_project',
                 'type' => 'heading',
                 'std' => false,
             ),
             array(
-                'name' => esc_html__('Post Transition', 'creote') ,
-                'id' => 'transition_timing_post',
+                'name' => esc_html__('Project Transition', 'creote') ,
+                'id' => 'transition_timing_project',
                 'options' => array(
                     '100' => esc_html__('100ms', 'creote'),
                     '200' => esc_html__('200ms', 'creote'),

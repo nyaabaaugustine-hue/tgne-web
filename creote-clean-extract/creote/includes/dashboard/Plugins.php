@@ -145,10 +145,10 @@ class Getrequiredpluigns {
                 'installing'                      => esc_html__('Installing Plugin: %s', 'creote'), // %1$s = plugin name
                 'oops'                            => esc_html__('Something went wrong with the plugin API.', 'creote'),
                 'notice_can_install_required'     => _n_noop('This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.', 'creote'), // %1$s = plugin name(s)
-                'notice_can_install_recom-mended'  => _n_noop('This theme recom-mended the following plugin: %1$s.', 'This theme recom-mendeds the following plugins: %1$s.', 'creote'), // %1$s = plugin name(s)
+                'notice_can_install_recommended'  => _n_noop('This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.', 'creote'), // %1$s = plugin name(s)
                 'notice_cannot_install'           => _n_noop('Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'creote'), // %1$s = plugin name(s)
                 'notice_can_activate_required'    => _n_noop('The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.', 'creote'), // %1$s = plugin name(s)
-                'notice_can_activate_recom-mended' => _n_noop('The following recom-mended plugin is currently inactive: %1$s.', 'The following recom-mended plugins are currently inactive: %1$s.', 'creote'), // %1$s = plugin name(s)
+                'notice_can_activate_recommended' => _n_noop('The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.', 'creote'), // %1$s = plugin name(s)
                 'notice_cannot_activate'          => _n_noop('Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.', 'creote'), // %1$s = plugin name(s)
                 'notice_ask_to_update'            => _n_noop('The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.', 'creote'), // %1$s = plugin name(s)
                 'notice_cannot_update'            => _n_noop('Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.', 'creote'), // %1$s = plugin name(s)
@@ -475,7 +475,7 @@ function creote_get_page_builder_plugins() {
                     'bundled' => true,
                 ),
             ),
-            'recom-mended' => array(
+            'recommended' => array(
                 'elementor-pro' => array(
                     'name' => 'Elementor Pro',
                     'description' => 'The most advanced website builder for WordPress with exclusive pro widgets.',
@@ -503,7 +503,7 @@ function creote_get_page_builder_plugins() {
                     'bundled' => true,
                 ),
             ),
-            'recom-mended' => array(
+            'recommended' => array(
                 'Ultimate_VC_Addons' => array(
                     'name' => 'Ultimate Addons for WPBakery',
                     'description' => 'Ultimate collection of addons for WPBakery Page Builder.',

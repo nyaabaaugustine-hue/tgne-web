@@ -7,6 +7,87 @@
  */
 
 
+/**
+ * Helper function to render breadcrumbs for single custom post type pages.
+ *
+ * @param string $post_type The slug of the post type (e.g., 'service', 'project').
+ * @param array  $creote_theme_mod The global theme options array.
+ * @param int    $showCurrent Flag to show the current page title.
+ * @param string $before HTML to place before the current crumb.
+ * @param string $after HTML to place after the current crumb.
+ */
+function creote_breadcrumb_cpt_singular_handler($post_type, $creote_theme_mod, $showCurrent, $before, $after) {
+    $breadcrumb_name_key = $post_type . '_breadcrumb_name';
+    $breadcrumb_link_key = $post_type . '_breadcrumb_link';
+
+    $crumb_name = !empty($creote_theme_mod[$breadcrumb_name_key]) ? $creote_theme_mod[$breadcrumb_name_key] : '';
+    $crumb_link = !empty($creote_theme_mod[$breadcrumb_link_key]) ? $creote_theme_mod[$breadcrumb_link_key] : '';
+
+    echo '<li><a href="' . esc_url($crumb_link) . '">' . esc_html($crumb_name) . '</a></li> ';
+
+    if ($showCurrent == 1) {
+        echo html_entity_decode(esc_html($before . get_the_title() . $after));
+    }
+}
+
+/**
+ * Helper function to render breadcrumb taxonomy hierarchy.
+ *
+ * @param object $queried_object The queried term object.
+ * @param string $before HTML to place before the current crumb.
+ * @param string $after HTML to place after the current crumb.
+ */
+function creote_breadcrumb_render_taxonomy_ancestors($queried_object, $before, $after) {
+    $term_object = get_term($queried_object);
+    if (!$term_object || is_wp_error($term_object)) {
+        return;
+    }
+    $taxonomy = $term_object->taxonomy;
+    $term_name = $term_object->name;
+    $term_parent = $term_object->parent;
+    
+    $parent_term_links = [];
+    while ($term_parent) {
+        $term = get_term($term_parent, $taxonomy);
+        if ($term && !is_wp_error($term)) {
+            $term_link = get_term_link($term);
+            if ( ! is_wp_error( $term_link ) ) {
+                $parent_term_links[] = sprintf(
+                    '<li><a href="%s">%s</a></li>',
+                    esc_url($term_link),
+                    esc_html($term->name)
+                );
+            }
+        }
+        $term_parent = $term ? $term->parent : 0;
+    }
+    
+    if (!empty($parent_term_links)) {
+        echo implode('', array_reverse($parent_term_links));
+    }
+
+    echo $before . esc_html($term_name) . $after;
+}
+
+/**
+ * Helper function to render breadcrumbs for CPT archives and taxonomy pages.
+ *
+ * @param string $post_type The slug of the post type (e.g., 'service', 'project').
+ * @param array  $creote_theme_mod The global theme options array.
+ * @param object $queried_object The queried object from WP_Query.
+ * @param string $before HTML to place before the current crumb.
+ * @param string $after HTML to place after the current crumb.
+ */
+function creote_breadcrumb_cpt_archive_handler($post_type, $creote_theme_mod, $queried_object, $before, $after) {
+    $breadcrumb_name_key = $post_type . '_breadcrumb_name';
+    $breadcrumb_link_key = $post_type . '_breadcrumb_link';
+    $crumb_name = !empty($creote_theme_mod[$breadcrumb_name_key]) ? $creote_theme_mod[$breadcrumb_name_key] : '';
+    $crumb_link = !empty($creote_theme_mod[$breadcrumb_link_key]) ? $creote_theme_mod[$breadcrumb_link_key] : '';
+    echo '<li><a href="' . esc_url($crumb_link) . '">' . esc_html($crumb_name) . '</a></li> ';
+    if (is_tax()) {
+        creote_breadcrumb_render_taxonomy_ancestors($queried_object, $before, $after);
+    }
+}
 
 //Breadcrumbs
 function creote_breadcrumb() {
@@ -73,224 +154,29 @@ function creote_breadcrumb() {
   }
 
   elseif(is_singular('service')) {
-    $service_crumb_name = '';
-        $service_crumb_name_link = '';
-    if(!empty($creote_theme_mod['service_breadcrumb_name'])):
-    $service_crumb_name = $creote_theme_mod['service_breadcrumb_name'];
-    endif;
-    if(!empty($creote_theme_mod['service_breadcrumb_link'])):
-    $service_crumb_name_link = $creote_theme_mod['service_breadcrumb_link'];
-  endif;
-    echo '<li><a href="'.$service_crumb_name_link.'">'.$service_crumb_name.'</a></li> ';
-
-    if($showCurrent == 1) echo html_entity_decode( esc_html( $before . get_the_title() . $after));
-
-    
-  
-}
-
-
-elseif(is_post_type_archive('service') || is_tax( 'service_category' )  || is_tax( 'service_tag' )) {
-  $service_crumb_name_tax = '';
-  $service_crumb_name_link_tax = '';
-  if(!empty($creote_theme_mod['service_breadcrumb_name'])):
-  $service_crumb_name_tax = $creote_theme_mod['service_breadcrumb_name'];
-  endif;
-  if(!empty($creote_theme_mod['service_breadcrumb_link'])):
-  $service_crumb_name_link_tax = $creote_theme_mod['service_breadcrumb_link'];
-  endif;
-  echo '<li><a href="'.$service_crumb_name_link_tax.'">'.$service_crumb_name_tax.'</a></li> ';
-  if (is_category()|| is_tag()|| is_tax()) {
-    // Set the variables for this section
-    $term_object        = get_term($queried_object);
-    $taxonomy           = $term_object->taxonomy;
-    $term_id            = $term_object->term_id;
-    $term_name          = $term_object->name;
-    $term_parent        = $term_object->parent;
-    $taxonomy_object    = get_taxonomy($taxonomy);
-    $current_term_link  = $before . $term_name . $after;
-    $parent_term_string = '';
-if(0!== $term_parent){
-// Get all the current term ancestors
-$parent_term_links = [];
-while($term_parent){
- $term = get_term( $term_parent, $taxonomy );
- $parent_term_links[] =
- 
- sprintf(
-  '<li>' .
-  '<a href="%s">%s</a>' .
-  '</li>',
-  esc_url( get_term_link( $term ) ), 
-  $term->name 
-); 
- $term_parent = $term->parent;
-}
-$parent_term_links  = array_reverse( $parent_term_links );
-$parent_term_string = implode( $parent_term_links );
-}
-if($parent_term_string){
-    echo wp_kses($parent_term_string  . $current_term_link , $allowed_tags);
-}else{
-    echo wp_kses($current_term_link , $allowed_tags);
-}
-}
-   
-}
-elseif(is_singular('product')) {
-  $product_crumb_name = '';
-  $product_crumb_link = '';
-  if(!empty($creote_theme_mod['product_breadcrumb_name'])):
-  $product_crumb_name = $creote_theme_mod['product_breadcrumb_name'];
-endif;
-  if(!empty($creote_theme_mod['product_breadcrumb_link'])):
-  $product_crumb_link = $creote_theme_mod['product_breadcrumb_link'];
-endif;
-
-  echo '<li><a href="'.$product_crumb_link.'">'.$product_crumb_name.'</a></li> ';
-
-  if($showCurrent == 1) echo html_entity_decode( esc_html( $before . get_the_title() . $after));
-
-}
-elseif(is_post_type_archive('product') || is_tax( 'product_cat' ) || is_tax( 'product_tag' )) {
-  $product_crumb_name_tax = '';
-  $product_crumb_name_link_tax = '';
-  if(!empty($creote_theme_mod['product_breadcrumb_name'])):
-  $product_crumb_name_tax = $creote_theme_mod['product_breadcrumb_name'];
-  endif;
-  if(!empty($creote_theme_mod['product_breadcrumb_link'])):
-  $product_crumb_name_link_tax = $creote_theme_mod['product_breadcrumb_link'];
-  endif;
-  echo '<li><a href="'.$product_crumb_name_link_tax.'">'.$product_crumb_name_tax.'</a></li> ';
-  if (is_category()|| is_tag()|| is_tax()) {
-    // Set the variables for this section
-    $term_object        = get_term($queried_object);
-    $taxonomy           = $term_object->taxonomy;
-    $term_id            = $term_object->term_id;
-    $term_name          = $term_object->name;
-    $term_parent        = $term_object->parent;
-    $taxonomy_object    = get_taxonomy($taxonomy);
-    $current_term_link  = $before . $term_name . $after;
-    $parent_term_string = '';
-if(0!== $term_parent){
-// Get all the current term ancestors
-$parent_term_links = [];
-while($term_parent){
- $term = get_term( $term_parent, $taxonomy );
- $parent_term_links[] =
- 
- sprintf(
-  '<li>' .
-  '<a href="%s">%s</a>' .
-  '</li>',
-  esc_url( get_term_link( $term ) ), 
-  $term->name 
-); 
- $term_parent = $term->parent;
-}
-$parent_term_links  = array_reverse( $parent_term_links );
-$parent_term_string = implode( $parent_term_links );
-}
-if($parent_term_string){
-    echo wp_kses($parent_term_string  . $current_term_link , $allowed_tags);
-}else{
-    echo wp_kses($current_term_link , $allowed_tags);
-}
-}
-}
-
-elseif(is_singular('project')) {
-  $project_crumb_name = '';
-  $project_crumb_name_link = '';
-  if(!empty($creote_theme_mod['project_breadcrumb_name'])):
-  $project_crumb_name = $creote_theme_mod['project_breadcrumb_name'];
-endif;
-  if(!empty($creote_theme_mod['project_breadcrumb_link'])):
-  $project_crumb_name_link = $creote_theme_mod['project_breadcrumb_link'];
-endif;
-
-  echo '<li><a href="'.$project_crumb_name_link.'">'.$project_crumb_name.'</a></li> ';
- 
-  if($showCurrent == 1) echo html_entity_decode( esc_html( $before . get_the_title() . $after));
-
-}
- 
-elseif(is_post_type_archive('project') || is_tax( 'project_category')  || is_tax('project_tag')) {
-  $project_crumb_name_tax = '';
-  $project_crumb_name_link = '';
-  if(!empty($creote_theme_mod['project_breadcrumb_name'])):
-    $project_crumb_name_tax = $creote_theme_mod['project_breadcrumb_name'];
-  endif;
-  if(!empty($creote_theme_mod['project_breadcrumb_link'])):
-    $project_crumb_name_link = $creote_theme_mod['project_breadcrumb_link'];
-  endif;  
-
-  echo '<li><a href="'.$project_crumb_name_link.'">'.$project_crumb_name_tax.'</a></li> ';
-  if (is_category()|| is_tag()|| is_tax()) {
-    // Set the variables for this section
-    $term_object        = get_term($queried_object);
-    $taxonomy           = $term_object->taxonomy;
-    $term_id            = $term_object->term_id;
-    $term_name          = $term_object->name;
-    $term_parent        = $term_object->parent;
-    $taxonomy_object    = get_taxonomy($taxonomy);
-    $current_term_link  = $before . $term_name . $after;
-    $parent_term_string = '';
-if(0!== $term_parent){
-// Get all the current term ancestors
-$parent_term_links = [];
-while($term_parent){
- $term = get_term( $term_parent, $taxonomy );
- $parent_term_links[] =
- 
- sprintf(
-  '<li>' .
-  '<a href="%s">%s</a>' .
-  '</li>',
-  esc_url( get_term_link( $term ) ), 
-  $term->name 
-); 
- $term_parent = $term->parent;
-}
-$parent_term_links  = array_reverse( $parent_term_links );
-$parent_term_string = implode( $parent_term_links );
-}
-if($parent_term_string){
-    echo wp_kses($parent_term_string  . $current_term_link , $allowed_tags);
-}else{
-    echo wp_kses($current_term_link , $allowed_tags);
-}
-}
-}
-
-elseif(is_singular('job_listing')) {
-  $job_breadcrumb_name_single = '';
-  $job_crumb_name_link_single = '';
-  if(!empty($creote_theme_mod['job_breadcrumb_name'])):
-  $job_breadcrumb_name_single = $creote_theme_mod['job_breadcrumb_name'];
-endif;
-  if(!empty($creote_theme_mod['job_breadcrumb_link'])):
-  $job_crumb_name_link_single = $creote_theme_mod['job_breadcrumb_link'];
-endif;
-
-  echo '<li><a href="'.$job_crumb_name_link_single.'">'.$job_breadcrumb_name_single.'</a></li> ';
-  if($showCurrent == 1) echo html_entity_decode( esc_html( $before . get_the_title() . $after));
-
-}
-
-elseif(is_post_type_archive('job_listing')) {
-  $job_breadcrumb_name = '';
-  $job_breadcrumb_link = '';
-  if(!empty($creote_theme_mod['job_breadcrumb_name'])):
-    $job_breadcrumb_name = $creote_theme_mod['job_breadcrumb_name'];
-  endif;
-  if(!empty($creote_theme_mod['job_breadcrumb_link'])):
-    $job_breadcrumb_link = $creote_theme_mod['job_breadcrumb_link'];
-  endif;  
-
-  echo '<li><a href="'.$job_breadcrumb_link.'">'.$job_breadcrumb_name.'</a></li> ';
-
-}
+    creote_breadcrumb_cpt_singular_handler('service', $creote_theme_mod, $showCurrent, $before, $after);
+  }
+  elseif(is_post_type_archive('service') || is_tax( 'service_category' )  || is_tax( 'service_tag' )) {
+    creote_breadcrumb_cpt_archive_handler('service', $creote_theme_mod, $queried_object, $before, $after);
+  }
+  elseif(is_singular('product')) {
+    creote_breadcrumb_cpt_singular_handler('product', $creote_theme_mod, $showCurrent, $before, $after);
+  }
+  elseif(is_post_type_archive('product') || is_tax( 'product_cat' ) || is_tax( 'product_tag' )) {
+    creote_breadcrumb_cpt_archive_handler('product', $creote_theme_mod, $queried_object, $before, $after);
+  }
+  elseif(is_singular('project')) {
+    creote_breadcrumb_cpt_singular_handler('project', $creote_theme_mod, $showCurrent, $before, $after);
+  }
+  elseif(is_post_type_archive('project') || is_tax( 'project_category')  || is_tax('project_tag')) {
+    creote_breadcrumb_cpt_archive_handler('project', $creote_theme_mod, $queried_object, $before, $after);
+  }
+  elseif(is_singular('job_listing')) {
+    creote_breadcrumb_cpt_singular_handler('job', $creote_theme_mod, $showCurrent, $before, $after);
+  }
+  elseif(is_post_type_archive('job_listing')) {
+    creote_breadcrumb_cpt_archive_handler('job', $creote_theme_mod, $queried_object, $before, $after);
+  }
   
 elseif ( is_attachment() ) {
       $parent = get_post($post->post_parent);

@@ -137,12 +137,12 @@ class Theme_Server_Capability_Check {
                 'recommendation' => '5000 or more'
             ),
             'curl' => array(
-                'status' => function_exists('curl_version') ? 'good' : 'warning',
+                'status' => function_exists('curl_version') ? 'good' : 'bad',
                 'value'  => function_exists('curl_version') ? 'Enabled' : 'Disabled',
                 'recommendation' => 'Enabled'
             ),
             'zip' => array(
-                'status' => class_exists('ZipArchive') ? 'good' : 'warning',
+                'status' => class_exists('ZipArchive') ? 'good' : 'bad',
                 'value'  => class_exists('ZipArchive') ? 'Enabled' : 'Disabled',
                 'recommendation' => 'Enabled'
             ),
@@ -457,7 +457,7 @@ class Theme_Server_Capability_Check {
                             <li>
                                 <strong><?php echo esc_html(ucwords(str_replace('_', ' ', $key))); ?>:</strong> 
                                 <?php echo esc_html($issue['value']); ?> -
-                                <?php _e('recom-mended:', 'creote'); ?> <?php echo esc_html($issue['recommendation']); ?>
+                                <?php _e('Recommended:', 'creote'); ?> <?php echo esc_html($issue['recommendation']); ?>
                             </li>
                         <?php endforeach; ?>
                     </ul>
@@ -469,7 +469,7 @@ class Theme_Server_Capability_Check {
                     <tr>
                         <th><?php _e('Setting', 'creote'); ?></th>
                         <th><?php _e('Current Value', 'creote'); ?></th>
-                        <th><?php _e('recom-mended', 'creote'); ?></th>
+                        <th><?php _e('Recommended', 'creote'); ?></th>
                         <th><?php _e('Status', 'creote'); ?></th>
                     </tr>
                 </thead>
