@@ -7,13 +7,8 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/debug.log
 
-# Theme packages
+# Theme packages - ONLY ZIP FILES
 *.zip
-creote-package-v-2-9-0/
-creote-theme-extracted/
-creote-original-extracted/
-creote-clean-extract/
-__MACOSX/
 
 # System files
 .DS_Store

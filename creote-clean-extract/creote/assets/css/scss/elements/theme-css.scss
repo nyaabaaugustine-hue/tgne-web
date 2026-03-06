@@ -1,0 +1,45 @@
+/*------===============-main-style-sheet-==============------*/
+@charset "UTF-8";
+
+@function unicode($str){
+  @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"");
+}
+
+
+@import 'variable';
+@import 'global';
+@import 'theme-button';
+@import 'topbar';
+@import 'header';
+@import 'header-two';
+@import 'slider';
+@import 'blog';
+@import 'service';
+@import 'project';
+@import 'widgets'; 
+@import 'common';
+@import 'content-two';
+@import 'footer';
+@import 'shop';
+@import 'shop-widgets';
+@import 'packagetwo/packagetwo'; 
+@import 'packagetwo/header';
+@import 'side-menu/sidemenu';
+@import 'responsive'; 
+@media(max-width:768px){
+  body .contact_form_box.type_one .contact_inner_box{
+      padding: 15px;
+  }
+  .contact_form_box.type_one .emergrncy_contact h6 span{
+      font-size: 16px!important;
+      line-height: 24px!important;
+  }
+  .contact_form_box.type_one .emergrncy_contact h6 a{
+      font-size: 20px!important;
+      line-height: 30px!important;
+  }
+  .heading.type_two .heading_text{
+      font-size: 30px;
+      line-height: 40px;
+  }
+}

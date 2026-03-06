@@ -1,0 +1,14 @@
+:root{
+    --primary-color-one: #078586;
+    --menu-active-color: #078586;
+    --preloader-background-color: #078586;
+}
+
+.primarg_bg_color{
+    background: var(--primary-color-one)!important;
+    background-color: var(--primary-color-one)!important;
+}
+.primarg_border_color{
+    border-color: var(--primary-color-one)!important;
+}
+ 

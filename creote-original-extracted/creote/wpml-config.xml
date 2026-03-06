@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<wpml-config>
+  <admin-texts>
+    <key name="creote_theme_mod">
+      <!-- Modal Content Settings -->
+      <key name="modal_form_short_code" />
+      <key name="about_company_modal" />
+      <key name="modal_read_more" />
+      <key name="modal_read_more_link" />
+      <key name="post_title_modal" />
+      <key name="copy_right_modal" />
+
+      <!-- Blog Single Settings -->
+      <key name="related_post_title" />
+      <key name="related_post_count" />
+
+      <!-- Mobile Header Settings -->
+      <key name="mobile_phone_number" />
+      <key name="mobile_mail_number" />
+      <key name="mobile_logo_link" />
+      <key name="mobile_button_text" />
+      <key name="mobile_button_link" />
+
+      <!-- All Post General Settings -->
+      <key name="service_breadcrumb_name" />
+      <key name="service_breadcrumb_link" />
+      <key name="project_breadcrumb_name" />
+      <key name="project_breadcrumb_link" />
+      <key name="product_page_name" />
+      <key name="product_breadcrumb_name" />
+      <key name="product_breadcrumb_link" />
+      <key name="job_breadcrumb_name" />
+      <key name="job_breadcrumb_link" />
+
+      <!-- Side Menu Settings -->
+      <key name="side_menu_button_texts" />
+      <key name="color_button_texts" />
+      <key name="mini_cart_text" />
+      <key name="content_one_text" />
+      <key name="content_one_text_link" />
+      <key name="content_two_text" />
+      <key name="content_two_link" />
+
+      <!-- Woocommerce Settings - Login Page Left Content -->
+      <key name="logo_width_mos" />
+      <key name="login_text_mids" />
+
+      <!-- Woocommerce Settings - Login Page Right Content -->
+      <key name="login_right_sm_text" />
+      <key name="login_right_md_text" />
+    </key>
+  </admin-texts>
+</wpml-config>

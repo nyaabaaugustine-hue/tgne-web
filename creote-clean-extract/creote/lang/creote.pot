@@ -1,0 +1,2743 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-09-09 20:31+0530\n"
+"PO-Revision-Date: 2023-09-09 20:32+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html;esc_html__;esc_html_e;esc_attr;"
+"esc_attr__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:36
+msgid "Oops..."
+msgstr ""
+
+#: 404.php:37
+msgid "We are not being able to find the page you are looking for."
+msgstr ""
+
+#: 404.php:38
+msgid ""
+"The page you are looking for was moved, removed, renamed\r\n"
+"or never existed."
+msgstr ""
+
+#: 404.php:44
+msgid "Back to home"
+msgstr ""
+
+#: comments.php:31
+msgid "0 Comments"
+msgstr ""
+
+#: comments.php:32 includes/common/functions/meta.php:48
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:33 includes/common/functions/meta.php:49
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:34 includes/common/functions/meta.php:50
+msgid "Comments are Closed"
+msgstr ""
+
+#: comments.php:40 comments.php:72
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:45 comments.php:76
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:48 comments.php:79
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:92
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:100
+msgid "Post  comment"
+msgstr ""
+
+#: comments.php:101
+msgid "Post a comment"
+msgstr ""
+
+#: comments.php:102
+msgid "Your email address will not be published."
+msgstr ""
+
+#: comments.php:103
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:103
+msgid "Write your comment here..."
+msgstr ""
+
+#: includes/WP_Bootstrap_Navwalker.php:380
+msgid "Add a menu"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:83
+msgid "Welcome / Theme Activation"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:87
+msgid "Plugins"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:92
+msgid "Import Demo Content"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:98
+msgid "Create Header"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:102
+msgid "Create Footer"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:106
+msgid "Create Megamenu"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:110
+#: includes/options/config.php:33 includes/options/config.php:34
+msgid "Theme Options"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:115
+msgid "Our Themes"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:122
+#: includes/admin/dashboard/class-dashboard.php:124
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:221
+msgid "Before Import Demo Content Check the server configuration here"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:221
+msgid "Click here..."
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:222
+msgid "We are here to help you.For any issues please submit your ticket here"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:222
+msgid "Get Support"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:223
+msgid "Looking for creote Documentation"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:223
+msgid "Click here"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:225
+msgid "Important Notice please read this one:"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:226
+msgid "1 - Do not reset or delete the theme without deactivating it."
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:227
+msgid ""
+"2 - To migrate the site from one domain to another, use a migration plugin "
+"such as Duplicator or All-in-One Migration, or any plugin you prefer."
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:228
+msgid ""
+"3 - After migration, deactivate the theme from old domainor form localhost, "
+"and once migration is completed on the new domain, activate the theme again "
+"by using purchase code."
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:229
+msgid "If you got a message like this -> The purchase code is already used ->"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:231
+msgid "Contact the support. Our support team will help you immediately"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:234
+msgid ""
+"Disable this notification totally go to creote -> theme option ->  general "
+"settings ->  Disable Admin Notice => Switch Off"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:246
+msgid "Activate Creote theme with purchase code and enjoy all features."
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:248
+msgid " 1) Dowload purchase code form envato and copy the purchase code."
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:250
+msgid "2) Then Go to Creote -> Welcome"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:250
+msgid "or Click here"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:250
+msgid "-> Enter the purchase and activate theme."
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:251
+msgid "3) To downlaod pruchase code please follow this"
+msgstr ""
+
+#: includes/admin/dashboard/class-dashboard.php:251
+msgid "Download Purchase code here"
+msgstr ""
+
+#: includes/admin/dashboard/maintenance-mode.php:42
+msgid "Site Under Maintenance."
+msgstr ""
+
+#: includes/admin/dashboard/maintenance-mode.php:47
+msgid "This website is currently undergoing maintenance."
+msgstr ""
+
+#: includes/admin/dashboard/ourthemes/outthemes.php:15
+msgid "Our Recent Themes"
+msgstr ""
+
+#: includes/admin/dashboard/ourthemes/outthemes.php:32
+msgid "Vankine - Insurance & Consulting Business WordPress Theme"
+msgstr ""
+
+#: includes/admin/dashboard/ourthemes/outthemes.php:37
+#: includes/admin/dashboard/ourthemes/outthemes.php:62
+#: includes/admin/dashboard/ourthemes/outthemes.php:89
+#: includes/admin/dashboard/ourthemes/outthemes.php:114
+msgid "Purchase Now"
+msgstr ""
+
+#: includes/admin/dashboard/ourthemes/outthemes.php:57
+msgid "CopyGen - AI Writer & Copywriting Landing Page WordPress Theme"
+msgstr ""
+
+#: includes/admin/dashboard/ourthemes/outthemes.php:84
+msgid "Lawnella - Gardening & Landscaping WordPress Theme"
+msgstr ""
+
+#: includes/admin/dashboard/ourthemes/outthemes.php:109
+msgid "Nest - Grocery Store WooCommerce WordPress Theme"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:334
+#: includes/admin/dashboard/pluigns/list-plugins.php:125
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:335
+#: includes/admin/dashboard/pluigns/list-plugins.php:126
+msgid "Install Plugins"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:337
+#: includes/admin/dashboard/pluigns/list-plugins.php:127
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:340
+#: includes/admin/dashboard/pluigns/list-plugins.php:128
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:392
+#: includes/admin/dashboard/pluigns/list-plugins.php:139
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:393
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:912
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2618
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:394
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3244
+#: includes/admin/dashboard/pluigns/list-plugins.php:140
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:395
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:1019
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2400
+#: includes/admin/dashboard/welcome/welcome.php:373
+msgid "Not Installed"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:15
+msgid "Elementor"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:22
+msgid "Wp Bakery"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:31
+msgid "Creote Addons"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:40
+msgid "Contact Form 7"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:48
+msgid "HubSpot All-In-One Marketing - Forms, Popups, Live Chat"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:56
+msgid "MailChimp for WordPress"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:64
+msgid "Meta Box"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:72
+msgid "Woocommerce"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:79
+msgid "YITH WooCommerce Compare"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:86
+msgid "YITH WooCommerce Wishlist"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:93
+msgid "One Click Demo Import"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:100
+msgid "WP Job Manager"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:107
+msgid "Revslider"
+msgstr ""
+
+#: includes/admin/dashboard/pluigns/list-plugins.php:141
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:305
+msgid "Activate your Theme here"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:308
+msgid "Enter your purchase code:"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:312
+msgid "Activate Theme"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:315
+msgid ""
+"To Enable staging site without purchase code go to apperance -- customize -- "
+"Staging Site"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:316
+msgid "Click Here to enable staging"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:317
+msgid "You can learn how to find your purchase key"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:317
+msgid "Click Here"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:320
+msgid ""
+"Disable Staging site opton to enter the pruchase code and make site Live."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:321
+msgid "To Disable staging site go to apperance -- customize -- Staging Site"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:321
+msgid "Click Here to Disable staging"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:336
+msgid "Purchase Code:"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:337
+msgid "Item Name:"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:338
+msgid "Domain Name:"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:339
+msgid "Customer Name:"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:340
+msgid "Bought Date:"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:341
+msgid "Supported Until:"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:344
+msgid "Do not reset or delete the theme without deactivating it."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:345
+msgid ""
+"To migrate the site from one domain to another, use a migration plugin such "
+"as Duplicator or All-in-One Migration, or any plugin you prefer."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:346
+msgid ""
+"After migration, deactivate the theme, and once migration is completed on "
+"the new domain, activate the theme again."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:347
+msgid "If you received this message -> The purchase code is already used ->"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:347
+msgid "Contact support. Our team will help you immediately."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/start.php:351
+msgid "Deactivate Theme"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:14
+msgid "Welcome to creote  "
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:24
+msgid ""
+"Thank you for purchasing our creote theme. Here you are able to \n"
+"                        start creating your awesome web Application by "
+"importing our dummy content and theme by options."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:42
+msgid "System Information"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:50
+msgid "Your Php Version "
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:70
+msgid " is too old. Please upgrade to version 5.6 or higher"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:75
+msgid "Please contact Host provider to fix it."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:83
+msgid " is up to date."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:96
+msgid "MySQL Version"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:122
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:148
+#: includes/admin/dashboard/welcome/welcome.php:188
+#: includes/admin/dashboard/welcome/welcome.php:237
+#: includes/admin/dashboard/welcome/welcome.php:288
+msgid "looks good"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:153
+msgid "Increase Your Post Max Size greaten than 512"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:165
+msgid "Max Upload Size"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:199
+msgid "Increase Max Upload Size to 300 or 512 or maximum"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:210
+msgid "PHP Time Limit"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:227
+msgid "sec"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:233
+msgid " sec"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:247
+msgid ""
+"Your PHP time limit is too low. Please set it to at least 600 seconds to "
+"import demo content"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:258
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:299
+msgid "Note:"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:303
+msgid ""
+"Your current PHP Max Input Vars setting is too low. Please increase it to at "
+"least"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:311
+msgid " to avoid issues with your menu items."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:322
+msgid "ZipArchive"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:334
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:338
+msgid "No"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:345
+msgid "ZipArchive class is not available on your server."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:355
+msgid "GD Library"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:385
+msgid "cURL"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:403
+msgid "Not Enabled"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:418
+msgid ""
+"Our documentation is simple  , With details and covers all the essential "
+"features from the beginning to the most advanced."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:425
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:437
+msgid ""
+"creote theme comes with 6 months of free support for every license you "
+"purchase. Support can be extended through subscriptions via ThemeForest."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:444
+#: includes/options/theme-options/side-menu-settings.php:188
+#: includes/options/theme-options/side-menu-settings.php:189
+msgid "Support"
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:459
+msgid ""
+"Here is the Video Tutorials to install theme , pluign , import demo content "
+"and Get Start with it."
+msgstr ""
+
+#: includes/admin/dashboard/welcome/welcome.php:465
+msgid "Video Tutorials"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:85
+msgid "Enable Badge"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:90
+msgid "Badge"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:92
+msgid "HOT"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:97
+msgid "Badge Text Color"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:102
+msgid "Badge Background Color"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:109
+msgid "Enable Mega Menu"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:113
+msgid "Megamenu Select"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:122
+msgid "Select Template"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:141
+msgid "Dropdown Column"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:143
+msgid "Select Column"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:144
+#: includes/options/theme-options/blog-settings.php:33
+msgid "Two Column"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:145
+#: includes/options/theme-options/blog-settings.php:34
+msgid "Three Column"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:146
+#: includes/options/theme-options/blog-settings.php:35
+msgid "Four Column"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:147
+msgid "Five Column"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:152
+msgid "Dropdown Right or Left"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:155
+msgid "Dropdown Align Left"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:156
+msgid "Dropdown Align Right"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:161
+msgid "Mega Menu Width"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:167
+msgid "Mega Move Right / Left"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:176
+msgid "Image Style"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:178
+msgid "Image Style One"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:179
+msgid "Image Style Two"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:201
+msgid "Set custom image"
+msgstr ""
+
+#: includes/admin/menu/menu-option.php:205
+msgid "Remove this image"
+msgstr ""
+
+#: includes/common/functions/classes.php:44
+msgid "header_custom_style_for_all"
+msgstr ""
+
+#: includes/common/functions/classes.php:47
+msgid "header_custom_style_for_page"
+msgstr ""
+
+#: includes/common/functions/header-source.php:93
+msgid "Search Results"
+msgstr ""
+
+#: includes/common/functions/header-source.php:95
+msgid "Page Not Found"
+msgstr ""
+
+#: includes/common/functions/header-source.php:101
+msgid "The Latest Posts"
+msgstr ""
+
+#: includes/common/functions/header-source.php:119
+#: includes/options/theme-options/post-general-settings.php:25
+msgid "Service"
+msgstr ""
+
+#: includes/common/functions/header-source.php:126
+msgid "Job Listing"
+msgstr ""
+
+#: includes/common/functions/header-source.php:133
+#: includes/options/theme-options/post-general-settings.php:43
+msgid "Project"
+msgstr ""
+
+#: includes/common/functions/header-source.php:140
+#: includes/options/theme-options/post-general-settings.php:62
+#: includes/options/theme-options/post-general-settings.php:68
+msgid "Product"
+msgstr ""
+
+#: includes/common/functions/header-source.php:158
+msgid "Share"
+msgstr ""
+
+#: includes/common/functions/header-source.php:198
+#: includes/common/functions/header-source.php:216 searchform.php:12
+#: template-parts/headers/header-content.php:19
+msgid "Search..."
+msgstr ""
+
+#: includes/common/functions/layout.php:152
+#: includes/common/functions/layout.php:200
+msgid "no_column"
+msgstr ""
+
+#: includes/common/functions/layout.php:155
+msgid "col-lg-8 col-md-12 col-sm-12 col-xs-12"
+msgstr ""
+
+#: includes/common/functions/layout.php:170
+#: includes/common/functions/layout.php:185
+#: includes/common/functions/layout.php:215
+msgid "col-lg-12 no_sidebar"
+msgstr ""
+
+#: includes/common/functions/meta.php:47
+msgid "Post Comment"
+msgstr ""
+
+#: includes/common/functions/meta.php:77
+msgid "Tags"
+msgstr ""
+
+#: includes/common/functions/meta.php:80
+#: includes/options/theme-options/header-extra.php:109
+#: includes/options/theme-options/header-modal-content.php:56
+#: includes/options/theme-options/header-settings.php:97
+#: includes/options/theme-options/post-general-settings.php:31
+#: includes/options/theme-options/post-general-settings.php:49
+#: includes/options/theme-options/post-general-settings.php:74
+#: includes/options/theme-options/post-general-settings.php:93
+#: includes/options/theme-options/side-menu-settings.php:160
+#: includes/options/theme-options/side-menu-settings.php:161
+#: includes/options/theme-options/side-menu-settings.php:197
+#: includes/options/theme-options/side-menu-settings.php:198
+msgid "#"
+msgstr ""
+
+#: includes/common/functions/meta.php:108
+msgid "Less than a minute ago"
+msgstr ""
+
+#: includes/common/functions/meta.php:111
+msgid "About a minute ago"
+msgstr ""
+
+#: includes/common/functions/meta.php:117
+msgid "About an hour ago"
+msgstr ""
+
+#: includes/common/lib/breadcrumbs.php:27
+#: includes/common/lib/breadcrumbs.php:34
+msgid "Home"
+msgstr ""
+
+#: includes/common/lib/breadcrumbs.php:44
+#: includes/common/lib/breadcrumbs.php:314
+#: woocommerce/myaccount/form-login.php:102
+#: woocommerce/myaccount/form-login.php:155
+msgid " "
+msgstr ""
+
+#: includes/common/lib/breadcrumbs.php:49
+msgid "Search results for \""
+msgstr ""
+
+#: includes/common/lib/breadcrumbs.php:49
+#: includes/common/lib/breadcrumbs.php:318
+#: includes/common/lib/breadcrumbs.php:323
+msgid "\""
+msgstr ""
+
+#: includes/common/lib/breadcrumbs.php:326
+msgid "Error 404"
+msgstr ""
+
+#: includes/common/lib/breadcrumbs.php:352
+msgid "Page"
+msgstr ""
+
+#: includes/custom-menu-option.php:14
+msgid "Activate MegaMenu"
+msgstr ""
+
+#: includes/custom/color-switcher.php:14
+msgid "Color Skins"
+msgstr ""
+
+#: includes/custom/side-menu-btn.php:47 includes/lib/woocom/action.php:330
+#: template-parts/headers/mobile/mobile-layout.php:89
+msgid "0"
+msgstr ""
+
+#: includes/demo-content/demo-content.php:23
+#: includes/demo-content/demo-content.php:37
+#: includes/demo-content/demo-content.php:51
+msgid "Please keep patients while importing sample data."
+msgstr ""
+
+#: includes/lib/functions/comments.php:37
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/lib/functions/comments.php:53
+msgid "Edit"
+msgstr ""
+
+#: includes/lib/functions/comments.php:72
+msgid "Website Url"
+msgstr ""
+
+#: includes/lib/functions/comments.php:73
+msgid "ex. www.example.com"
+msgstr ""
+
+#: includes/lib/functions/comments.php:76
+#: woocommerce/myaccount/form-login.php:134
+msgid "Email address"
+msgstr ""
+
+#: includes/lib/functions/comments.php:77
+msgid "ex. john@mail.com"
+msgstr ""
+
+#: includes/lib/functions/comments.php:80
+msgid "Full Name"
+msgstr ""
+
+#: includes/lib/functions/comments.php:81
+msgid "ex. John Doe"
+msgstr ""
+
+#: includes/lib/functions/comments.php:87
+msgid "Save my name, and email in this browser for the next time I comment."
+msgstr ""
+
+#: includes/lib/functions/nav.php:79
+msgid "Previous Post"
+msgstr ""
+
+#: includes/lib/functions/nav.php:92
+msgid "Next Post"
+msgstr ""
+
+#: includes/lib/woocom/action.php:223
+msgid "out of 5"
+msgstr ""
+
+#: includes/lib/woocom/action.php:254
+msgid ":"
+msgstr ""
+
+#: includes/lib/woocom/action.php:289
+msgid "Out of Stock"
+msgstr ""
+
+#: includes/options/config.php:143
+msgid ""
+"<p>This text is displayed above the options panel. It isn't required, but "
+"more info is always better! The intro_text field accepts all HTML.</p>"
+msgstr ""
+
+#: includes/options/config.php:147
+msgid "<p></p>"
+msgstr ""
+
+#: includes/options/metabox.php:23
+msgid "General Setting"
+msgstr ""
+
+#: includes/options/metabox.php:39
+msgid "Enable Body Padding Css"
+msgstr ""
+
+#: includes/options/metabox.php:47
+msgid "Padding For Body (Desktop)"
+msgstr ""
+
+#: includes/options/metabox.php:51 includes/options/metabox.php:60
+#: includes/options/metabox.php:81 includes/options/metabox.php:89
+msgid "0px 0px 0px 0px"
+msgstr ""
+
+#: includes/options/metabox.php:52 includes/options/metabox.php:61
+msgid "Padding option for body  top right botton left  eg(10px 20px 10px 20px)"
+msgstr ""
+
+#: includes/options/metabox.php:56
+msgid "Padding For Body (Mobile)"
+msgstr ""
+
+#: includes/options/metabox.php:69
+msgid "Enable Page Header Padding Css"
+msgstr ""
+
+#: includes/options/metabox.php:77
+msgid "Padding For Page Header (Desktop)"
+msgstr ""
+
+#: includes/options/metabox.php:82 includes/options/metabox.php:90
+msgid "Padding option for body top right botton left  eg(10px 20px 10px 20px)"
+msgstr ""
+
+#: includes/options/metabox.php:85
+msgid "Padding For Page Header (Mobile)"
+msgstr ""
+
+#: includes/options/metabox.php:96
+#: includes/options/theme-options/header-settings.php:10
+msgid "Header Settings"
+msgstr ""
+
+#: includes/options/metabox.php:102
+msgid "Enable Header Style"
+msgstr ""
+
+#: includes/options/metabox.php:110
+msgid "Choose Header Style"
+msgstr ""
+
+#: includes/options/metabox.php:118
+msgid "Disable Sticky Header"
+msgstr ""
+
+#: includes/options/metabox.php:127
+msgid "Enable Sticky Header Style"
+msgstr ""
+
+#: includes/options/metabox.php:135
+msgid "Choose Sticky Header Style"
+msgstr ""
+
+#: includes/options/metabox.php:144
+#: includes/options/theme-options/footer-settings.php:9
+msgid "Footer Settings"
+msgstr ""
+
+#: includes/options/metabox.php:150
+msgid "Enable Footer Style"
+msgstr ""
+
+#: includes/options/metabox.php:158
+msgid "Choose Footer Style"
+msgstr ""
+
+#: includes/options/metabox.php:165
+msgid "Enable Footer Sticky"
+msgstr ""
+
+#: includes/options/metabox.php:173
+#: includes/options/theme-options/layout-settings.php:9
+msgid "Layout Settings"
+msgstr ""
+
+#: includes/options/metabox.php:179
+msgid "Enable Custom Layout"
+msgstr ""
+
+#: includes/options/metabox.php:187
+msgid "Layout"
+msgstr ""
+
+#: includes/options/metabox.php:200
+msgid "Preloader Settings"
+msgstr ""
+
+#: includes/options/metabox.php:206
+msgid "Enable Preloader Style"
+msgstr ""
+
+#: includes/options/metabox.php:222
+#: includes/options/theme-options/general-settings.php:68
+msgid "Preloader Image"
+msgstr ""
+
+#: includes/options/metabox.php:237
+msgid "Page Header Setting"
+msgstr ""
+
+#: includes/options/metabox.php:252
+#: includes/options/theme-options/page-header-settings.php:10
+msgid "Page Header Settings"
+msgstr ""
+
+#: includes/options/metabox.php:258
+msgid "Page Header  Disable"
+msgstr ""
+
+#: includes/options/metabox.php:270
+msgid "Page header Title"
+msgstr ""
+
+#: includes/options/metabox.php:282
+msgid "Page Header background Image"
+msgstr ""
+
+#: includes/options/metabox.php:290
+msgid "Page Header Text Color "
+msgstr ""
+
+#: includes/options/metabox.php:309
+msgid "Service Setting"
+msgstr ""
+
+#: includes/options/metabox.php:319
+msgid "Icon Image / Icon Font ( Use Image Or Icon Font)"
+msgstr ""
+
+#: includes/options/metabox.php:325
+msgid "Icon"
+msgstr ""
+
+#: includes/options/metabox.php:337 includes/options/metabox.php:340
+msgid "Icon Image"
+msgstr ""
+
+#: includes/options/metabox.php:346 includes/options/metabox.php:410
+#: includes/options/metabox.php:485
+msgid "Transitions Effect Timing"
+msgstr ""
+
+#: includes/options/metabox.php:352
+msgid "Service Transition"
+msgstr ""
+
+#: includes/options/metabox.php:355 includes/options/metabox.php:364
+#: includes/options/metabox.php:419 includes/options/metabox.php:428
+#: includes/options/metabox.php:494 includes/options/metabox.php:503
+msgid "100ms"
+msgstr ""
+
+#: includes/options/metabox.php:356 includes/options/metabox.php:420
+#: includes/options/metabox.php:495
+msgid "200ms"
+msgstr ""
+
+#: includes/options/metabox.php:357 includes/options/metabox.php:421
+#: includes/options/metabox.php:496
+msgid "300ms"
+msgstr ""
+
+#: includes/options/metabox.php:358 includes/options/metabox.php:422
+#: includes/options/metabox.php:497
+msgid "400ms"
+msgstr ""
+
+#: includes/options/metabox.php:359 includes/options/metabox.php:423
+#: includes/options/metabox.php:498
+msgid "500ms"
+msgstr ""
+
+#: includes/options/metabox.php:360 includes/options/metabox.php:424
+#: includes/options/metabox.php:499
+msgid "600ms"
+msgstr ""
+
+#: includes/options/metabox.php:361 includes/options/metabox.php:425
+#: includes/options/metabox.php:500
+msgid "700ms"
+msgstr ""
+
+#: includes/options/metabox.php:362 includes/options/metabox.php:426
+#: includes/options/metabox.php:501
+msgid "800ms"
+msgstr ""
+
+#: includes/options/metabox.php:363 includes/options/metabox.php:427
+#: includes/options/metabox.php:502
+msgid "900ms"
+msgstr ""
+
+#: includes/options/metabox.php:365 includes/options/metabox.php:429
+#: includes/options/metabox.php:504
+msgid "1100ms"
+msgstr ""
+
+#: includes/options/metabox.php:366 includes/options/metabox.php:430
+#: includes/options/metabox.php:505
+msgid "1200ms"
+msgstr ""
+
+#: includes/options/metabox.php:367 includes/options/metabox.php:431
+#: includes/options/metabox.php:506
+msgid "1300ms"
+msgstr ""
+
+#: includes/options/metabox.php:368 includes/options/metabox.php:432
+#: includes/options/metabox.php:507
+msgid "1400ms"
+msgstr ""
+
+#: includes/options/metabox.php:369 includes/options/metabox.php:433
+#: includes/options/metabox.php:508
+msgid "1500ms"
+msgstr ""
+
+#: includes/options/metabox.php:382
+msgid "Post Setting"
+msgstr ""
+
+#: includes/options/metabox.php:392
+msgid "Single Page Featured Image Enable / Disable"
+msgstr ""
+
+#: includes/options/metabox.php:401
+msgid "Related Post Enable / Disable"
+msgstr ""
+
+#: includes/options/metabox.php:416 includes/options/metabox.php:491
+msgid "Post Transition"
+msgstr ""
+
+#: includes/options/metabox.php:446
+msgid "Project Settings"
+msgstr ""
+
+#: includes/options/metabox.php:457
+msgid "Project Information Enable / Disable"
+msgstr ""
+
+#: includes/options/metabox.php:465
+msgid "Client"
+msgstr ""
+
+#: includes/options/metabox.php:469
+msgid "The Sixmothers Group"
+msgstr ""
+
+#: includes/options/metabox.php:474
+msgid "date"
+msgstr ""
+
+#: includes/options/metabox.php:478
+msgid "February 14, 2021"
+msgstr ""
+
+#: includes/options/metabox.php:523
+msgid "Product Settings"
+msgstr ""
+
+#: includes/options/metabox.php:533
+msgid "Product Attributes Enable / Disable"
+msgstr ""
+
+#: includes/options/metabox.php:542
+msgid "Attributes"
+msgstr ""
+
+#: includes/options/metabox.php:549
+msgid "Attributes Name"
+msgstr ""
+
+#: includes/options/theme-options/404-settings.php:11
+msgid "404 Settings"
+msgstr ""
+
+#: includes/options/theme-options/404-settings.php:23
+msgid "Padding for 404"
+msgstr ""
+
+#: includes/options/theme-options/404-settings.php:24
+msgid "Allow your users to choose the spacing or padding they want."
+msgstr ""
+
+#: includes/options/theme-options/404-settings.php:38
+msgid "404 Background"
+msgstr ""
+
+#: includes/options/theme-options/404-settings.php:39
+msgid "404 background with image, color, etc."
+msgstr ""
+
+#: includes/options/theme-options/404-settings.php:46
+msgid "404 Image"
+msgstr ""
+
+#: includes/options/theme-options/blog-settings.php:9
+msgid "Post Settings"
+msgstr ""
+
+#: includes/options/theme-options/blog-settings.php:17
+#: includes/options/theme-options/blog-settings.php:18
+msgid "Blog Styles"
+msgstr ""
+
+#: includes/options/theme-options/blog-settings.php:20
+msgid "Blog Classic"
+msgstr ""
+
+#: includes/options/theme-options/blog-settings.php:21
+msgid "Blog List View"
+msgstr ""
+
+#: includes/options/theme-options/blog-settings.php:29
+msgid "Blog Column"
+msgstr ""
+
+#: includes/options/theme-options/blog-settings.php:32
+msgid "One Column"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:9
+msgid "Blog Single Settings"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:26
+msgid "Share Enable / Disable "
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:27
+msgid "This is used to enable and disable Share in blog single"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:33
+msgid "Tag Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:34
+msgid "This is used to enable and disable Tags in blog single"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:41
+msgid "Prev - Next Post Navigation Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:42
+msgid ""
+"This is used to enable and disable AuthoPrev - Next Post Navigationur in "
+"blog single"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:49
+msgid "Related posts Enbale / Disable"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:50
+msgid "This is used to enable and disable Related Posts in blog single"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:56
+msgid "Related Post Title"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:58
+#: template-parts/related-posts.php:34
+msgid "Related Posts"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:63
+msgid "Related Post Count"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:65
+msgid "4"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:70
+msgid "Items To Display"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:72
+msgid "Three Items"
+msgstr ""
+
+#: includes/options/theme-options/blog-single-settings.php:73
+msgid "Two Items "
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:9
+msgid "Theme Color Settings"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:18
+msgid "Theme Color Settings Enable"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:24
+msgid "Theme Color (1)"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:31
+msgid "Theme Color (2)"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:38
+msgid "Theme Color (3 Light Background) "
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:46
+msgid "Heading Color"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:54
+msgid "Text , Paragraph and Body  Color"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:61
+msgid "Text Color (Light) "
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:70
+msgid "Border Color"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:78
+msgid "Menu Color"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:86
+msgid "Menu Active Color"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:94
+msgid "Header Sticky Menu  Color"
+msgstr ""
+
+#: includes/options/theme-options/color-settings.php:103
+msgid "Header Sticky Menu Active Color"
+msgstr ""
+
+#: includes/options/theme-options/footer-settings.php:17
+msgid "Footer Custom Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/footer-settings.php:23
+msgid "Select Footer Style"
+msgstr ""
+
+#: includes/options/theme-options/footer-settings.php:32
+msgid "Footer Sticky Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:9
+msgid "General Settings"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:17
+msgid "Body Settings Section"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:23
+msgid "Body Css Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:32
+msgid "Body Padding Option"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:33
+#: includes/options/theme-options/general-settings.php:45
+msgid "Whole Body padding you can add padding here."
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:44
+msgid "Body Padding Option (Mobile after 1200px)"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:52
+msgid "Preloader / Backtotop Section"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:59
+msgid "Preloader Hide  / show"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:60
+msgid "Preloader"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:74
+msgid "Preloader Background"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:75
+msgid "Preloader background color, etc."
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:85
+msgid "Back to top Enable /Disable"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:90
+msgid "Animation Section"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:97
+msgid "Fade Anmation Effects On /Off"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:103
+msgid "Rtl Section"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:111
+msgid "RTL Enable"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:112
+msgid "This Option Is For Full RTL"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:118
+msgid "Sidebar Section"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:126
+msgid "Sidebar Sticky Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/general-settings.php:131
+msgid "Admin Panel Notice Enable  / Disable"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:10
+msgid "Mobile Header Settings"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:20
+#: includes/options/theme-options/header-settings.php:31
+msgid "Select Header Style"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:23
+msgid "Mobile Header Style One"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:24
+msgid "Mobile Header Style Two"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:26
+msgid "mobile_header_style_two"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:31
+#: includes/options/theme-options/header-settings.php:137
+msgid "Search Enable"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:37
+msgid "Phone Number Enable"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:43
+msgid "Phone Number"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:45
+msgid "9806071234"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:51
+msgid "Mail Enable"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:57
+msgid "Mail Id"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:59
+msgid "sendmail@example.com"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:67
+#: includes/options/theme-options/header-modal-content.php:33
+#: includes/options/theme-options/header-settings.php:85
+msgid "Logo"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:72
+msgid "Logo LInk"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:73
+#: includes/options/theme-options/header-extra.php:108
+msgid "https://example.com"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:80
+#: includes/options/theme-options/header-settings.php:104
+msgid "Logo Width"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:82
+#: includes/options/theme-options/header-settings.php:106
+msgid "Allow your users to choose width"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:83
+#: includes/options/theme-options/header-settings.php:107
+msgid "Enable or disable any piece of this field. Width, or Units."
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:93
+msgid "Mobile Button Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:100
+msgid "Button Text"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:101
+msgid "Contact Us"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:107
+msgid "Button LInk"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:116
+msgid "Mini Cart Enable"
+msgstr ""
+
+#: includes/options/theme-options/header-extra.php:123
+msgid "Option Panel Enable"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:9
+msgid "Modal Content Settings"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:18
+msgid "Modal Enable"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:24
+msgid "Modal Form Shortcode"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:25
+msgid "Enter Contact Form 7 Short Code here"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:26
+msgid "[contact-form-7 id=\"344\" title=\"Contact Form\"]"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:39
+msgid "About Company"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:41
+msgid ""
+"Denounce with righteous indignation and dislike men who are beguiled\r\n"
+"                and demoralized by the charms pleasure moment so blinded "
+"desire that\r\n"
+"                they cannot foresee the pain and trouble."
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:48
+#: includes/options/theme-options/header-modal-content.php:49
+msgid "Read More"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:54
+#: includes/options/theme-options/header-settings.php:95
+msgid " Link (url)"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:55
+#: includes/options/theme-options/header-settings.php:96
+msgid "Enter the url here"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:61
+msgid "Post Enable"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:68
+msgid "Title"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:70
+msgid "Latest Projects"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:76
+msgid "Select Post To Display"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:79
+msgid "Service Post"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:80
+msgid "Project Post"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:81
+msgid "Post"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:88
+msgid "Copy Right"
+msgstr ""
+
+#: includes/options/theme-options/header-modal-content.php:90
+msgid "© 2023 Creote. All Rights Reserved."
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:19
+msgid "Header  Section"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:25
+msgid "Header Custom Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:39
+msgid "Enable One Page Mobile Menu On Click Close"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:48
+msgid "Sticky Header  Section"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:55
+msgid "Sticky Header Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:62
+msgid "Select Sticky Header Type"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:65
+msgid "Default Sticky header"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:66
+msgid "Custom Sticky Header Throught Elementor"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:75
+msgid "Select Sticky Header Style"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:118
+msgid "Logo Move Top"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:119
+msgid "This text box is used to move logo top eg( 10px  , -10px  or -10rem)"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:128
+msgid "Logo Move Left"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:129
+msgid "This text box is used to move logo Left eg( 10px  , -10px  or -10rem)"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:144
+msgid "Modal  Enable"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:151
+msgid "Mega Menu Section"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:157
+msgid "Select Megamenu Types"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:159
+msgid "Select Builder For Megamenu"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:160
+msgid "Elementor Mega Menu"
+msgstr ""
+
+#: includes/options/theme-options/header-settings.php:161
+msgid "Wpbakery Mega Menu "
+msgstr ""
+
+#: includes/options/theme-options/layout-settings.php:17
+msgid "Default Layouts"
+msgstr ""
+
+#: includes/options/theme-options/layout-settings.php:18
+#: includes/options/theme-options/layout-settings.php:42
+#: includes/options/theme-options/layout-settings.php:65
+#: includes/options/theme-options/layout-settings.php:90
+msgid "Choose your layouts Styles"
+msgstr ""
+
+#: includes/options/theme-options/layout-settings.php:22
+#: includes/options/theme-options/layout-settings.php:45
+#: includes/options/theme-options/layout-settings.php:69
+#: includes/options/theme-options/layout-settings.php:94
+msgid "Full Width"
+msgstr ""
+
+#: includes/options/theme-options/layout-settings.php:26
+#: includes/options/theme-options/layout-settings.php:49
+#: includes/options/theme-options/layout-settings.php:73
+#: includes/options/theme-options/layout-settings.php:98
+msgid "Right Sidebar"
+msgstr ""
+
+#: includes/options/theme-options/layout-settings.php:30
+#: includes/options/theme-options/layout-settings.php:53
+#: includes/options/theme-options/layout-settings.php:77
+#: includes/options/theme-options/layout-settings.php:102
+msgid "Left Sidebar"
+msgstr ""
+
+#: includes/options/theme-options/layout-settings.php:41
+msgid "Page Layouts"
+msgstr ""
+
+#: includes/options/theme-options/layout-settings.php:64
+msgid "Service Layouts"
+msgstr ""
+
+#: includes/options/theme-options/layout-settings.php:89
+msgid "Shop Layouts"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:19
+msgid "Page Header  Section"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:25
+msgid "Page Header Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:31
+msgid "Select Title Tag"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:33
+msgid "Div Tag"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:34
+msgid "H1 Tag"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:35
+msgid "H2 Tag"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:36
+msgid "H3 Tag"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:37
+msgid "H4 Tag"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:38
+msgid "H5 Tag"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:39
+msgid "H6 Tag"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:47
+msgid "Pageheader Background Image"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:55
+msgid "Pageheader Background Color"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:62
+msgid "Page Header Padding"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:68
+msgid "Page Header Css Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:77
+msgid "Page Header  Padding"
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:78
+#: includes/options/theme-options/page-header-settings.php:90
+msgid "Page Header padding you can add padding here."
+msgstr ""
+
+#: includes/options/theme-options/page-header-settings.php:89
+msgid "Page Header Padding (Mobile after 1200px)"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:9
+msgid "All Post General Settings"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:18
+msgid "Service Section"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:24
+msgid "Service Breadcrumb Name"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:30
+msgid "Service Breadcrumb Link"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:36
+msgid "Project Section"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:42
+msgid "Project Breadcrumb Name"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:48
+msgid "Project Breadcrumb Link"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:55
+msgid "Product Section"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:61
+msgid "Product Page Title"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:67
+msgid "Product Breadcrumb Name"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:73
+msgid "Product Breadcrumb Link"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:80
+msgid "Job Listing Section"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:86
+msgid "Job Breadcrumb Name"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:87
+msgid "Job"
+msgstr ""
+
+#: includes/options/theme-options/post-general-settings.php:92
+msgid "Job Breadcrumb Link"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:10
+msgid "Side Menu Settings"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:18
+msgid "Side Menu  Enable"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:26
+msgid "Side Menu Icon Image "
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:36
+msgid "Side Menu  Text"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:37
+#: includes/options/theme-options/side-menu-settings.php:38
+msgid "Demos"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:45
+msgid "Select Mega Menu Style For display in Side Menu"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:55
+msgid "Color Switcher Section"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:63
+msgid "Color Switcher Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:70
+#: includes/options/theme-options/side-menu-settings.php:104
+msgid "Color Switcher Icon Image "
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:80
+msgid "Color Scheme Menu  Text"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:81
+#: includes/options/theme-options/side-menu-settings.php:82
+msgid "Colors"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:89
+msgid "Mini Cart Content"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:95
+msgid "Mini Cart Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:96
+msgid "Enable Mini cart"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:114
+msgid "Minu Cart Button Text"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:115
+#: includes/options/theme-options/side-menu-settings.php:116
+msgid "Cart"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:124
+msgid "Extra Content Section"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:133
+msgid "Content One Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:140
+msgid "Content One Icon Image "
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:150
+msgid "Content One Menu  Text"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:151
+#: includes/options/theme-options/side-menu-settings.php:152
+msgid "Docs"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:159
+msgid "Content One Menu  Link"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:170
+msgid "Content Two Enable / Disable"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:177
+msgid "Content Two Icon Image "
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:187
+msgid "Content Two Menu  Text"
+msgstr ""
+
+#: includes/options/theme-options/side-menu-settings.php:196
+msgid "Content Two Menu  Link"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:10
+msgid "Typography Settings"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:22
+msgid "Default Font Family Enable"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:24
+msgid "Enable to fontfamily to change font family"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:31
+msgid "Font Family Primary"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:53
+msgid "Font Family Secondary"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:79
+msgid "Enable H1 Custom Font (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:81
+msgid "Enable to customize the theme heading h1 tag font (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:89
+msgid "H1 Font Typography (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:96
+msgid "Apply options to customize the h1 heading font for the theme (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:116
+msgid "Enable H1 Custom Font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:118
+msgid "Enable to customize the theme heading h1 tag font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:125
+msgid "H1 Font Typography (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:136
+msgid "Apply options to customize the h1 heading font for the theme (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:154
+msgid "Enable H2 Custom Font (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:156
+msgid "Enable to customize the theme heading h2 tag font (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:164
+msgid "H2 Font Typography (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:171
+msgid "Apply options to customize the h2 heading font for the theme (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:192
+msgid "Enable H2 Custom Font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:194
+msgid "Enable to customize the theme heading h2 tag font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:201
+msgid "H2 Font Typography (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:211
+msgid "Apply options to customize the h2 heading font for the theme (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:229
+msgid "Enable H3 Custom Font (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:231
+msgid "Enable to customize the theme heading h3 tag font (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:238
+msgid "H3 Font Typography (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:246
+msgid "Apply options to customize the h3 heading  for the theme (Desktop)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:260
+msgid "Enable H3 Custom Font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:261
+msgid "Enable to customize the theme heading h3 tag font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:267
+msgid "H3 Font Typography (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:278
+msgid "Apply options to customize the h3 heading font for the theme (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:291
+msgid "Enable H4 Custom Font"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:292
+msgid "Enable to customize the theme heading h4 tag font"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:297
+msgid "H4 Font Typography"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:305
+msgid "Apply options to customize the h4 heading font for the theme"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:318
+msgid "Enable H4 Custom Font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:319
+msgid "Enable to customize the theme heading h4 tag font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:325
+msgid "H4 Font Typography (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:336
+msgid "Apply options to customize the h4 heading font for the theme (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:348
+msgid "Enable H5 Custom Font"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:349
+msgid "Enable to customize the theme heading h5 tag font"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:354
+msgid "H5 Font Typography"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:362
+msgid "Apply options to customize the h5 heading font for the theme"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:375
+msgid "Enable H5 Custom Font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:376
+msgid "Enable to customize the theme heading h5 tag font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:382
+msgid "H5 Font Typography (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:393
+msgid "Apply options to customize the h5 heading font for the theme (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:410
+msgid "Enable H6 Custom Font"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:412
+msgid "Enable to customize the theme heading h6 tag font"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:419
+msgid "H6 Font Typography"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:427
+msgid "Apply options to customize the h6 heading font for the theme"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:441
+msgid "Enable H6 Custom Font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:442
+msgid "Enable to customize the theme heading h6 tag font (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:448
+msgid "H6 Font Typography (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:459
+msgid "Apply options to customize the h6 heading font for the theme (Mobile)"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:472
+msgid "Use Body,Paragraph Custom Font"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:473
+msgid "Enable to customize the theme body,p tag font"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:478
+msgid "Body Font Typography"
+msgstr ""
+
+#: includes/options/theme-options/typography-settings.php:486
+msgid "Apply options to customize the body,paragraph font for the theme"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:9
+msgid "Woocommerce Settings"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:17
+msgid "Login Left Content"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:24
+msgid "Logo For Login Page"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:29
+msgid " Logo Dimentions"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:35
+msgid "Login Text"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:42
+msgid "Login Background Image"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:47
+msgid "Login Right Content"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:53
+msgid "Form Small Title"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:54
+msgid "Start For Free"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:59
+msgid "Form Title"
+msgstr ""
+
+#: includes/options/theme-options/woocommerce.php:60
+msgid "Create New Account"
+msgstr ""
+
+#: includes/theme-file.php:41
+msgid "Primary Menu (For Sticky Header And Mobile Header)"
+msgstr ""
+
+#: includes/theme-file.php:53
+msgid "Blog Sidebar"
+msgstr ""
+
+#: includes/theme-file.php:54
+msgid "Page Sidebar"
+msgstr ""
+
+#: includes/theme-file.php:55
+msgid "Shop Sidebar"
+msgstr ""
+
+#: includes/theme-file.php:56
+msgid "Service Sidebar"
+msgstr ""
+
+#: includes/theme-file.php:65
+msgid "Add widgets here in order to display on pages"
+msgstr ""
+
+#: job_manager/content-no-jobs-found.php:20
+msgid "There are no listings matching your search."
+msgstr ""
+
+#: job_manager/content-no-jobs-found.php:22
+msgid "There are currently no vacancies."
+msgstr ""
+
+#: job_manager/content-single-job_listing-company.php:33
+msgid "Website"
+msgstr ""
+
+#: job_manager/content-single-job_listing-meta.php:42
+msgid "This position has been filled"
+msgstr ""
+
+#: job_manager/content-single-job_listing-meta.php:44
+msgid "Applications have closed"
+msgstr ""
+
+#: job_manager/content-single-job_listing.php:23
+msgid "This listing has expired."
+msgstr ""
+
+#: template-parts/content-blog.php:41
+msgid "col-xs-12 grid_box"
+msgstr ""
+
+#: template-parts/content-blog.php:92 template-parts/content-blog.php:126
+#: template-parts/content-search.php:36
+msgid "Read more"
+msgstr ""
+
+#: template-parts/content-blog.php:97 template-parts/content-blog.php:131
+#: template-parts/content-search.php:42
+msgid "POSTED BY"
+msgstr ""
+
+#: template-parts/content-job.php:17 template-parts/content-service.php:17
+msgid "Service:"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:16
+msgid "Ready to publish your first post?"
+msgstr ""
+
+#: template-parts/content-none.php:16
+msgid "Get started here"
+msgstr ""
+
+#: template-parts/content-none.php:18
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:15 template-parts/content-project.php:17
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/footer/default-footer.php:36
+msgid "© 2023 Steelthemes. All Right Reseved"
+msgstr ""
+
+#: template-parts/page-header/blog-pageheader.php:31
+#: template-parts/page-header/blog-pageheader.php:33
+#: template-parts/page-header/default-page-header.php:30
+#: template-parts/page-header/default-page-header.php:32
+#: template-parts/page-header/default-page-header.php:61
+#: template-parts/page-header/default-page-header.php:63
+#: template-parts/page-header/page-header.php:38
+#: template-parts/page-header/page-header.php:40
+msgid "bg_image"
+msgstr ""
+
+#: template-parts/page-header/blog-pageheader.php:66
+#: template-parts/page-header/default-page-header.php:101
+msgid "Posted By"
+msgstr ""
+
+#: template-parts/related-posts.php:37
+msgid "related_posts_swiper_two"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:59
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:96
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:49
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:24
+#, php-format
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:24
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:49
+msgid "Product quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:57
+msgid "on"
+msgstr ""
+
+#: woocommerce/loop/add-to-cart.php:30
+msgid "button"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:66
+msgid "Login"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:69
+#: woocommerce/myaccount/form-login.php:155
+msgid "Register"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:87
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:91
+#: woocommerce/myaccount/form-login.php:141
+msgid "Password"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:99
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:102
+msgid "Log in"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:105
+msgid "Lost your password?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:127
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:147
+msgid "A link to set a new password will be sent to your email address."
+msgstr ""
+
+#: woocommerce/myaccount/my-account.php:41
+msgid "Back To Home"
+msgstr ""
+
+#: woocommerce/single-product/related.php:27
+msgid "Related products"
+msgstr ""
