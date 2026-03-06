@@ -65,7 +65,7 @@ global $creote_theme_mod;
 		        ?>
 		<div class="<?php echo esc_attr($container); ?>">
 		<?php
-		$layout_row = creote_get_layout();
+		$layout_row = function_exists('creote_get_layout') ? creote_get_layout() : 'no-sidebar';
 		$row = 'row';
 		if( is_page_template( 'template-homepage.php' ) || is_page_template( 'template-empty.php' ) || is_page_template( 'template-fullwidth.php' ) || is_page_template( 'template-full-empty.php' ) || $layout_row == 'no-sidebar'){
 			$row = 'no-row';

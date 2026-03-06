@@ -5,7 +5,13 @@ Meta Box Css File
 ==========================================
 */
 
-require_once ('WP_Bootstrap_Navwalker.php');
+function creote_safe_require($path) {
+    if (is_string($path) && is_readable($path)) {
+        require_once $path;
+    }
+}
+require_once get_template_directory() . '/includes/WP_Bootstrap_Navwalker.php';
+creote_safe_require(get_template_directory() . '/includes/WP_Bootstrap_Navwalker.php');
 
 function creote_cat_meta_postbox_css(){
 	wp_enqueue_style('meta-box-css', get_template_directory_uri().'/assets/css/metabox.css' );    
@@ -18,9 +24,10 @@ Theme Support
 */
  
 
-add_action('init', function() { 
-    load_plugin_textdomain('creote', false, get_template_directory() . '/lang');
-});
+function creote_load_textdomain() {
+    load_theme_textdomain('creote', get_template_directory() . '/lang');
+}
+add_action('after_setup_theme', 'creote_load_textdomain');
 
 function creote_setup(){
 if(!isset($content_width))
@@ -90,7 +97,7 @@ add_action('widgets_init', 'creote_register_sidebar');
 //require_once get_template_directory() . "/includes/admin/dashboard/pluigns/list-plugins.php";
 //require_once get_template_directory() . '/includes/admin/dashboard/class-dashboard.php';
 
-require_once get_template_directory() . '/includes/dashboard/Setup.php';
+creote_safe_require(get_template_directory() . '/includes/dashboard/Setup.php');
 
 
 //require_once get_template_directory() . '/demo-import/class-merlin.php';
@@ -98,45 +105,45 @@ require_once get_template_directory() . '/includes/dashboard/Setup.php';
 //require_once get_template_directory() . '/demo-import/merlin-filters.php';
 /*------includes > Options---------------*/
 if(class_exists('RW_Meta_Box')){
-    require_once get_template_directory() . '/includes/options/metabox.php';
+    creote_safe_require(get_template_directory() . '/includes/options/metabox.php');
 }
 /*----includes > custom-menu-option--------*/
-require_once get_template_directory() . '/includes/custom-menu-option.php';
+creote_safe_require(get_template_directory() . '/includes/custom-menu-option.php');
 /*------ includes > common---------------*/
-require_once get_template_directory() . '/includes/common/functions/header-source.php';
-require_once get_template_directory() . '/includes/common/functions/layout.php';
-require_once get_template_directory() . '/includes/common/functions/classes.php';
-require_once get_template_directory() . '/includes/common/functions/meta.php';
-require_once get_template_directory() . '/includes/common/lib/breadcrumbs.php';
+creote_safe_require(get_template_directory() . '/includes/common/functions/header-source.php');
+creote_safe_require(get_template_directory() . '/includes/common/functions/layout.php');
+creote_safe_require(get_template_directory() . '/includes/common/functions/classes.php');
+creote_safe_require(get_template_directory() . '/includes/common/functions/meta.php');
+creote_safe_require(get_template_directory() . '/includes/common/lib/breadcrumbs.php');
 /*------ templateparts > header---------------*/
-require_once get_template_directory() . '/template-parts/headers/header-content.php';
-require_once get_template_directory() . '/template-parts/headers/sticky-header.php';
-require_once get_template_directory() . '/template-parts/headers/mobile-menu.php';
+creote_safe_require(get_template_directory() . '/template-parts/headers/header-content.php');
+creote_safe_require(get_template_directory() . '/template-parts/headers/sticky-header.php');
+creote_safe_require(get_template_directory() . '/template-parts/headers/mobile-menu.php');
 /*------ templateparts > pageheader---------------*/
-require_once get_template_directory() . '/template-parts/page-header/default-page-header.php';
+creote_safe_require(get_template_directory() . '/template-parts/page-header/default-page-header.php');
 /*------ Redux---------------*/
 if(class_exists('Redux')){
-    require_once get_template_directory() . '/template-parts/page-header/page-header.php';
-    require_once get_template_directory() . '/template-parts/page-header/blog-pageheader.php';
-    require_once get_template_directory() . '/includes/options/theme-option.php';
-    require_once get_template_directory() . '/includes/options/typography-css.php';
-    require_once get_template_directory() . '/includes/options/config.php';
+    creote_safe_require(get_template_directory() . '/template-parts/page-header/page-header.php');
+    creote_safe_require(get_template_directory() . '/template-parts/page-header/blog-pageheader.php');
+    creote_safe_require(get_template_directory() . '/includes/options/theme-option.php');
+    creote_safe_require(get_template_directory() . '/includes/options/typography-css.php');
+    creote_safe_require(get_template_directory() . '/includes/options/config.php');
 }
 /*------includes > functions---------------*/
-require_once get_template_directory() . '/includes/lib/functions/comments.php';
+creote_safe_require(get_template_directory() . '/includes/lib/functions/comments.php');
 //require_once get_template_directory() . '/includes/lib/functions/authour-and-tags.php';
-require_once get_template_directory() . '/includes/lib/functions/nav.php';
+creote_safe_require(get_template_directory() . '/includes/lib/functions/nav.php');
 /*------includes > libs---------------*/
-require_once get_template_directory() . '/template-parts/related-posts.php';
-require_once get_template_directory() . '/includes/custom/color-switcher.php';
-require_once get_template_directory() . '/includes/custom/side-menu-btn.php';
-require_once get_template_directory() . '/includes/custom/side-menu.php'; 
+creote_safe_require(get_template_directory() . '/template-parts/related-posts.php');
+creote_safe_require(get_template_directory() . '/includes/custom/color-switcher.php');
+creote_safe_require(get_template_directory() . '/includes/custom/side-menu-btn.php');
+creote_safe_require(get_template_directory() . '/includes/custom/side-menu.php'); 
  
 // woocommerce
 if(class_exists('woocommerce')){
-    require_once get_template_directory() . '/includes/lib/woocom/action.php';
-    require_once get_template_directory() . '/includes/lib/woocom/min-cart.php';
-    require_once get_template_directory() . '/includes/quick-view-template.php';
+    creote_safe_require(get_template_directory() . '/includes/lib/woocom/action.php');
+    creote_safe_require(get_template_directory() . '/includes/lib/woocom/min-cart.php');
+    creote_safe_require(get_template_directory() . '/includes/quick-view-template.php');
  
 }
 function ifnotactivated() {

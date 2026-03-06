@@ -16,7 +16,8 @@
        return false;
      }
      $class = '';
-     if(creote_get_page_header_image() == '')
+     $header_image = function_exists('creote_get_page_header_image') ? creote_get_page_header_image() : '';
+     if($header_image == '')
      {
          $class .= ' no-image';
       }
@@ -26,7 +27,7 @@
 <?php if(!is_singular('post')) { ?>
 <section class="page_header_default style_one">
    <div class="parallax_cover">
-      <?php if($image = creote_get_page_header_image()): ?>
+      <?php if($image = (function_exists('creote_get_page_header_image') ? creote_get_page_header_image() : '')): ?>
       <img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_html__('bg_image' , 'creote'); ?>" class="cover-parallax">
       <?php else: ?>
       <img src="<?php echo esc_url($image_alt); ?>" alt="<?php echo esc_html__('bg_image' , 'creote'); ?>" class="cover-parallax">
@@ -57,7 +58,7 @@
 <!-- Start Banner Section -->
 <section class="page_header_default style_one blog_single_pageheader <?php echo esc_attr($class); ?>">
    <div class="parallax_cover">
-      <?php if($image = creote_get_page_header_image()): ?>
+      <?php if($image = (function_exists('creote_get_page_header_image') ? creote_get_page_header_image() : '')): ?>
       <img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_html__('bg_image' , 'creote'); ?>" class="cover-parallax">
       <?php else: ?>
       <img src="<?php echo esc_url($image_alt); ?>" alt="<?php echo esc_html__('bg_image' , 'creote'); ?>" class="cover-parallax">
@@ -91,8 +92,8 @@
          <div class="row">
             <div class="col-md-12">
                <div class="left_side">
-                  <?php creote_category_two(); ?>
-                  <?php creote_comments(); ?>
+                  <?php if(function_exists('creote_category_two')) { creote_category_two(); } ?>
+                  <?php if(function_exists('creote_comments')) { creote_comments(); } ?>
                </div>
                <?php if(!empty(the_author())): ?>
                <div class="right_side">

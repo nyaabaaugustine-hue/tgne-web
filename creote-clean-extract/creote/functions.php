@@ -6,7 +6,10 @@
  *==================================
 */
 // ============================== theme file get ============================
-require_once get_template_directory() . '/includes/Mobile_Detect.php';
+$__md_path = get_template_directory() . '/includes/Mobile_Detect.php';
+if (file_exists($__md_path)) {
+    require_once $__md_path;
+}
 // Merlin
  
 function creote_get_option($option_name, $default_value = '') {
@@ -33,7 +36,39 @@ if (!function_exists('is_plugin_active')) {
     include_once(ABSPATH . 'wp-admin/includes/plugin.php');
   }
 
-require_once get_template_directory() . '/includes/theme-file.php'; 
+$__themefile = get_template_directory() . '/includes/theme-file.php';
+if (file_exists($__themefile)) {
+    require_once $__themefile;
+}
+if(class_exists('Creote_Addons')):
+if (!function_exists('creote_get_layout')) {
+    function creote_get_layout() {
+        return 'no-sidebar';
+    }
+}
+if (!function_exists('creote_column_for_blog')) {
+    function creote_column_for_blog() {
+        echo 'col-lg-12';
+    }
+}
+if (!function_exists('creote_footer_sticky_for_body_class')) {
+    function creote_footer_sticky_for_body_class() {
+        return 'no_footer_sticky_body';
+    }
+}
+if (!function_exists('creote_color_switcher')) {
+    function creote_color_switcher() {}
+}
+if (!function_exists('creote_menu_display_arear')) {
+    function creote_menu_display_arear() {}
+}
+if (!function_exists('creote_preloaders')) {
+    function creote_preloaders() {}
+}
+if (!function_exists('creote_numeric_posts_nav')) {
+    function creote_numeric_posts_nav() {}
+}
+endif;
 if(class_exists('Creote_Addons')):
 add_action( 'vc_before_init', 'creote_vc_remove_css' );
 function creote_vc_remove_css() {
@@ -88,6 +123,13 @@ function creote_print_elementor_header() {
 add_action( 'creote_elementor_header', 'creote_print_elementor_header' );
 // ============================== Elementor Register Location ============================
  
+/* Additional safe fallbacks */
+if (!function_exists('creote_get_page_header_image')) {
+    function creote_get_page_header_image() { return ''; }
+}
+if (!function_exists('creote_breadcrumb')) {
+    function creote_breadcrumb() { return ''; }
+}
  
 /**
  * Add admin notice for plugin updates.
@@ -119,7 +161,10 @@ function custom_plugin_update_notice() {
 
         if (file_exists($plugin_path)) {
             // Get installed plugin data
-            $plugin_data = get_plugin_data($plugin_path);
+            if (!function_exists('get_plugin_data')) {
+                require_once ABSPATH . 'wp-admin/includes/plugin.php';
+            }
+            $plugin_data = function_exists('get_plugin_data') ? get_plugin_data($plugin_path) : array('Version' => '0.0.0');
             $installed_version = $plugin_data['Version'];
 
             // Compare versions
@@ -160,8 +205,8 @@ function ecom_theme_launch_notice() {
     }
 
     // Only show on dashboard or plugins page
-    $screen = get_current_screen();
-    if ($screen->base !== 'dashboard' && $screen->base !== 'plugins') {
+    $screen = function_exists('get_current_screen') ? get_current_screen() : null;
+    if (!$screen || empty($screen->base) || ($screen->base !== 'dashboard' && $screen->base !== 'plugins')) {
         return;
     }
 

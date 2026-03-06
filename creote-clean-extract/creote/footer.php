@@ -14,14 +14,12 @@
             <?php do_action('get_creote_mobile_menu'); ?>
         <?php // mobile nav ?>
         <?php   // search popupp ?>
-            <?php  creote_search_popup(); ?>
+            <?php if (function_exists('creote_search_popup')) { creote_search_popup(); } ?>
         <?php ?>
         <?php   // Modal popupp ?>
           <?php if(!empty($creote_theme_mod['modal_box_enable']) == true):  do_action('modal_box_one'); endif; ?>
         <?php ?>
-        <?php if(class_exists('woocommerce')):
-          creote_mini_cart();
-          endif; ?>
+        <?php if (class_exists('woocommerce') && function_exists('creote_mini_cart')) { creote_mini_cart(); } ?>
         <div class="cart_notice"></div>
     <div class="wcqv_contend"> </div>
 

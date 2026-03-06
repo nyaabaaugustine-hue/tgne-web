@@ -248,13 +248,21 @@ get icon
 if (!function_exists('creote_get_theme_side_icon_two')):
     function creote_get_theme_side_icon_two(){ 
 		$get_icon_data = get_transient('creote_get_theme_side_icon_two');
-		if (empty($get_icon_data)) {
+		if (!empty($get_icon_data)) {
+            return $get_icon_data;
+        }
+        {
             global $wp_filesystem;
 		    require_once(ABSPATH . '/wp-admin/includes/file.php');
 		    WP_Filesystem();
             $file = get_template_directory() . '/assets/css/font-awesome.min.css';
             $theme_pattern = '/\.(fa-(?:\w+(?:-)?)+):before\s*{\s*content/';
-            $theme_subject = $wp_filesystem->get_contents( $file );
+            $theme_subject = '';
+            if (isset($wp_filesystem) && is_object($wp_filesystem)) {
+                $theme_subject = $wp_filesystem->get_contents( $file );
+            } else {
+                $theme_subject = @file_get_contents( $file );
+            }
             preg_match_all($theme_pattern, $theme_subject, $theme_matches, PREG_SET_ORDER);
             $theme_icons = array();
             foreach($theme_matches as $theme_matche):
@@ -263,7 +271,12 @@ if (!function_exists('creote_get_theme_side_icon_two')):
              //Font Two
             $filetwos = get_template_directory() . '/assets/css/icomoon.css';
             $theme_patterntwo = '/\.(icon-(?:\w+(?:-)?)+):before\s*{\s*content/';
-            $theme_subjectwo = $wp_filesystem->get_contents( $filetwos );
+            $theme_subjectwo = '';
+            if (isset($wp_filesystem) && is_object($wp_filesystem)) {
+                $theme_subjectwo = $wp_filesystem->get_contents( $filetwos );
+            } else {
+                $theme_subjectwo = @file_get_contents( $filetwos );
+            }
             preg_match_all($theme_patterntwo, $theme_subjectwo, $theme_matchestwo, PREG_SET_ORDER);
             foreach($theme_matchestwo as $theme_match):
                 $theme_icons[] = array('value' => 'icon '.$theme_match[1], 'label' => 'icon '.$theme_match[1]);
@@ -272,7 +285,6 @@ if (!function_exists('creote_get_theme_side_icon_two')):
         //print_r($icons); exit('hellow');
         return $theme_icons;
     }
-}
 endif;
 
 /*
@@ -382,9 +394,7 @@ corona preloader
 ========================
 */
 function creote_fonts_url() {
-   
-    $font_url = '';
-
+    $fonts_url = '';
     $spartan = _x( 'on', 'Spartan font: on or off', 'creote' );
      
     /* Translators: If there are characters in your language that are not
