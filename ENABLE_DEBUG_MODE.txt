@@ -1,0 +1,41 @@
+╔═══════════════════════════════════════════════════════════════╗
+║           FIND THE EXACT ERROR - ENABLE DEBUG MODE           ║
+╚═══════════════════════════════════════════════════════════════╝
+
+TO SEE THE EXACT ERROR:
+
+1. Access your site via FTP or File Manager
+2. Open the file: wp-config.php (in root directory)
+3. Find this line:
+   define('WP_DEBUG', false);
+
+4. Replace it with these lines:
+   define('WP_DEBUG', true);
+   define('WP_DEBUG_LOG', true);
+   define('WP_DEBUG_DISPLAY', true);
+
+5. Save the file
+6. Refresh your website
+7. You will see the EXACT error message on screen
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THEN SEND ME THE ERROR MESSAGE
+
+It will show something like:
+"Fatal error: Call to undefined function..."
+or
+"Parse error: syntax error in /path/to/file.php on line 123"
+
+Once I see the exact error, I can fix it immediately.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OR CHECK ERROR LOG:
+
+After enabling debug, check:
+wp-content/debug.log
+
+This file will contain the error details.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

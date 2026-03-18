@@ -1,0 +1,333 @@
+*** Changelog - Creote Business Multipurpose WordPress Theme ***
+-------------------------------------------
+******************************************************************
+17.09.2025 - Version 2.9.0
+******************************************************************   
+- Updated Outdated woocommerce template minicat 10.0,0 to 10.1,0
+- Updated Redux Framework
+- Added Theme Wizard Setup -> To install child Theme , Plugins and Demo Content with Sliders
+- Added WordPress compatibility 6.8.2
+- Added compatibility Support Php Version 8.4.10
+- Fixed Minor bugs in Wpbakery Shortcodes
+- Updated Plugins
+******************************************************************
+01.8.2025 - Version 2.8.9
+******************************************************************   
+- Updated Redux Framework
+- Minor Css bug in theme.
+******************************************************************
+15.7.2025 - Version 2.8.8
+******************************************************************   
+- Updated Outdated woocommerce template minicat 9.4.0 to 10.0,0
+******************************************************************
+04.7.2025 - Version 2.8.7
+******************************************************************   
+- Updated Redux Framework
+- Updated Outdated woocommerce templates 
+- Fixed minor bugs in creote elementor widgets
+- Updated Plugins  
+******************************************************************
+26.5.2025 - Version 2.8.6
+******************************************************************  
+- Added WordPress compatibility 6.8.1
+- Updated Redux Framework
+- Fixed Minor bugs in theme
+- Updated Plugins  
+******************************************************************
+28.4.2025 - Version 2.8.5
+******************************************************************  
+- Added WordPress compatibility 6.8
+- Updated Plugins
+- Updated Outdated Woo-commerce template 
+******************************************************************
+09.4.2025 - Version 2.8.4
+****************************************************************** 
+- Fixed Minor Bug In Creote Addons
+- Updated Plugins
+- Updated Outdated Woo-commerce template 
+- Added WordPress compatibility 6.7.2
+******************************************************************
+06.2.2025 - Version 2.8.3
+******************************************************************
+- Fixed Unwanted Space in footer
+- Fixed Minor Bug In Wpbakery HEader
+- Updated Plugins
+******************************************************************
+04.2.2025 - Version 2.8.2
+******************************************************************
+- Fixed Minor Bugs in Faqs and Call to action elementor widgets
+- Updated Plugins
+******************************************************************
+24.1.2025 - Version 2.8.1
+******************************************************************
+- Updated Outdated templates in woocommerce - Related Product 3.9.0 - 9.6.0
+- Fixed Minor css issues in product detail page
+******************************************************************
+21.12.2024 - Version 2.8
+******************************************************************
+- Updated Outdated templates in woocommerce
+- Added Theme Wizard Setup -> To install child Theme , Plugins and Demo Content with Sliders
+- Fixed Bugs in Header Version 8
+- Minor Css bug in theme.
+- Updated Plugins 
+******************************************************************
+10.12.2024 - Version 2.7.9
+******************************************************************
+- WordPress 6.7.1 compatibility
+- Updated Outdated templates in woocommerce
+- Updated Plugins 
+******************************************************************
+24.10.2024 - Version 2.7.8
+******************************************************************
+- Fixed Slider Animation issues 
+- Updated Plugins 
+******************************************************************
+18.09.2024 - Version 2.7.7
+******************************************************************
+- Fixed Search Result
+- Updated Outdated templates in woocommerce
+- Updated Plugins 
+******************************************************************
+03.08.2024 - Version 2.7.6
+******************************************************************
+- Fixed Minor Bugs in Create Addons Plugin
+- Updated Plugins 
+- Updated Outdated templates in woocommerce
+******************************************************************
+14.06.2024 - Version 2.7.4 and 2.7.5
+******************************************************************
+- Fixed Minor Bugs in Theme
+- Updated Plugins 
+- Added Tag Option Some Elementor Widgets
+******************************************************************
+1.05.2024 - Version 2.7.3
+******************************************************************
+- Fixed Minor Bugs in Theme
+- Updated Plugins 
+- Updated Woo-commerce Outdated Templates 
+******************************************************************
+8.04.2024 - Version 2.7.2
+******************************************************************
+- Added Slider loop and autoplay option for slider elementor widgets
+- Fixed Minor bugs in theme.
+- Compressed the create-addons plugin
+- Added Performance option this will help to increase site speed little bit
+- Updated Plugins and package.
+******************************************************************
+4.03.2024 - Version 2.7.1
+******************************************************************
+- Fixed Minor bugs in create addons plugin
+- Fixed Minor bugs in theme.
+- Updated Plugins and package.
+******************************************************************
+7.02.2024 - Version 2.7
+******************************************************************
+- Fixed Header , Footer and mega menu translate issues
+- Fixed minor bug in create addons plugin
+- Updated Plugins
+******************************************************************
+25.01.2024 - Version 2.6.9
+******************************************************************
+- Fixed Pagination issues
+- Added option to control slider speed
+- Added auto changing headers and footers based on language for polylang and wpml
+- Updated Plugins
+******************************************************************
+1.01.2024 - Version 2.6.7
+******************************************************************
+- Fixed Wpbakery Section Option Issues
+- Fixed Bug in Creote addons Js
+- Updated Plugins
+******************************************************************
+9.09.2023 - Version 2.6.5
+******************************************************************
+- Added Staging site option
+- Fixed Notice
+- Updated Plugins
+- Updated Pot files
+******************************************************************
+4.08.2023 - Version 2.6.2 - 2.6.3
+******************************************************************
+- Fixed Creote addons Elementor image alt issues
+- Updated Plugins
+- Minor Bugs in theme
+******************************************************************
+25.07.2023 - Version 2.6.1
+******************************************************************
+- Fixed Creote addons issues
+- Updated Woocommerce template
+******************************************************************
+12.07.2023 - Version 2.6
+******************************************************************
+- Updated Outdated Woocommerce templates
+- Fixed Twice add to cart
+- Fixed timeline Slide issues
+- Improved usability
+- Updated the Pluigns
+******************************************************************
+10.06.2023 - Version 2.5.2
+******************************************************************
+- Fixed My account page issues on mobile 
+- Updated the Pluigns
+******************************************************************
+02.06.2023 - Version 2.5.1
+******************************************************************
+- Fixed 404 Padding and Background not worked
+- Fixed Some bug in Creote addons 
+- Added type two option in project filter 
+******************************************************************
+05.05.2023 - Version 2.5
+******************************************************************
+- Added Image Alt Option in Elementor
+- Fixed Translatepress Issues
+- Fixed Header Issues
+- Updated Woocommerce Tempaltes
+- Updated Pot File
+- Updated the Pluigns
+******************************************************************
+04.04.2023 - Version 2.4.3
+******************************************************************
+- Removed H1 tag Form expertise-v1 Elementor widgets
+- Enabled Inifinite Item Option Brand Carousel
+- Added Mail and tel Option in Call to Action v1 Elementor  Widgets
+- Updated the Pluigns
+******************************************************************
+25.03.2023 - Version 2.4.2
+******************************************************************
+- Fixed Header Widgets Issues on Elementor
+- FIxed Js issues 
+******************************************************************
+20.03.2023 - Version 2.4.1
+******************************************************************
+- Fixed Styling Issues
+- Fixed Woocommerce Cart Bugs
+******************************************************************
+07.03.2023 - Version 2.4
+******************************************************************
+- Added Tag Option for Title Widgets
+- Improved UI Design
+- Fixed Import Issues
+- Updated Plugins
+******************************************************************
+28.02.2023 - Version 2.3
+******************************************************************
+- Updated woocommerce outdated templates
+- Added Two New Demos Demo 15 , 16
+- Updated plugins
+- Fixed Icon Issues
+******************************************************************
+12.01.2023 - Version 2.2
+******************************************************************
+- Fixed Auto Update Issues  
+******************************************************************
+9.01.2023 - Version 2.1
+******************************************************************
+- Update Woocommerce outdated templates
+- Added Auto Update Option For Theme and Plugin
+- Updated Fontawesome icon 4.7 to 6.0
+******************************************************************
+19.12.2022 - Version 2.0.5
+******************************************************************
+- Added Suport for Hubspot HubSpot All-In-One Marketing - Forms, Popups, Live Chat
+- Added  Woocommerce Outdated templates
+- Fixed Woocommerce Add To cart Ajax issues
+******************************************************************
+13.12.2022 - Version 2.0.4
+******************************************************************
+- Fixed Page Header Issues
+- Fixed Project Filter issues
+******************************************************************
+24.11.2022 - Version 2.0.3
+******************************************************************
+- Fixed Translation Issues
+- Fixed Relatepost in Shop Page
+- Fixed Problem while Importing demo content
+******************************************************************
+10.11.2022 - Version 2.0.2
+******************************************************************
+- Added Tag Option for Page header
+- Fixed Product Post Pagination
+- Update Woocommerce Outdated Templates
+******************************************************************
+1.11.2022 - Version 2.0.1
+******************************************************************
+- Improved Product Quickview Button Css
+- Fixed Swiper Pagination in project carousel
+******************************************************************
+27.10.2022 - Version 2.0
+******************************************************************
+- Updated all the Plugins
+- Added 20+ New Elementor Widgets 
+- Fixed Breadcrumb Bugs
+- Added 2+ Home Page and 15+ Inner Pages
+- Added Support for elementor theme builder
+- Added Sticky header builder option
+- Imporved responsive
+******************************************************************
+22.09.2022 - Version 1.6.1
+******************************************************************
+- Fixed Breadcrumb Bugs
+- Updated Woocommerce outdated Templates 
+- Updated Elementor Widgets
+- Remove H1 Tag From Pageheader and Title Widgets
+- Updated all the Plugins
+******************************************************************
+01.06.2022 - Version 1.6.0
+******************************************************************
+- Fixed Page Header Bugs
+- Fixed Some Issues in Elementor Widgets
+- Added Wpbakery (4 Demos & Innerpages)
+- Imporved Styling
+******************************************************************
+26.04.2022 - Version 1.5.1
+******************************************************************
+- Fixed Animation Bug
+- Fixed Cart Bug In header
+******************************************************************
+19.04.2022 - Version 1.5
+******************************************************************
+- Added 2 Demos
+- Added Career Pages
+- Added Job Board Plugin
+- Added Side Menu
+- Added Mobile Header Style Two
+- Fixed Bugs In Theme & Core Plugins
+******************************************************************
+1.04.2022 - Version 1.4
+******************************************************************
+- Fixed Theme Option Bugs
+- Fixed Core Pluging Bugs
+- Improved Theme Rtl bugs
+******************************************************************
+28.03.2022 - Version 1.3
+******************************************************************
+- Updated Plugins
+- Added New Demos( 9 , 10 )
+- Improved Rtl Styling
+- Fixed Woocommerce Bugs
+- Fixed elementor widget bugs
+- Added New Elementor Widgets
+******************************************************************
+18.03.2022 - Version 1.2
+******************************************************************
+- Updated Plugins
+- Added Floating Onepage Menu
+- Added Support for OnePage
+- Updated Theme and Plugin Translation File
+- Fixed Bugs in Theme and Plugin
+******************************************************************
+08.03.2022 - Version 1.2
+******************************************************************
+- Fixed Js Error
+- Other bug fixes
+- Added Rtl Support
+- New Demo (Demo 7)
+- Updated Revolution Silder
+******************************************************************
+10.03.2022 - Version 1.0
+******************************************************************
+- First Release
+
+
+
+

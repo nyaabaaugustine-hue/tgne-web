@@ -1,0 +1,118 @@
+{
+  "primary_menu": {
+    "name": "Main Navigation",
+    "location": "header",
+    "items": [
+      {
+        "label": "Home",
+        "url": "/",
+        "type": "page"
+      },
+      {
+        "label": "About Us",
+        "url": "/about",
+        "type": "page",
+        "submenu": [
+          {
+            "label": "Our Approach",
+            "url": "/our-approach"
+          },
+          {
+            "label": "Our Team",
+            "url": "/about#team"
+          }
+        ]
+      },
+      {
+        "label": "Services",
+        "url": "/services",
+        "type": "page",
+        "submenu": [
+          {
+            "label": "Website Development",
+            "url": "/services/website-development"
+          },
+          {
+            "label": "Graphics & Production",
+            "url": "#",
+            "submenu": [
+              {
+                "label": "Graphic Design",
+                "url": "/services/graphic-design"
+              },
+              {
+                "label": "Printing",
+                "url": "/services/printing"
+              },
+              {
+                "label": "Laser Engraving",
+                "url": "/services/laser-engraving"
+              },
+              {
+                "label": "CNC Production",
+                "url": "/services/cnc-production"
+              },
+              {
+                "label": "Memorial Souvenirs",
+                "url": "/services/memorial-souvenirs"
+              }
+            ]
+          },
+          {
+            "label": "Education & Training",
+            "url": "#",
+            "submenu": [
+              {
+                "label": "AI for Educators",
+                "url": "/services/ai-for-educators"
+              },
+              {
+                "label": "AI for Youth Development",
+                "url": "/services/ai-youth-development"
+              },
+              {
+                "label": "ICT Training",
+                "url": "/services/ict-training"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Technology",
+        "url": "/technology",
+        "type": "page"
+      },
+      {
+        "label": "Shop",
+        "url": "/shop",
+        "type": "page"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact",
+        "type": "page"
+      }
+    ]
+  },
+  "footer_menu_1": {
+    "name": "Quick Links",
+    "items": [
+      {"label": "Home", "url": "/"},
+      {"label": "About Us", "url": "/about"},
+      {"label": "Services", "url": "/services"},
+      {"label": "Technology", "url": "/technology"},
+      {"label": "Contact", "url": "/contact"}
+    ]
+  },
+  "footer_menu_2": {
+    "name": "Services",
+    "items": [
+      {"label": "Website Development", "url": "/services/website-development"},
+      {"label": "Graphic Design", "url": "/services/graphic-design"},
+      {"label": "AI Training", "url": "/services/ai-for-educators"},
+      {"label": "ICT Training", "url": "/services/ict-training"},
+      {"label": "View All Services", "url": "/services"}
+    ]
+  }
+}

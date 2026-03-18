@@ -1,0 +1,43 @@
+{
+  "theme_name": "Technology & Digital Solutions",
+  "color_palette": {
+    "primary": {
+      "blue": "#2563eb",
+      "blue_dark": "#1e40af",
+      "blue_light": "#dbeafe",
+      "blue_accent": "#3b82f6"
+    },
+    "neutral": {
+      "white": "#ffffff",
+      "gray_light": "#f8fafc",
+      "gray_medium": "#64748b",
+      "gray_dark": "#1e293b",
+      "text_primary": "#334155",
+      "text_secondary": "#64748b"
+    },
+    "accent": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "info": "#3b82f6"
+    }
+  },
+  "usage": {
+    "headers": "blue (#2563eb)",
+    "body_text": "text_primary (#334155)",
+    "links": "blue_accent (#3b82f6)",
+    "buttons_primary": "blue (#2563eb)",
+    "buttons_hover": "blue_dark (#1e40af)",
+    "backgrounds": "white (#ffffff) and gray_light (#f8fafc)",
+    "borders": "gray_medium (#64748b)"
+  },
+  "redux_settings": {
+    "primary_color": "#2563eb",
+    "secondary_color": "#1e40af",
+    "body_bg": "#ffffff",
+    "heading_color": "#1e293b",
+    "text_color": "#334155",
+    "link_color": "#3b82f6",
+    "link_hover": "#2563eb"
+  }
+}
