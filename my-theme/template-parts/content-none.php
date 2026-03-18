@@ -1,25 +1,25 @@
 <?php
 /**
- * Template Part: No Content Found
- * @package MyTheme
+ * The template part for displaying a message that posts cannot be found.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package creote
  */
 ?>
-<section class="no-results not-found" style="text-align:center;padding:var(--space-20) 0;">
-    <header class="page-header" style="background:none;padding:0;margin-bottom:var(--space-8);">
-        <h2 class="page-title" style="color:var(--color-text);">
-            <?php esc_html_e( 'Nothing Found', 'my-theme' ); ?>
-        </h2>
-    </header>
-    <div class="page-content">
-        <?php if ( is_search() ) : ?>
-            <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);">
-                <?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with different keywords.', 'my-theme' ); ?>
-            </p>
-        <?php else : ?>
-            <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);">
-                <?php esc_html_e( "It seems we can't find what you're looking for. Perhaps searching can help.", 'my-theme' ); ?>
-            </p>
-        <?php endif; ?>
-        <?php get_search_form(); ?>
-    </div>
-</section>
+<section class="no-results not-found">
+	<div class="header">
+		<h1 class="page-title"><?php _e( 'Nothing Found', 'creote' ); ?></h1>
+	</div><!-- .page-header -->
+	<div class="content">
+		<?php if(is_home() && current_user_can('publish_posts')) : ?>
+			<p><?php echo esc_html__( 'Ready to publish your first post?', 'creote'); ?> <a href="<?php echo esc_url(admin_url( 'post-new.php' )); ?>"><?php echo esc_html__('Get started here','creote'); ?></a></p>
+		<?php elseif(is_search()) : ?>
+			<p><?php echo esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'creote'); ?></p>
+			<?php get_search_form(); ?>
+		<?php else : ?>
+			<p><?php echo esc_html__('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'creote'); ?></p>
+			<?php get_search_form(); ?>
+		<?php endif; ?>
+	</div><!-- .page-content -->
+</section><!-- .no-results -->

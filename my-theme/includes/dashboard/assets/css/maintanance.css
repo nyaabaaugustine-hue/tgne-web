@@ -1,0 +1,39 @@
+.maintenance-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the content takes the full viewport height */
+  position: relative;
+}
+.maintenance-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.maintenance-content h2, .maintenance-content p {
+  color: #ffffff;
+}
+.maintenance-content .box_content {
+  vertical-align: middle;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+.maintenance-content::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: var(--color-set-one-1);
+  opacity: 0.7;
+  left: 0;
+  z-index: 1;
+}/*# sourceMappingURL=maintanance.css.map */
