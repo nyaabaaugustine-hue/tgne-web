@@ -1,0 +1,143 @@
+<!-- ═══════════════════════════════════════════════════════
+  TGNE Solutions — GLOBAL FOOTER & FLOATING WIDGETS
+  Elementor Template Part — use for Site Footer
+  Contains: Map/Location, Floating Buttons, Theme Toggle
+  ═══════════════════════════════════════════════════════ -->
+<style>
+  /* ─── MAP & LOCATION STYLES ─── */
+  #location { background: var(--sd); padding: 0; position: relative; z-index: 1; }
+  .map-wrapper { display: grid; grid-template-columns: 1fr 1.2fr; }
+  .map-info-col { padding: 64px 6% 64px 5%; display: flex; flex-direction: column; justify-content: center; background: var(--sd); position: relative; overflow: hidden; }
+  .map-info-col::before { content: ''; position: absolute; top: -60px; right: -60px; width: 280px; height: 280px; border-radius: 50%; background: rgba(255, 168, 102, .05); pointer-events: none; }
+  .map-iframe-col { position: relative; min-height: 480px; }
+  .map-iframe-col iframe { display: block; width: 100%; height: 100%; min-height: 520px; border: 0; filter: grayscale(10%) contrast(1.05); }
+  .map-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
+  .map-item-ic { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; border: 1px solid rgba(255, 255, 255, .12); }
+  .mi-orange { background: rgba(255, 168, 102, .15); border-color: rgba(255, 168, 102, .25) !important; }
+  .mi-green { background: rgba(76, 175, 136, .15); border-color: rgba(76, 175, 136, .25) !important; }
+  .mi-blue { background: rgba(44, 127, 184, .15); border-color: rgba(44, 127, 184, .25) !important; }
+  .map-item-label { font-family: var(--fh); font-size: 10.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 3px; }
+  .lb-orange { color: var(--lo); } .lb-green { color: var(--lg); } .lb-blue { color: var(--slb); }
+  .map-item-val { font-size: 14.5px; color: var(--sw); font-weight: 500; line-height: 1.55; }
+  .map-badge { position: absolute; top: 20px; left: 20px; background: rgba(6, 27, 51, .92); backdrop-filter: blur(12px); border: 1px solid rgba(255, 168, 102, .3); border-radius: 12px; padding: 10px 16px; display: flex; align-items: center; gap: 10px; pointer-events: none; }
+  .mb-dot { width: 10px; height: 10px; background: var(--lg); border-radius: 50%; animation: pulse 2s infinite; flex-shrink: 0; }
+  .mb-text { font-family: var(--fh); font-size: 12px; font-weight: 600; color: var(--sw); }
+
+  /* ─── FLOATING WIDGETS ─── */
+  .floating-widgets-container { position: fixed; bottom: 28px; left: 20px; right: 20px; z-index: 3000; display: flex; justify-content: space-between; align-items: flex-end; pointer-events: none; }
+  .float-btn, .theme-toggle { pointer-events: auto; }
+  .float-btn { display: inline-flex; align-items: center; gap: 10px; border: none; border-radius: 50px; cursor: pointer; font-family: var(--fh); font-weight: 700; font-size: 13.5px; text-decoration: none; transition: var(--tr); padding: 12px 18px 12px 14px; box-shadow: 0 6px 24px rgba(0,0,0,.22); }
+  .float-wa { background: #25D366; color: white; animation: floatPop 3.5s ease-in-out infinite; }
+  .float-wa:hover { background: #1ebe5a; transform: translateY(-3px) scale(1.04); box-shadow: 0 10px 32px rgba(37,211,102,.45); }
+  .float-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+  @keyframes floatPop { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+
+  /* ─── THEME TOGGLE ─── */
+  .theme-toggle { width: 48px; height: 48px; background: var(--sd); border: 1px solid rgba(255,255,255,.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: var(--tr); box-shadow: 0 6px 24px rgba(0,0,0,.22); }
+  .theme-toggle:hover { transform: translateY(-3px) scale(1.05); border-color: var(--lo); }
+  .tt-icon { font-size: 22px; position: absolute; transition: opacity .3s, transform .3s; }
+  .tt-moon { opacity: 0; transform: translateY(10px); }
+  body.dark-theme .tt-sun { opacity: 0; transform: translateY(-10px); }
+  body.dark-theme .tt-moon { opacity: 1; transform: translateY(0); }
+  body.dark-theme .theme-toggle { background: var(--sg); border-color: var(--gb); }
+
+  @media (max-width: 768px) {
+    .map-wrapper { grid-template-columns: 1fr; }
+    .map-info-col { padding: 48px 6%; }
+    .map-iframe-col iframe { min-height: 300px; }
+    .float-btn span { display: none; }
+    .float-btn { padding: 14px; width: 52px; height: 52px; justify-content: center; }
+    .floating-widgets-container { left: 12px; right: 12px; bottom: 20px; }
+  }
+</style>
+
+<!-- MAP & LOCATION SECTION -->
+<section id="location">
+  <div class="map-wrapper">
+    <div class="map-info-col">
+      <div class="slabel lb-orange">Find Us</div>
+      <h2 class="stitle ondk">Visit <span class="to">TGNE</span> Solutions</h2>
+      <p class="ssub ondk" style="max-width:380px; margin: 0 0 32px;">Come see us in person — our team is ready to welcome you and discuss how we can help your business grow.</p>
+      <div class="map-items-wrap">
+        <div class="map-item">
+          <div class="map-item-ic mi-orange">📍</div>
+          <div>
+            <div class="map-item-label lb-orange">Address</div>
+            <div class="map-item-val">TGNE Solutions, Tema, Community 11, Ghana</div>
+          </div>
+        </div>
+        <div class="map-item">
+          <div class="map-item-ic mi-green">📞</div>
+          <div>
+            <div class="map-item-label lb-green">Phone</div>
+            <div class="map-item-val">+233 55 812 2767</div>
+          </div>
+        </div>
+        <div class="map-item">
+          <div class="map-item-ic mi-blue">🕐</div>
+          <div>
+            <div class="map-item-label lb-blue">Opening Hours</div>
+            <div class="map-item-val">Mon–Fri: 8AM – 6PM · Sat: 9AM – 2PM</div>
+          </div>
+        </div>
+        <div class="map-item">
+          <div class="map-item-ic mi-orange">📧</div>
+          <div>
+            <div class="map-item-label lb-orange">Email</div>
+            <div class="map-item-val"><a href="mailto:info@tgnesolutions.com" style="color:inherit;text-decoration:none">info@tgnesolutions.com</a></div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:28px">
+        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15883.4!2d-0.0167!3d5.6408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf818b29a000001%3A0xa1b2c3d4e5f60001!2sTema%20Community%2011%2C%20Tema%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1741000000000!5m2!1sen!2sgh" class="btn-orange" style="font-size:13.5px;padding:11px 22px"> Visit TGNE Solutions Now</a>
+      </div>
+    </div>
+    <div class="map-iframe-col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15883.4!2d-0.0167!3d5.6408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf818b29a000001%3A0xa1b2c3d4e5f60001!2sTema%20Community%2011%2C%20Tema%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1741000000000!5m2!1sen!2sgh" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-badge">
+        <div class="mb-dot"></div>
+        <span class="mb-text">TGNE Solutions, Tema, Ghana</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING WIDGETS -->
+<div class="floating-widgets-container">
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/233558122767" target="_blank" rel="noopener" class="float-btn float-wa">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp Us</span>
+  </a>
+  <!-- Theme Toggle -->
+  <div class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Theme">
+    <div class="tt-icon tt-sun">☀️</div>
+    <div class="tt-icon tt-moon">🌙</div>
+  </div>
+</div>
+
+<script>
+  /* ═══ THEME TOGGLE SCRIPT ═══ */
+  (function() {
+    const themeToggle = document.getElementById('themeToggle');
+    if (!themeToggle) return;
+
+    const body = document.body;
+    const currentTheme = localStorage.getItem('theme');
+
+    // Apply saved theme on page load
+    if (currentTheme === 'dark-theme') {
+      body.classList.add('dark-theme');
+    }
+
+    // Toggle theme on click
+    themeToggle.addEventListener('click', function() {
+      body.classList.toggle('dark-theme');
+      let theme = 'light-theme';
+      if (body.classList.contains('dark-theme')) {
+        theme = 'dark-theme';
+      }
+      localStorage.setItem('theme', theme);
+    });
+  })();
+</script>

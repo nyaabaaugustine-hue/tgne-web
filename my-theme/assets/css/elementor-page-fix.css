@@ -1,0 +1,177 @@
+/**
+ * TGNE Solutions — Elementor Page Fix CSS
+ * =========================================
+ * Scoped isolation layer: prevents WordPress/Elementor base styles
+ * from conflicting with the TGNE HTML widget pages.
+ *
+ * @package  MyTheme
+ * @version  2.0.0
+ */
+
+/* ─────────────────────────────────────────────────────
+   1. ELEMENTOR WIDGET CONTAINER RESET
+───────────────────────────────────────────────────── */
+.elementor-widget-html,
+.elementor-widget-html > .elementor-widget-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow: visible !important;
+}
+
+.elementor-section-wrap,
+.e-con-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   2. BODY & PAGE WRAPPER ON CANVAS
+───────────────────────────────────────────────────── */
+.elementor-template-canvas #page,
+.elementor-template-canvas .site-content,
+.elementor-template-canvas #content {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   3. HERO SLIDER
+───────────────────────────────────────────────────── */
+#hero-slider {
+    height: calc(100vh - 115px) !important;
+    min-height: 560px !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    position: relative !important;
+    display: block !important;
+}
+
+#hero-slider .hs-track {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    height: 100% !important;
+    will-change: transform !important;
+}
+
+#hero-slider .hs-slide {
+    flex: 0 0 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   4. ANCHOR SCROLL OFFSET (fixed header clearance)
+───────────────────────────────────────────────────── */
+[id] {
+    scroll-margin-top: 124px;
+}
+
+/* ─────────────────────────────────────────────────────
+   5. .tg-container — scoped container (avoids theme conflict)
+───────────────────────────────────────────────────── */
+.tg-container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ─────────────────────────────────────────────────────
+   6. FULL-WIDTH BLEED SECTIONS
+───────────────────────────────────────────────────── */
+.tgne-bleed {
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    position: relative !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   7. OVERFLOW PROTECTION
+───────────────────────────────────────────────────── */
+.elementor-widget-html {
+    overflow-x: hidden !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   8. KILL WP PAGE HEADER on Elementor canvas pages
+───────────────────────────────────────────────────── */
+.elementor-template-canvas .page-header,
+.elementor-template-canvas .section > .container > .content-area {
+    display: none !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   9. KILL ORPHANED NAV/HEADER INSIDE HTML WIDGETS
+      Each inner HTML file has its own <nav> tag that
+      must not render — TGNE header handles navigation.
+───────────────────────────────────────────────────── */
+.elementor-widget-html nav:not(#tgne-nav),
+.elementor-widget-html > .elementor-widget-container > nav {
+    display: none !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   10. PRELOADER KILL
+───────────────────────────────────────────────────── */
+#preloader {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   11. LIST RESET FIX — restore inside widget sections
+───────────────────────────────────────────────────── */
+.elementor-widget-html ul,
+.elementor-widget-html ol {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ─────────────────────────────────────────────────────
+   12. RESPONSIVE BREAKPOINTS
+───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    body {
+        padding-top: 111px !important;
+    }
+
+    [id] {
+        scroll-margin-top: 115px;
+    }
+
+    #hero-slider {
+        height: calc(100vh - 111px) !important;
+        min-height: 420px !important;
+    }
+
+    .tg-container {
+        width: 94%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 108px !important;
+    }
+
+    #hero-slider {
+        height: calc(100svh - 108px) !important;
+        min-height: 380px !important;
+    }
+}

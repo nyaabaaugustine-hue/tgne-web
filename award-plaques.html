@@ -1,0 +1,341 @@
+<style>
+/* ═══ TGNE ELEMENTOR WIDGET ISOLATION v2 ═══
+   Prevents WordPress/Elementor styles from squeezing widget content.
+   DO NOT REMOVE — required for pixel-perfect match to standalone HTML. */
+.elementor-widget-html,.elementor-widget-html>.elementor-widget-container{
+  padding:0!important;margin:0!important;
+  max-width:100%!important;width:100%!important;overflow:visible!important}
+#preloader{display:none!important;opacity:0!important;visibility:hidden!important}
+
+:root{--sb:#0A4C7F;--sd:#061B33;--sm:#0D5E9E;--slb:#2C7FB8;--lg:#4CAF88;--lgd:#389E6F;--lo:#FFA866;--lod:#E8914A;--wh:#FFFFFF;--sg:#F5F6F8;--gb:#E2E8F0;--bt:#EAF3FB;--td:#1A1A2E;--tm:#4A5568;--sw:#D8E4F0;--mw:#C8D8E8;--gw:#B0C4D8;--fh:'Poppins',sans-serif;--fb:'Inter',sans-serif;--r:14px;--shh:0 20px 50px rgba(10,76,127,.18);--tr:all .35s cubic-bezier(.4,0,.2,1);}
+/* ── Standalone nav hidden inside WordPress (TGNE header used) ── */
+.elementor-widget-html nav:not(#tgne-nav),
+nav:not(#tgne-nav){display:none!important}
+
+*{box-sizing:border-box;margin:0;padding:0}
+.pp-wrap{font-family:var(--fb);color:var(--td);overflow-x:hidden}
+.pp-back{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-size:13px;font-weight:600;color:var(--lo);text-decoration:none;padding:14px 5%;background:var(--sd);width:100%;border-bottom:1px solid rgba(255,255,255,.06);transition:gap .2s}
+.pp-back:hover{gap:12px}
+.btn-o{display:inline-flex;align-items:center;gap:8px;background:var(--lo);color:white;padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid var(--lo);transition:var(--tr)}
+.btn-o:hover{background:var(--lod);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,168,102,.4)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--sw);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid rgba(216,228,240,.35);transition:var(--tr)}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:var(--sw);transform:translateY(-2px)}
+.btn-wh{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--sb);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:700;font-size:14px;text-decoration:none;border:2px solid white;transition:var(--tr)}
+.btn-wh:hover{background:transparent;color:white;transform:translateY(-2px)}
+.sec-label{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--lo);margin-bottom:12px;display:block}
+.sec-title{font-family:var(--fh);font-size:clamp(24px,3vw,42px);font-weight:800;line-height:1.12;letter-spacing:-.8px;margin-bottom:14px}
+
+/* Hero */
+.pp-hero{position:relative;padding:90px 5% 80px;overflow:hidden;background:linear-gradient(135deg,#0D1B2A 0%,var(--sd) 40%,#0A3060 100%)}
+.pp-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;z-index:0}
+.pp-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.pp-hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,168,102,.15);border:1px solid rgba(255,168,102,.35);color:var(--lo);padding:6px 16px;border-radius:40px;font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:22px}
+.pp-dot{width:6px;height:6px;background:var(--lo);border-radius:50%;animation:ppp 2s infinite}
+@keyframes ppp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+.pp-hero h1{font-family:var(--fh);font-size:clamp(30px,4.2vw,58px);font-weight:900;color:var(--sw);line-height:1.06;letter-spacing:-2px;margin-bottom:20px}
+.pp-hero h1 .ao{color:var(--lo)} .pp-hero h1 .ag{color:var(--lg)}
+.pp-hero-sub{font-size:16px;color:var(--mw);max-width:520px;line-height:1.78;margin-bottom:36px}
+.pp-hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.pp-hero-visual{display:flex;flex-direction:column;gap:16px}
+.pp-hv-stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px 24px;display:flex;align-items:center;gap:18px;transition:var(--tr)}
+.pp-hv-stat:hover{background:rgba(255,168,102,.1);border-color:rgba(255,168,102,.25)}
+.pp-hv-num{font-family:var(--fh);font-size:36px;font-weight:800;color:var(--lo);line-height:1;flex-shrink:0}
+.pp-hv-label{font-family:var(--fh);font-size:13px;font-weight:600;color:var(--sw);line-height:1.3}
+.pp-hv-sub{font-size:12px;color:var(--gw);margin-top:2px}
+
+/* Products */
+.pp-products{padding:80px 5%;background:var(--sg)}
+.pp-products-inner{max-width:1200px;margin:0 auto}
+.pp-pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.pp-pcard{background:white;border-radius:18px;padding:28px 22px;border:1px solid var(--gb);transition:var(--tr);position:relative;overflow:hidden}
+.pp-pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(to right,var(--lo),#FFD700);transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
+.pp-pcard:hover{transform:translateY(-7px);box-shadow:var(--shh)}
+.pp-pcard:hover::before{transform:scaleX(1)}
+.pp-pcard-icon{font-size:38px;margin-bottom:14px}
+.pp-pcard h3{font-family:var(--fh);font-size:16px;font-weight:700;color:var(--td);margin-bottom:7px}
+.pp-pcard p{font-size:13.5px;color:var(--tm);line-height:1.65;margin-bottom:14px}
+.pp-pcard-specs{display:flex;flex-wrap:wrap;gap:6px}
+.pp-spec{font-size:11px;background:var(--bt);color:var(--sb);padding:3px 10px;border-radius:20px;font-family:var(--fh);font-weight:600}
+.pp-spec-gold{background:rgba(255,168,102,.15);color:var(--lod)}
+
+/* Materials */
+.pp-mat{padding:80px 5%;background:linear-gradient(135deg,var(--sd),var(--sm))}
+.pp-mat-inner{max-width:1200px;margin:0 auto}
+.pp-mat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.pp-mat-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:26px 18px;text-align:center;transition:var(--tr)}
+.pp-mat-card:hover{background:rgba(255,168,102,.12);border-color:rgba(255,168,102,.3);transform:translateY(-6px)}
+.pp-mat-icon{font-size:34px;margin-bottom:12px}
+.pp-mat-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--sw);margin-bottom:6px}
+.pp-mat-desc{font-size:12px;color:var(--gw);line-height:1.55}
+
+/* Why */
+.pp-why{padding:80px 5%;background:var(--wh)}
+.pp-why-inner{max-width:1200px;margin:0 auto}
+.pp-why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
+.pp-why-card{background:var(--sg);border-radius:16px;padding:28px 20px;text-align:center;border:1px solid var(--gb);transition:var(--tr)}
+.pp-why-card:hover{background:white;box-shadow:var(--shh);transform:translateY(-6px)}
+.pp-why-icon{font-size:36px;margin-bottom:12px}
+.pp-why-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--td);margin-bottom:6px}
+.pp-why-desc{font-size:12.5px;color:var(--tm);line-height:1.6}
+
+/* Order */
+.pp-order{padding:80px 5%;background:var(--sg)}
+.pp-order-inner{max-width:1200px;margin:0 auto}
+.pp-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;position:relative}
+.pp-steps::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--lo),#FFD700);z-index:0}
+.pp-step{text-align:center;position:relative;z-index:1;padding:0 8px}
+.pp-step-num{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--lo),#FFD700);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:800;font-size:18px;color:white;margin:0 auto 14px;box-shadow:0 4px 16px rgba(255,168,102,.4)}
+.pp-step h4{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--td);margin-bottom:5px}
+.pp-step p{font-size:11.5px;color:var(--tm);line-height:1.5}
+
+/* CTA */
+.pp-cta{padding:90px 5%;background:linear-gradient(135deg,var(--sd),var(--sb));text-align:center;position:relative;overflow:hidden}
+.pp-cta::before{content:'🏆';position:absolute;font-size:200px;opacity:.04;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.pp-cta h2{position:relative;font-family:var(--fh);font-size:clamp(26px,4vw,50px);font-weight:800;color:var(--sw);line-height:1.1;letter-spacing:-1px;margin-bottom:14px}
+.pp-cta p{position:relative;font-size:16px;color:var(--mw);margin-bottom:34px;max-width:480px;margin-left:auto;margin-right:auto}
+.pp-cta-btns{position:relative;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+@media(max-width:1024px){.pp-hero-inner{grid-template-columns:1fr}.pp-hero-visual{display:none}.pp-pgrid{grid-template-columns:1fr 1fr}.pp-mat-grid{grid-template-columns:1fr 1fr}.pp-why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.pp-pgrid{grid-template-columns:1fr}.pp-steps{grid-template-columns:1fr 1fr}.pp-steps::before{display:none}.pp-cta-btns{flex-direction:column;align-items:center}}
+
+/* ── Photo Gallery ── */
+.pp-gallery{padding:80px 5%;background:var(--sd)}
+.pp-gallery-inner{max-width:1200px;margin:0 auto}
+.pp-gallery-hdr{text-align:center;margin-bottom:48px}
+.pp-gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pp-gallery-item{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1;cursor:pointer;group}
+.pp-gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.pp-gallery-item:hover img{transform:scale(1.08)}
+.pp-gallery-item-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,27,51,.9) 0%,transparent 60%);opacity:0;transition:opacity .35s;display:flex;align-items:flex-end;padding:16px}
+.pp-gallery-item:hover .pp-gallery-item-ov{opacity:1}
+.pp-gallery-item-label{font-family:var(--fh);font-size:12px;font-weight:700;color:var(--lo);letter-spacing:1.2px;text-transform:uppercase}
+.pp-gallery-item-featured{grid-column:span 2;grid-row:span 2}
+.pp-gallery-item-featured img{height:100%}
+
+/* Lightbox */
+.pp-lb{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.95);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:20px}
+.pp-lb.open{opacity:1;pointer-events:auto}
+.pp-lb-img{max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain;transform:scale(.92);transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.pp-lb.open .pp-lb-img{transform:scale(1)}
+.pp-lb-close{position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:white;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.pp-lb-close:hover{background:rgba(220,50,50,.6)}
+.pp-lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:white;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.pp-lb-nav:hover{background:rgba(255,168,102,.5)}
+.pp-lb-prev{left:16px}
+.pp-lb-next{right:16px}
+.pp-lb-caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-family:var(--fh);font-size:13px;font-weight:600;color:var(--lo);letter-spacing:2px;text-transform:uppercase;background:rgba(0,0,0,.5);padding:6px 18px;border-radius:30px;white-space:nowrap}
+
+@media(max-width:900px){.pp-gallery-grid{grid-template-columns:repeat(2,1fr)}.pp-gallery-item-featured{grid-column:span 1;grid-row:span 1}}
+@media(max-width:480px){.pp-gallery-grid{grid-template-columns:repeat(2,1fr)}}
+
+
+[id]{scroll-margin-top:124px}
+</style>
+
+<div class="pp-wrap">
+
+  <!-- Hero -->
+  <section class="pp-hero">
+    <div class="pp-hero-grid"></div>
+    <div class="pp-hero-inner">
+      <div>
+        <div class="pp-hero-tag"><span class="pp-dot"></span>Award Plaques &amp; Trophies</div>
+        <h1>Honour Achievement<br>with <span class="ao">Lasting</span> <span class="ag">Recognition.</span></h1>
+        <p class="pp-hero-sub">Premium custom award plaques, trophies, medals and certificates designed to celebrate excellence and create moments that are remembered forever.</p>
+        <div class="pp-hero-btns">
+          <a href="/contact/" class="btn-o">Order Awards &#8594;</a>
+          <a href="#products" class="btn-ghost">View Products</a>
+        </div>
+      </div>
+      <div class="pp-hero-visual">
+        <div class="pp-hv-stat">
+          <div class="pp-hv-num">500<span style="font-size:20px;color:var(--lg)">+</span></div>
+          <div><div class="pp-hv-label">Awards Produced</div><div class="pp-hv-sub">Every year for clients across Ghana</div></div>
+        </div>
+        <div class="pp-hv-stat">
+          <div class="pp-hv-num">3<span style="font-size:20px;color:var(--lg)">days</span></div>
+          <div><div class="pp-hv-label">Average Turnaround</div><div class="pp-hv-sub">Express orders available in 24hrs</div></div>
+        </div>
+        <div class="pp-hv-stat">
+          <div class="pp-hv-num">100<span style="font-size:20px;color:var(--lg)">%</span></div>
+          <div><div class="pp-hv-label">Custom Made</div><div class="pp-hv-sub">Every award is unique to your brief</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Gallery -->
+  <section class="pp-gallery">
+    <div class="pp-gallery-inner">
+      <div class="pp-gallery-hdr">
+        <span class="sec-label" style="color:var(--lo)">Awards Gallery</span>
+        <h2 class="sec-title" style="color:var(--sw)">See Our <span style="color:var(--lo)">Work</span></h2>
+        <p style="font-size:15px;color:var(--gw);max-width:500px;margin:0 auto;line-height:1.7">A selection of projects we've delivered for clients across Ghana and beyond. Click any image to view full size.</p>
+      </div>
+      <div class="pp-gallery-grid">
+        <div class="pp-gallery-item pp-gallery-item-featured">
+          <img src="https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/awards.jpg" alt="Crystal Trophy" loading="lazy">
+          <div class="pp-gallery-item-ov"><span class="pp-gallery-item-label">Crystal Trophy</span></div>
+        </div>
+        <div class="pp-gallery-item">
+          <img src="https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/IK.jpg" alt="Acrylic Plaque" loading="lazy">
+          <div class="pp-gallery-item-ov"><span class="pp-gallery-item-label">Acrylic Plaque</span></div>
+        </div>
+        <div class="pp-gallery-item">
+          <img src="https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/YY.jpg" alt="Wooden Shield" loading="lazy">
+          <div class="pp-gallery-item-ov"><span class="pp-gallery-item-label">Wooden Shield</span></div>
+        </div>
+        <div class="pp-gallery-item">
+          <img src="https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/FF.jpg" alt="Metal Trophy" loading="lazy">
+          <div class="pp-gallery-item-ov"><span class="pp-gallery-item-label">Metal Trophy</span></div>
+        </div>
+        <div class="pp-gallery-item">
+          <img src="https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/TY.jpg" alt="Medals" loading="lazy">
+          <div class="pp-gallery-item-ov"><span class="pp-gallery-item-label">Medals</span></div>
+        </div>
+        <div class="pp-gallery-item">
+          <img src="https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/BV.jpg" alt="Framed Certificate" loading="lazy">
+          <div class="pp-gallery-item-ov"><span class="pp-gallery-item-label">Framed Certificate</span></div>
+        </div>
+        <div class="pp-gallery-item">
+          <img src="https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/A.jpg" alt="Award Ceremony" loading="lazy">
+          <div class="pp-gallery-item-ov"><span class="pp-gallery-item-label">Award Ceremony</span></div>
+        </div>
+        <div class="pp-gallery-item">
+          <img src="https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/YY.jpg" alt="Custom Awards" loading="lazy">
+          <div class="pp-gallery-item-ov"><span class="pp-gallery-item-label">Custom Awards</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="pp-products" id="products">
+    <div class="pp-products-inner">
+      <div style="text-align:center">
+        <span class="sec-label">Our Products</span>
+        <h2 class="sec-title" style="color:var(--td)">Award &amp; <span style="color:var(--lo)">Trophy Range</span></h2>
+        <p style="font-size:15px;color:var(--tm);max-width:520px;margin:0 auto;line-height:1.7">Handcrafted awards in a wide range of materials, styles and sizes. Every piece engraved or printed to your exact specification.</p>
+      </div>
+      <div class="pp-pgrid">
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#127942;</div><h3>Crystal &amp; Glass Trophies</h3><p>Elegant crystal and optical glass awards with laser engraving — the ultimate symbol of achievement for top performers and prestigious events.</p><div class="pp-pcard-specs"><span class="pp-spec pp-spec-gold">Premium</span><span class="pp-spec">Laser Engraved</span><span class="pp-spec">Gift Box</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#129350;</div><h3>Acrylic Award Plaques</h3><p>Custom-cut acrylic plaques in any shape — printed in full colour with UV inks. Sleek, modern and highly customisable for any occasion.</p><div class="pp-pcard-specs"><span class="pp-spec">Full Colour</span><span class="pp-spec">Any Shape</span><span class="pp-spec">UV Print</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#127866;</div><h3>Wooden Plaques &amp; Shields</h3><p>Classic wooden plaques and shields with engraved brass or silver plates — perfect for long-service, academic and sporting awards.</p><div class="pp-pcard-specs"><span class="pp-spec">Mahogany</span><span class="pp-spec">MDF</span><span class="pp-spec">Engraved Plate</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#127881;</div><h3>Metal Trophies &amp; Cups</h3><p>Traditional and contemporary metal trophies, cups and statuettes in gold, silver and bronze finishes. Ideal for sports and corporate awards.</p><div class="pp-pcard-specs"><span class="pp-spec pp-spec-gold">Gold / Silver</span><span class="pp-spec">Bronze</span><span class="pp-spec">Engraved</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#129351;</div><h3>Medals &amp; Medallions</h3><p>Custom cast or die-struck medals for sports events, competitions and academic ceremonies — with ribbon, lanyard or presentation case.</p><div class="pp-pcard-specs"><span class="pp-spec">50mm / 70mm</span><span class="pp-spec">With Ribbon</span><span class="pp-spec">Bulk Orders</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#128196;</div><h3>Framed Certificates &amp; Citations</h3><p>Premium printed and framed certificates of achievement, appreciation and recognition — complete with custom calligraphy and your official seal.</p><div class="pp-pcard-specs"><span class="pp-spec">A4 / A3</span><span class="pp-spec">Framed</span><span class="pp-spec">Custom Design</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Materials -->
+  <section class="pp-mat">
+    <div class="pp-mat-inner">
+      <div style="text-align:center">
+        <span class="sec-label" style="color:var(--lo)">Materials</span>
+        <h2 class="sec-title" style="color:var(--sw)">Crafted from the <span style="color:var(--lo)">Finest Materials</span></h2>
+      </div>
+      <div class="pp-mat-grid">
+        <div class="pp-mat-card"><div class="pp-mat-icon">&#128142;</div><div class="pp-mat-title">Optical Crystal</div><div class="pp-mat-desc">Premium clarity, laser-engraved 3D designs and text with unmatched precision.</div></div>
+        <div class="pp-mat-card"><div class="pp-mat-icon">&#128154;</div><div class="pp-mat-title">Acrylic / Perspex</div><div class="pp-mat-desc">Versatile, full-colour UV-printed in any shape or size. Modern and affordable.</div></div>
+        <div class="pp-mat-card"><div class="pp-mat-icon">&#127795;</div><div class="pp-mat-title">Solid Wood</div><div class="pp-mat-desc">Classic mahogany and MDF plaques with a warm, timeless appearance.</div></div>
+        <div class="pp-mat-card"><div class="pp-mat-icon">&#9889;</div><div class="pp-mat-title">Cast Metal</div><div class="pp-mat-desc">Gold, silver and bronze finishes — prestigious and weighty for top-tier awards.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section class="pp-why">
+    <div class="pp-why-inner">
+      <div style="text-align:center">
+        <span class="sec-label">Why Choose Us</span>
+        <h2 class="sec-title" style="color:var(--td)">Award-Winning <span style="color:var(--sb)">Quality</span></h2>
+      </div>
+      <div class="pp-why-grid">
+        <div class="pp-why-card"><div class="pp-why-icon">&#127775;</div><div class="pp-why-title">Premium Finish</div><div class="pp-why-desc">Every award is inspected for quality before leaving our production floor.</div></div>
+        <div class="pp-why-card"><div class="pp-why-icon">&#9881;</div><div class="pp-why-title">Fully Custom</div><div class="pp-why-desc">100% customised to your design — shape, size, material and text.</div></div>
+        <div class="pp-why-card"><div class="pp-why-icon">&#9889;</div><div class="pp-why-title">Fast Delivery</div><div class="pp-why-desc">Standard 3-day turnaround. Express 24-hour service available on request.</div></div>
+        <div class="pp-why-card"><div class="pp-why-icon">&#127873;</div><div class="pp-why-title">Presentation Ready</div><div class="pp-why-desc">All awards supplied in presentation gift boxes, ready to hand over on the day.</div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Order Steps -->
+  <section class="pp-order">
+    <div class="pp-order-inner">
+      <div style="text-align:center">
+        <span class="sec-label">Simple Process</span>
+        <h2 class="sec-title" style="color:var(--td)">How to <span style="color:var(--lo)">Order</span></h2>
+      </div>
+      <div class="pp-steps">
+        <div class="pp-step"><div class="pp-step-num">1</div><h4>Share Brief</h4><p>Tell us occasion, quantities and your budget.</p></div>
+        <div class="pp-step"><div class="pp-step-num">2</div><h4>Get Quote</h4><p>We respond with pricing within 2 hours.</p></div>
+        <div class="pp-step"><div class="pp-step-num">3</div><h4>Approve Design</h4><p>Review a digital proof before we produce.</p></div>
+        <div class="pp-step"><div class="pp-step-num">4</div><h4>Produce</h4><p>Handcrafted with precision and care.</p></div>
+        <div class="pp-step"><div class="pp-step-num">5</div><h4>Collect / Deliver</h4><p>Pick up or delivered to your venue.</p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Lightbox -->
+  <div id="pp-lb" class="pp-lb">
+    <button id="pp-lb-close" class="pp-lb-close">&#215;</button>
+    <button id="pp-lb-prev" class="pp-lb-nav pp-lb-prev">&#8592;</button>
+    <img id="pp-lb-img" class="pp-lb-img" src="" alt="">
+    <button id="pp-lb-next" class="pp-lb-nav pp-lb-next">&#8594;</button>
+    <div id="pp-lb-cap" class="pp-lb-caption"></div>
+  </div>
+
+  <!-- CTA -->
+  <section class="pp-cta">
+    <h2>Ready to Honour <span style="color:var(--lo)">Excellence?</span></h2>
+    <p>Order today and we'll have your awards ready in time for your event.</p>
+    <div class="pp-cta-btns">
+      <a href="/contact/" class="btn-wh">Request a Quote</a>
+      <a href="https://wa.me/233558122767" class="btn-ghost" target="_blank" rel="noopener">&#128172; WhatsApp Us</a>
+    </div>
+  </section>
+
+
+<script>
+(function(){
+  var lbImgs = document.querySelectorAll('.pp-gallery-item img');
+  if(!lbImgs.length) return;
+  var lb   = document.getElementById('pp-lb');
+  var lbI  = document.getElementById('pp-lb-img');
+  var lbC  = document.getElementById('pp-lb-cap');
+  var cur  = 0;
+  var srcs = Array.from(lbImgs).map(function(i){return{src:i.src,label:i.alt};});
+
+  function open(n){
+    cur=n;
+    lbI.src=srcs[cur].src;
+    lbI.alt=srcs[cur].label;
+    if(lbC) lbC.textContent=srcs[cur].label;
+    lb.classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function close(){lb.classList.remove('open');document.body.style.overflow='';}
+  function prev(){cur=(cur-1+srcs.length)%srcs.length;lbI.src=srcs[cur].src;if(lbC)lbC.textContent=srcs[cur].label;}
+  function next(){cur=(cur+1)%srcs.length;lbI.src=srcs[cur].src;if(lbC)lbC.textContent=srcs[cur].label;}
+
+  lbImgs.forEach(function(img,i){
+    img.parentElement.addEventListener('click',function(){open(i);});
+  });
+  document.getElementById('pp-lb-close').addEventListener('click',close);
+  document.getElementById('pp-lb-prev').addEventListener('click',prev);
+  document.getElementById('pp-lb-next').addEventListener('click',next);
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') close();
+    if(e.key==='ArrowLeft') prev();
+    if(e.key==='ArrowRight') next();
+  });
+})();
+</script>
+
+</div>

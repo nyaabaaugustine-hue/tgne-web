@@ -1,0 +1,268 @@
+<!-- ═══════════════════════════════════════════
+  TGNE Solutions — EVENT BRANDING PAGE
+  Paste into: Elementor → HTML Widget
+  ═══════════════════════════════════════════ -->
+<style>
+/* ═══ TGNE ELEMENTOR WIDGET ISOLATION v2 ═══
+   Prevents WordPress/Elementor styles from squeezing widget content.
+   DO NOT REMOVE — required for pixel-perfect match to standalone HTML. */
+.elementor-widget-html,.elementor-widget-html>.elementor-widget-container{
+  padding:0!important;margin:0!important;
+  max-width:100%!important;width:100%!important;overflow:visible!important}
+#preloader{display:none!important;opacity:0!important;visibility:hidden!important}
+
+:root{--sb:#0A4C7F;--sd:#061B33;--sm:#0D5E9E;--slb:#2C7FB8;--lg:#4CAF88;--lgd:#389E6F;--lo:#FFA866;--lod:#E8914A;--wh:#FFFFFF;--sg:#F5F6F8;--gb:#E2E8F0;--bt:#EAF3FB;--td:#1A1A2E;--tm:#4A5568;--sw:#D8E4F0;--mw:#C8D8E8;--gw:#B0C4D8;--fh:'Poppins',sans-serif;--fb:'Inter',sans-serif;--r:14px;--shh:0 20px 50px rgba(10,76,127,.18);--tr:all .35s cubic-bezier(.4,0,.2,1);}
+/* ── Standalone nav hidden inside WordPress (TGNE header used) ── */
+.elementor-widget-html nav:not(#tgne-nav),
+nav:not(#tgne-nav){display:none!important}
+
+*{box-sizing:border-box;margin:0;padding:0}
+.eb-wrap{font-family:var(--fb);color:var(--td);overflow-x:hidden}
+.eb-back{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-size:13px;font-weight:600;color:var(--lo);text-decoration:none;padding:14px 5%;background:var(--sd);width:100%;border-bottom:1px solid rgba(255,255,255,.06);transition:gap .2s;}
+.eb-back:hover{gap:12px;}
+.btn-o{display:inline-flex;align-items:center;gap:8px;background:var(--lo);color:white;padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid var(--lo);transition:var(--tr);}
+.btn-o:hover{background:var(--lod);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,168,102,.4)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--sw);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid rgba(216,228,240,.35);transition:var(--tr);}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:var(--sw);transform:translateY(-2px)}
+.btn-wh{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--sb);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:700;font-size:14px;text-decoration:none;border:2px solid white;transition:var(--tr);}
+.btn-wh:hover{background:transparent;color:white;transform:translateY(-2px)}
+.sec-label{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--lo);margin-bottom:12px;display:block;}
+.sec-title{font-family:var(--fh);font-size:clamp(24px,3vw,42px);font-weight:800;line-height:1.12;letter-spacing:-.8px;margin-bottom:14px;}
+.sec-divider{width:60px;height:3px;background:linear-gradient(to right,var(--lo),var(--lg));border-radius:2px;margin-bottom:20px;}
+
+/* Hero */
+.eb-hero{position:relative;padding:90px 5% 80px;background:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/Innovation-Lab-scaled-1.jpg') center/cover no-repeat;overflow:hidden;}
+.eb-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,27,51,.92) 0%,rgba(10,76,127,.78) 100%);}
+.eb-hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;}
+.eb-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;}
+.eb-hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,168,102,.15);border:1px solid rgba(255,168,102,.35);color:var(--lo);padding:6px 16px;border-radius:40px;font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:22px;}
+.eb-dot{width:6px;height:6px;background:var(--lo);border-radius:50%;animation:ebp 2s infinite;}
+@keyframes ebp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+.eb-hero h1{font-family:var(--fh);font-size:clamp(30px,4.8vw,64px);font-weight:900;color:var(--sw);line-height:1.06;letter-spacing:-2px;margin-bottom:20px;}
+.eb-hero h1 .ao{color:var(--lo);} .eb-hero h1 .ag{color:var(--lg);}
+.eb-hero-sub{font-size:17px;color:var(--mw);max-width:580px;line-height:1.78;margin-bottom:36px;}
+.eb-hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+
+/* Event types */
+.eb-types{padding:80px 5%;background:var(--wh);}
+.eb-types-inner{max-width:1200px;margin:0 auto;}
+.eb-types-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px;}
+.eb-type-card{
+  border-radius:18px;overflow:hidden;
+  border:1px solid var(--gb);transition:var(--tr);
+  cursor:default;background:white;
+}
+.eb-type-card:hover{transform:translateY(-8px);box-shadow:var(--shh);border-color:transparent;}
+.eb-type-card:hover .eb-tc-img{transform:scale(1.06);}
+.eb-tc-img-wrap{height:180px;overflow:hidden;}
+.eb-tc-img{width:100%;height:100%;background-size:cover;background-position:center;transition:transform .5s ease;}
+.eb-tc-body{padding:22px;}
+.eb-tc-icon{font-size:28px;margin-bottom:10px;}
+.eb-tc-title{font-family:var(--fh);font-size:16px;font-weight:700;color:var(--td);margin-bottom:7px;}
+.eb-tc-desc{font-size:13.5px;color:var(--tm);line-height:1.65;}
+
+/* What we provide */
+.eb-provides{padding:80px 5%;background:var(--sg);}
+.eb-provides-inner{max-width:1200px;margin:0 auto;}
+.eb-prov-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px;}
+.eb-prov-img{border-radius:20px;height:440px;background:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/awards.jpg') center/cover no-repeat;box-shadow:0 24px 60px rgba(10,76,127,.14);}
+.eb-prov-list{display:flex;flex-direction:column;gap:16px;}
+.eb-prov-item{
+  display:flex;align-items:flex-start;gap:14px;
+  background:white;border:1px solid var(--gb);
+  border-radius:14px;padding:18px;transition:var(--tr);
+}
+.eb-prov-item:hover{border-color:var(--lo);background:rgba(255,168,102,.04);transform:translateX(5px);}
+.eb-pi-icon{
+  width:44px;height:44px;min-width:44px;border-radius:11px;
+  display:flex;align-items:center;justify-content:center;font-size:20px;
+}
+.pii-o{background:rgba(255,168,102,.12);}
+.pii-b{background:rgba(10,76,127,.1);}
+.pii-g{background:rgba(76,175,136,.12);}
+.eb-pi-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--td);margin-bottom:3px;}
+.eb-pi-desc{font-size:13px;color:var(--tm);line-height:1.55;}
+
+/* Order form */
+.eb-order{padding:80px 5%;background:linear-gradient(135deg,var(--sd) 0%,#0A3060 100%);}
+.eb-order-inner{max-width:900px;margin:0 auto;text-align:center;}
+.eb-order h2{font-family:var(--fh);font-size:clamp(26px,3.5vw,44px);font-weight:800;color:var(--sw);line-height:1.12;letter-spacing:-1px;margin-bottom:12px;}
+.eb-order p{font-size:15.5px;color:var(--mw);margin-bottom:40px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.72;}
+.eb-form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:36px;}
+.eb-form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.eb-form-row.full{grid-template-columns:1fr;}
+.eb-field{display:flex;flex-direction:column;gap:5px;}
+.eb-label{font-family:var(--fh);font-size:12px;font-weight:600;color:var(--sw);letter-spacing:.3px;}
+.eb-input,.eb-select,.eb-textarea{
+  border:1.5px solid rgba(255,255,255,.15);border-radius:9px;
+  padding:11px 14px;font-family:var(--fb);font-size:14px;
+  color:var(--sw);background:rgba(255,255,255,.07);
+  outline:none;width:100%;transition:border .2s;
+}
+.eb-input::placeholder,.eb-textarea::placeholder{color:rgba(255,255,255,.35);}
+.eb-input:focus,.eb-select:focus,.eb-textarea:focus{border-color:var(--lo);background:rgba(255,255,255,.1);}
+.eb-select option{background:var(--sd);color:var(--td);}
+.eb-textarea{min-height:110px;resize:vertical;}
+.eb-form-submit{
+  width:100%;padding:14px;margin-top:8px;
+  background:var(--lo);color:white;border:none;border-radius:12px;
+  font-family:var(--fh);font-weight:700;font-size:15px;
+  cursor:pointer;transition:var(--tr);
+}
+.eb-form-submit:hover{background:var(--lod);transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,168,102,.4);}
+
+/* CTA */
+.eb-cta{padding:90px 5%;background:linear-gradient(135deg,var(--sb) 0%,var(--sm) 100%);text-align:center;}
+.eb-cta h2{font-family:var(--fh);font-size:clamp(26px,4vw,50px);font-weight:800;color:var(--sw);line-height:1.1;letter-spacing:-1px;margin-bottom:14px;}
+.eb-cta p{font-size:16px;color:var(--mw);margin-bottom:34px;max-width:480px;margin-left:auto;margin-right:auto;}
+.eb-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+@media(max-width:900px){.eb-types-grid{grid-template-columns:1fr 1fr;}.eb-prov-grid{grid-template-columns:1fr;}.eb-prov-img{height:280px;}.eb-form-row{grid-template-columns:1fr;}}
+@media(max-width:600px){.eb-types-grid{grid-template-columns:1fr;}.eb-hero-btns{flex-direction:column;}.eb-cta-btns{flex-direction:column;align-items:center;}}
+
+[id]{scroll-margin-top:124px}
+</style>
+
+<div class="eb-wrap">
+
+  <!-- Hero -->
+  <section class="eb-hero">
+    <div class="eb-hero-inner">
+      <div class="eb-hero-tag"><span class="eb-dot"></span>Event Branding</div>
+      <h1>Make Your <span class="ao">Event</span><br>Unforgettable.</h1>
+      <p class="eb-hero-sub">From corporate conferences to private celebrations — we design and produce every visual element that makes your event look and feel world-class.</p>
+      <div class="eb-hero-btns">
+        <a href="#order" class="btn-o">Plan Your Event &#8594;</a>
+        <a href="#what-we-do" class="btn-ghost">What We Offer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event types -->
+  <section class="eb-types">
+    <div class="eb-types-inner">
+      <div style="text-align:center;">
+        <span class="sec-label">Events We Brand</span>
+        <h2 class="sec-title" style="color:var(--td);">Every <span style="color:var(--lo)">Occasion,</span> Beautifully Branded</h2>
+      </div>
+      <div class="eb-types-grid">
+        <div class="eb-type-card">
+          <div class="eb-tc-img-wrap"><div class="eb-tc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/Innovation-Lab-scaled-1.jpg');"></div></div>
+          <div class="eb-tc-body"><div class="eb-tc-icon">&#127970;</div><div class="eb-tc-title">Corporate Events</div><div class="eb-tc-desc">Conferences, AGMs, product launches, team-building events and corporate dinners.</div></div>
+        </div>
+        <div class="eb-type-card">
+          <div class="eb-tc-img-wrap"><div class="eb-tc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/awards.jpg');"></div></div>
+          <div class="eb-tc-body"><div class="eb-tc-icon">&#127941;</div><div class="eb-tc-title">Awards &amp; Galas</div><div class="eb-tc-desc">Black-tie dinners, industry award nights, recognition ceremonies and gala events.</div></div>
+        </div>
+        <div class="eb-type-card">
+          <div class="eb-tc-img-wrap"><div class="eb-tc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/post2-scaled-1.webp');"></div></div>
+          <div class="eb-tc-body"><div class="eb-tc-icon">&#127882;</div><div class="eb-tc-title">Social &amp; Private Events</div><div class="eb-tc-desc">Weddings, birthdays, graduations, funerals and all personal celebrations.</div></div>
+        </div>
+        <div class="eb-type-card">
+          <div class="eb-tc-img-wrap"><div class="eb-tc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/fgv-scaled.jpg');"></div></div>
+          <div class="eb-tc-body"><div class="eb-tc-icon">&#128218;</div><div class="eb-tc-title">Exhibitions &amp; Trade Shows</div><div class="eb-tc-desc">Exhibition stands, signage, rollup banners and all trade show collateral.</div></div>
+        </div>
+        <div class="eb-type-card">
+          <div class="eb-tc-img-wrap"><div class="eb-tc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/Branding.jpg');"></div></div>
+          <div class="eb-tc-body"><div class="eb-tc-icon">&#127979;</div><div class="eb-tc-title">School &amp; Academic Events</div><div class="eb-tc-desc">Graduation ceremonies, open days, speech &amp; prize-giving and school fairs.</div></div>
+        </div>
+        <div class="eb-type-card">
+          <div class="eb-tc-img-wrap"><div class="eb-tc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/apronbranding.jpg');"></div></div>
+          <div class="eb-tc-body"><div class="eb-tc-icon">&#9895;</div><div class="eb-tc-title">Outdooring &amp; Naming</div><div class="eb-tc-desc">Outdoorings, naming ceremonies, funeral programmes and celebration-of-life events.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we provide -->
+  <section class="eb-provides" id="what-we-do">
+    <div class="eb-provides-inner">
+      <div style="text-align:center;">
+        <span class="sec-label">What We Produce</span>
+        <h2 class="sec-title" style="color:var(--td);">Everything Your Event <span style="color:var(--sb)">Needs</span></h2>
+      </div>
+      <div class="eb-prov-grid">
+        <div class="eb-prov-img"></div>
+        <div class="eb-prov-list">
+          <div class="eb-prov-item">
+            <div class="eb-pi-icon pii-o">&#128247;</div>
+            <div><div class="eb-pi-title">Event Flyers &amp; Programmes</div><div class="eb-pi-desc">Beautiful printed and digital programmes, order-of-service and event flyers.</div></div>
+          </div>
+          <div class="eb-prov-item">
+            <div class="eb-pi-icon pii-b">&#129354;</div>
+            <div><div class="eb-pi-title">Banners &amp; Backdrops</div><div class="eb-pi-desc">Step-and-repeat backdrops, pull-up banners, stage banners and entrance arches.</div></div>
+          </div>
+          <div class="eb-prov-item">
+            <div class="eb-pi-icon pii-g">&#127981;</div>
+            <div><div class="eb-pi-title">Signage &amp; Wayfinding</div><div class="eb-pi-desc">Directional signs, table numbers, seating charts and entrance boards.</div></div>
+          </div>
+          <div class="eb-prov-item">
+            <div class="eb-pi-icon pii-o">&#128393;</div>
+            <div><div class="eb-pi-title">Branded Stationery</div><div class="eb-pi-desc">Event badges, name tags, menus, notepads, pens and branded gift items.</div></div>
+          </div>
+          <div class="eb-prov-item">
+            <div class="eb-pi-icon pii-b">&#128184;</div>
+            <div><div class="eb-pi-title">Photo Frames &amp; Awards</div><div class="eb-pi-desc">Custom award plaques, trophies, certificates and branded photo frames.</div></div>
+          </div>
+          <div class="eb-prov-item">
+            <div class="eb-pi-icon pii-g">&#127908;</div>
+            <div><div class="eb-pi-title">Digital Screens &amp; Motion</div><div class="eb-pi-desc">Countdown screens, slides, welcome loops and animated event intros.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order form -->
+  <section class="eb-order" id="order">
+    <div class="eb-order-inner">
+      <span class="sec-label" style="color:var(--lo);">Get Started</span>
+      <h2>Tell Us About <span style="color:var(--lo)">Your Event</span></h2>
+      <p>Fill in the form and our events team will contact you within 24 hours with a tailored quote.</p>
+      <div class="eb-form">
+        <div class="eb-form-row">
+          <div class="eb-field"><label class="eb-label">Full Name *</label><input class="eb-input" type="text" placeholder="Your full name"></div>
+          <div class="eb-field"><label class="eb-label">Phone / WhatsApp *</label><input class="eb-input" type="tel" placeholder="+233 XX XXX XXXX"></div>
+        </div>
+        <div class="eb-form-row">
+          <div class="eb-field"><label class="eb-label">Email Address</label><input class="eb-input" type="email" placeholder="your@email.com"></div>
+          <div class="eb-field"><label class="eb-label">Event Type *</label>
+            <select class="eb-select">
+              <option value="">Select event type</option>
+              <option>Corporate Event</option><option>Wedding</option><option>Birthday / Party</option>
+              <option>Awards / Gala</option><option>Graduation</option><option>Funeral / Memorial</option>
+              <option>Outdooring / Naming</option><option>Exhibition / Trade Show</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="eb-form-row">
+          <div class="eb-field"><label class="eb-label">Event Date *</label><input class="eb-input" type="date"></div>
+          <div class="eb-field"><label class="eb-label">Expected Guests</label>
+            <select class="eb-select">
+              <option value="">Select range</option>
+              <option>Under 50</option><option>50 – 100</option><option>100 – 300</option>
+              <option>300 – 500</option><option>500+</option>
+            </select>
+          </div>
+        </div>
+        <div class="eb-form-row full">
+          <div class="eb-field"><label class="eb-label">Items Needed / Special Requirements</label>
+            <textarea class="eb-textarea" placeholder="e.g. Banners, flyers, badges, programmes, step-and-repeat backdrop..."></textarea>
+          </div>
+        </div>
+        <button class="eb-form-submit" onclick="window.location.href='/contact/'">&#128197; &nbsp;Submit Event Brief &#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="eb-cta">
+    <h2>Your Event Deserves<br>to Look <span style="color:var(--lo)">Amazing.</span></h2>
+    <p>Let's work together to make your next event visually spectacular.</p>
+    <div class="eb-cta-btns">
+      <a href="/contact/" class="btn-wh">Start Planning</a>
+      <a href="https://wa.me/233558122767" class="btn-ghost" target="_blank" rel="noopener">&#128172; WhatsApp Us</a>
+    </div>
+  </section>
+
+</div>

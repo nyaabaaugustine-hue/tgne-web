@@ -1,0 +1,208 @@
+<!-- ═══════════════════════════════════════════
+  TGNE Solutions — DIGITAL PRINTS PAGE
+  Paste into: Elementor → HTML Widget
+  ═══════════════════════════════════════════ -->
+<style>
+/* ═══ TGNE ELEMENTOR WIDGET ISOLATION v2 ═══
+   Prevents WordPress/Elementor styles from squeezing widget content.
+   DO NOT REMOVE — required for pixel-perfect match to standalone HTML. */
+.elementor-widget-html,.elementor-widget-html>.elementor-widget-container{
+  padding:0!important;margin:0!important;
+  max-width:100%!important;width:100%!important;overflow:visible!important}
+#preloader{display:none!important;opacity:0!important;visibility:hidden!important}
+
+:root{--sb:#0A4C7F;--sd:#061B33;--sm:#0D5E9E;--slb:#2C7FB8;--lg:#4CAF88;--lgd:#389E6F;--lo:#FFA866;--lod:#E8914A;--wh:#FFFFFF;--sg:#F5F6F8;--gb:#E2E8F0;--bt:#EAF3FB;--td:#1A1A2E;--tm:#4A5568;--sw:#D8E4F0;--mw:#C8D8E8;--gw:#B0C4D8;--fh:'Poppins',sans-serif;--fb:'Inter',sans-serif;--r:14px;--shh:0 20px 50px rgba(10,76,127,.18);--tr:all .35s cubic-bezier(.4,0,.2,1);}
+/* ── Standalone nav hidden inside WordPress (TGNE header used) ── */
+.elementor-widget-html nav:not(#tgne-nav),
+nav:not(#tgne-nav){display:none!important}
+
+*{box-sizing:border-box;margin:0;padding:0}
+.dp-wrap{font-family:var(--fb);color:var(--td);overflow-x:hidden}
+.dp-back{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-size:13px;font-weight:600;color:var(--lo);text-decoration:none;padding:14px 5%;background:var(--sd);width:100%;border-bottom:1px solid rgba(255,255,255,.06);transition:gap .2s;}
+.dp-back:hover{gap:12px;}
+.btn-o{display:inline-flex;align-items:center;gap:8px;background:var(--lo);color:white;padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid var(--lo);transition:var(--tr);}
+.btn-o:hover{background:var(--lod);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,168,102,.4)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--sw);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid rgba(216,228,240,.35);transition:var(--tr);}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:var(--sw);transform:translateY(-2px)}
+.btn-wh{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--sb);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:700;font-size:14px;text-decoration:none;border:2px solid white;transition:var(--tr);}
+.btn-wh:hover{background:transparent;color:white;transform:translateY(-2px)}
+.sec-label{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--lo);margin-bottom:12px;display:block;}
+.sec-title{font-family:var(--fh);font-size:clamp(24px,3vw,42px);font-weight:800;line-height:1.12;letter-spacing:-.8px;margin-bottom:14px;}
+
+/* Hero */
+.dp-hero{position:relative;padding:90px 5% 80px;background:linear-gradient(135deg,#061225 0%,#0A2B50 50%,#0D5E9E 100%);overflow:hidden;}
+.dp-hero-pattern{position:absolute;inset:0;opacity:.4;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,168,102,.05) 10px,rgba(255,168,102,.05) 20px);}
+.dp-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.dp-hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(76,175,136,.15);border:1px solid rgba(76,175,136,.35);color:var(--lg);padding:6px 16px;border-radius:40px;font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:22px;}
+.dp-dot{width:6px;height:6px;background:var(--lg);border-radius:50%;animation:dpp 2s infinite;}
+@keyframes dpp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+.dp-hero h1{font-family:var(--fh);font-size:clamp(30px,4.8vw,64px);font-weight:900;color:var(--sw);line-height:1.06;letter-spacing:-2px;margin-bottom:20px;}
+.dp-hero h1 .ao{color:var(--lo);} .dp-hero h1 .ag{color:var(--lg);}
+.dp-hero-sub{font-size:17px;color:var(--mw);max-width:500px;line-height:1.78;margin-bottom:36px;}
+.dp-hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+
+/* Hero visual: comparison panel */
+.dp-compare{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:24px;backdrop-filter:blur(14px);}
+.dp-compare-title{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lg);margin-bottom:18px;}
+.dp-compare-rows{display:flex;flex-direction:column;gap:10px;}
+.dp-cr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;align-items:center;}
+.dp-cr-label{font-family:var(--fh);font-size:11px;font-weight:600;color:var(--gw);}
+.dp-cr-val{font-size:12px;padding:6px 10px;border-radius:8px;text-align:center;font-family:var(--fh);font-weight:600;}
+.dv-g{background:rgba(76,175,136,.2);color:var(--lg);}
+.dv-b{background:rgba(10,76,127,.2);color:var(--slb);}
+.dp-cr-head{font-family:var(--fh);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--lo);padding:0 10px;}
+
+/* Products */
+.dp-products{padding:80px 5%;background:var(--sg);}
+.dp-products-inner{max-width:1200px;margin:0 auto;}
+.dp-pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px;}
+.dp-pcard{background:white;border-radius:18px;border:1px solid var(--gb);overflow:hidden;transition:var(--tr);}
+.dp-pcard:hover{transform:translateY(-8px);box-shadow:var(--shh);border-color:transparent;}
+.dp-pcard:hover .dp-pc-img{transform:scale(1.05);}
+.dp-pc-top{height:140px;overflow:hidden;position:relative;}
+.dp-pc-img{width:100%;height:100%;background-size:cover;background-position:center;transition:transform .5s ease;}
+.dp-pc-badge{position:absolute;top:12px;left:12px;background:var(--lo);color:white;font-family:var(--fh);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:20px;}
+.dp-pc-body{padding:20px;}
+.dp-pc-icon{font-size:28px;margin-bottom:10px;}
+.dp-pc-title{font-family:var(--fh);font-size:15px;font-weight:700;color:var(--td);margin-bottom:7px;}
+.dp-pc-desc{font-size:13px;color:var(--tm);line-height:1.65;margin-bottom:14px;}
+.dp-pc-specs{display:flex;flex-wrap:wrap;gap:5px;}
+.dp-spec{font-size:11px;background:var(--bt);color:var(--sb);padding:3px 9px;border-radius:20px;font-family:var(--fh);font-weight:600;}
+
+/* Fast turnaround banner */
+.dp-fast{padding:60px 5%;background:linear-gradient(135deg,var(--lg) 0%,var(--lgd) 100%);text-align:center;}
+.dp-fast-inner{max-width:700px;margin:0 auto;}
+.dp-fast h2{font-family:var(--fh);font-size:clamp(22px,3.5vw,40px);font-weight:800;color:white;line-height:1.15;margin-bottom:12px;}
+.dp-fast p{font-size:16px;color:rgba(255,255,255,.9);margin-bottom:28px;}
+.dp-fast-badges{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.dp-fb{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);color:white;font-family:var(--fh);font-size:13px;font-weight:700;padding:10px 20px;border-radius:30px;display:flex;align-items:center;gap:8px;}
+
+/* Use cases */
+.dp-usecases{padding:80px 5%;background:var(--wh);}
+.dp-usecases-inner{max-width:1200px;margin:0 auto;}
+.dp-uc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px;}
+.dp-uc-card{border-radius:16px;padding:26px 18px;text-align:center;border:1px solid var(--gb);background:var(--sg);transition:var(--tr);}
+.dp-uc-card:hover{background:white;box-shadow:var(--shh);transform:translateY(-6px);}
+.dp-uc-icon{font-size:32px;margin-bottom:12px;}
+.dp-uc-title{font-family:var(--fh);font-size:13.5px;font-weight:700;color:var(--td);margin-bottom:6px;}
+.dp-uc-desc{font-size:12px;color:var(--tm);line-height:1.6;}
+
+/* CTA */
+.dp-cta{padding:90px 5%;background:linear-gradient(135deg,var(--sb) 0%,var(--sm) 100%);text-align:center;}
+.dp-cta h2{font-family:var(--fh);font-size:clamp(26px,4vw,50px);font-weight:800;color:var(--sw);line-height:1.1;letter-spacing:-1px;margin-bottom:14px;}
+.dp-cta p{font-size:16px;color:var(--mw);margin-bottom:34px;max-width:480px;margin-left:auto;margin-right:auto;}
+.dp-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+@media(max-width:1024px){.dp-hero-inner{grid-template-columns:1fr;}.dp-compare{display:none;}}
+@media(max-width:900px){.dp-pgrid{grid-template-columns:1fr 1fr;}.dp-uc-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.dp-pgrid{grid-template-columns:1fr;}.dp-uc-grid{grid-template-columns:1fr 1fr;}.dp-hero-btns{flex-direction:column;}.dp-cta-btns{flex-direction:column;align-items:center;}.dp-fast-badges{flex-direction:column;align-items:center;}}
+@media(max-width:420px){.dp-uc-grid{grid-template-columns:1fr;}}
+
+[id]{scroll-margin-top:124px}
+</style>
+
+<div class="dp-wrap">
+
+  <!-- Hero -->
+  <section class="dp-hero">
+    <div class="dp-hero-pattern"></div>
+    <div class="dp-hero-inner">
+      <div>
+        <div class="dp-hero-tag"><span class="dp-dot"></span>Digital Printing</div>
+        <h1>Digital Prints —<br><span class="ag">Fast.</span> Sharp. <span class="ao">Brilliant.</span></h1>
+        <p class="dp-hero-sub">Short-run, same-day and next-day digital printing with exceptional colour accuracy. No minimum order — print exactly what you need.</p>
+        <div class="dp-hero-btns">
+          <a href="/contact/" class="btn-o">Order Now &#8594;</a>
+          <a href="#dp-products" class="btn-ghost">See Products</a>
+        </div>
+      </div>
+      <div class="dp-compare">
+        <div class="dp-compare-title">Digital vs Offset</div>
+        <div class="dp-compare-rows">
+          <div class="dp-cr"><span class="dp-cr-label"></span><span class="dp-cr-head">Digital</span><span class="dp-cr-head">Offset</span></div>
+          <div class="dp-cr"><span class="dp-cr-label">Min. Order</span><span class="dp-cr-val dv-g">1 copy</span><span class="dp-cr-val dv-b">100+</span></div>
+          <div class="dp-cr"><span class="dp-cr-label">Turnaround</span><span class="dp-cr-val dv-g">Same day</span><span class="dp-cr-val dv-b">3–5 days</span></div>
+          <div class="dp-cr"><span class="dp-cr-label">Personalise</span><span class="dp-cr-val dv-g">&#10003; Yes</span><span class="dp-cr-val dv-b">&#10005; No</span></div>
+          <div class="dp-cr"><span class="dp-cr-label">Best For</span><span class="dp-cr-val dv-g">Short runs</span><span class="dp-cr-val dv-b">Bulk runs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="dp-products" id="dp-products">
+    <div class="dp-products-inner">
+      <div style="text-align:center;">
+        <span class="sec-label">What We Print</span>
+        <h2 class="sec-title" style="color:var(--td);">Digital Print <span style="color:var(--lo)">Products</span></h2>
+        <p style="font-size:15px;color:var(--tm);max-width:520px;margin:0 auto;line-height:1.7;">From a single sheet to a few hundred — printed with photo-quality resolution and fast turnaround.</p>
+      </div>
+      <div class="dp-pgrid">
+        <div class="dp-pcard">
+          <div class="dp-pc-top"><div class="dp-pc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/post2-scaled-1.webp');"></div><div class="dp-pc-badge">Same Day</div></div>
+          <div class="dp-pc-body"><div class="dp-pc-icon">&#128198;</div><div class="dp-pc-title">Business Cards</div><div class="dp-pc-desc">Short-run business cards with fast turnaround. Great for startups and quick reprints.</div><div class="dp-pc-specs"><span class="dp-spec">1–499 qty</span><span class="dp-spec">Matt/Gloss</span></div></div>
+        </div>
+        <div class="dp-pcard">
+          <div class="dp-pc-top"><div class="dp-pc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/Professional-Printing-scaled-1.jpg');"></div><div class="dp-pc-badge">Popular</div></div>
+          <div class="dp-pc-body"><div class="dp-pc-icon">&#128203;</div><div class="dp-pc-title">Flyers &amp; Leaflets</div><div class="dp-pc-desc">A4, A5, A6 flyers for promotions, menus and events. Order from just 10 copies.</div><div class="dp-pc-specs"><span class="dp-spec">A4 / A5 / A6</span><span class="dp-spec">Full Colour</span></div></div>
+        </div>
+        <div class="dp-pcard">
+          <div class="dp-pc-top"><div class="dp-pc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/fgv-scaled.jpg');"></div></div>
+          <div class="dp-pc-body"><div class="dp-pc-icon">&#128218;</div><div class="dp-pc-title">Short-Run Brochures</div><div class="dp-pc-desc">4–16 page folded brochures, menus and presentation documents in small quantities.</div><div class="dp-pc-specs"><span class="dp-spec">Bi/Tri-fold</span><span class="dp-spec">Saddle Stitch</span></div></div>
+        </div>
+        <div class="dp-pcard">
+          <div class="dp-pc-top"><div class="dp-pc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/awards.jpg');"></div><div class="dp-pc-badge">Personalised</div></div>
+          <div class="dp-pc-body"><div class="dp-pc-icon">&#127881;</div><div class="dp-pc-title">Invitations &amp; Cards</div><div class="dp-pc-desc">Wedding, birthday and event invitations with personalised names and details on each card.</div><div class="dp-pc-specs"><span class="dp-spec">Variable Data</span><span class="dp-spec">Custom Size</span></div></div>
+        </div>
+        <div class="dp-pcard">
+          <div class="dp-pc-top"><div class="dp-pc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/obituary.jpg');"></div></div>
+          <div class="dp-pc-body"><div class="dp-pc-icon">&#128196;</div><div class="dp-pc-title">Funeral Programmes</div><div class="dp-pc-desc">Respectful, beautifully laid out funeral and memorial programmes printed same day if needed.</div><div class="dp-pc-specs"><span class="dp-spec">A4 / A5</span><span class="dp-spec">Urgent Available</span></div></div>
+        </div>
+        <div class="dp-pcard">
+          <div class="dp-pc-top"><div class="dp-pc-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/gyan.webp');"></div></div>
+          <div class="dp-pc-body"><div class="dp-pc-icon">&#9994;</div><div class="dp-pc-title">ID Cards &amp; Badges</div><div class="dp-pc-desc">Staff ID cards, visitor badges, name tags and event credentials with lamination.</div><div class="dp-pc-specs"><span class="dp-spec">CR80 Size</span><span class="dp-spec">Laminated</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fast turnaround -->
+  <section class="dp-fast">
+    <div class="dp-fast-inner">
+      <h2>&#9889; Need It Urgently? We've Got You.</h2>
+      <p>Same-day printing available for most digital products. Just send your file by 12pm and collect same afternoon.</p>
+      <div class="dp-fast-badges">
+        <div class="dp-fb">&#9200; Same-Day Available</div>
+        <div class="dp-fb">&#128220; No Minimum Order</div>
+        <div class="dp-fb">&#127775; Photo-Quality Print</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section class="dp-usecases">
+    <div class="dp-usecases-inner">
+      <div style="text-align:center;">
+        <span class="sec-label">Perfect For</span>
+        <h2 class="sec-title" style="color:var(--td);">Who Uses Digital <span style="color:var(--lo)">Printing?</span></h2>
+      </div>
+      <div class="dp-uc-grid">
+        <div class="dp-uc-card"><div class="dp-uc-icon">&#127970;</div><div class="dp-uc-title">Small Businesses</div><div class="dp-uc-desc">Affordable short runs without minimum order requirements.</div></div>
+        <div class="dp-uc-card"><div class="dp-uc-icon">&#127882;</div><div class="dp-uc-title">Event Planners</div><div class="dp-uc-desc">Fast turnaround programmes, invites and place cards.</div></div>
+        <div class="dp-uc-card"><div class="dp-uc-icon">&#127979;</div><div class="dp-uc-title">Schools &amp; Churches</div><div class="dp-uc-desc">Bulletins, newsletters and event programmes as needed.</div></div>
+        <div class="dp-uc-card"><div class="dp-uc-icon">&#129309;</div><div class="dp-uc-title">Families &amp; Individuals</div><div class="dp-uc-desc">Personal invitations, funeral programmes and celebration prints.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="dp-cta">
+    <h2>Send Your File,<br>Pick Up <span style="color:var(--lo)">Today.</span></h2>
+    <p>Fast, affordable and high quality. Request your print quote now.</p>
+    <div class="dp-cta-btns">
+      <a href="/contact/" class="btn-wh">Get a Quote</a>
+      <a href="https://wa.me/233558122767" class="btn-ghost" target="_blank" rel="noopener">&#128172; Send File via WhatsApp</a>
+    </div>
+  </section>
+
+</div>

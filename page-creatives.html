@@ -1,0 +1,466 @@
+<!-- ═══════════════════════════════════════════
+  TGNE Solutions — CREATIVES PAGE
+  Paste into: Elementor → HTML Widget
+  ═══════════════════════════════════════════ -->
+
+<style>
+/* ═══ TGNE ELEMENTOR WIDGET ISOLATION v2 ═══
+   Prevents WordPress/Elementor styles from squeezing widget content.
+   DO NOT REMOVE — required for pixel-perfect match to standalone HTML. */
+.elementor-widget-html,.elementor-widget-html>.elementor-widget-container{
+  padding:0!important;margin:0!important;
+  max-width:100%!important;width:100%!important;overflow:visible!important}
+#preloader{display:none!important;opacity:0!important;visibility:hidden!important}
+
+:root{
+  --sb:#0A4C7F;--sd:#061B33;--sm:#0D5E9E;--slb:#2C7FB8;
+  --lg:#4CAF88;--lgd:#389E6F;
+  --lo:#FFA866;--lod:#E8914A;
+  --wh:#FFFFFF;--sg:#F5F6F8;--gb:#E2E8F0;
+  --bt:#EAF3FB;--td:#1A1A2E;--tm:#4A5568;
+  --sw:#D8E4F0;--mw:#C8D8E8;--gw:#B0C4D8;
+  --fh:'Poppins',sans-serif;--fb:'Inter',sans-serif;
+  --r:14px;
+  --sh:0 4px 24px rgba(10,76,127,.10);
+  --shh:0 20px 50px rgba(10,76,127,.18);
+  --tr:all .35s cubic-bezier(.4,0,.2,1);
+}
+/* ── Standalone <nav> hidden inside WordPress (TGNE header used instead) ── */
+.elementor-widget-html nav:not(#tgne-nav),
+nav:not(#tgne-nav){display:none!important}
+
+*{box-sizing:border-box;margin:0;padding:0}
+.cr-wrap{font-family:var(--fb);color:var(--td);overflow-x:hidden}
+
+/* ── Back link ── */
+.cr-back{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--fh);font-size:13px;font-weight:600;
+  color:var(--lo);text-decoration:none;
+  padding:14px 5%;
+  background:var(--sd);
+  width:100%;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  transition:gap .2s;
+}
+.cr-back:hover{gap:12px;}
+
+/* ── Hero ── */
+.cr-hero{
+  position:relative;
+  background:linear-gradient(135deg,var(--sd) 0%,#0A3060 60%,var(--sm) 100%);
+  padding:90px 5% 80px;
+  overflow:hidden;
+}
+.cr-hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:60px 60px;
+  z-index:0;
+}
+.cr-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;}
+.cr-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,168,102,.15);border:1px solid rgba(255,168,102,.35);
+  color:var(--lo);padding:6px 16px;border-radius:40px;
+  font-family:var(--fh);font-size:11px;font-weight:700;
+  letter-spacing:1.8px;text-transform:uppercase;margin-bottom:22px;
+}
+.cr-hero-dot{width:6px;height:6px;background:var(--lo);border-radius:50%;animation:hpulse 2s infinite;}
+@keyframes hpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+.cr-hero h1{
+  font-family:var(--fh);font-size:clamp(32px,5vw,68px);
+  font-weight:900;color:var(--sw);line-height:1.05;
+  letter-spacing:-2px;margin-bottom:20px;
+}
+.cr-hero h1 .ao{color:var(--lo);}
+.cr-hero h1 .ag{color:var(--lg);}
+.cr-hero-sub{
+  font-size:17px;color:var(--mw);max-width:600px;
+  line-height:1.78;margin-bottom:36px;
+}
+.cr-hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+
+/* Buttons */
+.btn-o{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--lo);color:white;
+  padding:13px 28px;border-radius:var(--r);
+  font-family:var(--fh);font-weight:600;font-size:14px;
+  text-decoration:none;border:2px solid var(--lo);
+  transition:var(--tr);
+}
+.btn-o:hover{background:var(--lod);border-color:var(--lod);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,168,102,.4)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  background:transparent;color:var(--sw);
+  padding:13px 28px;border-radius:var(--r);
+  font-family:var(--fh);font-weight:600;font-size:14px;
+  text-decoration:none;border:2px solid rgba(216,228,240,.35);
+  transition:var(--tr);
+}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:var(--sw);transform:translateY(-2px)}
+
+/* ── Intro ── */
+.cr-intro{padding:80px 5%;background:var(--wh);max-width:1200px;margin:0 auto;}
+.cr-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.cr-intro-img{
+  border-radius:20px;overflow:hidden;height:400px;
+  background:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/hjh.jpg') center/cover no-repeat;
+  box-shadow:0 24px 60px rgba(10,76,127,.15);
+  position:relative;
+}
+.cr-intro-img-badge{
+  position:absolute;bottom:-20px;left:24px;
+  background:white;border-radius:14px;padding:14px 18px;
+  display:flex;align-items:center;gap:12px;
+  box-shadow:0 8px 32px rgba(10,76,127,.18);
+  border:1px solid var(--gb);
+}
+.cr-ib-num{font-family:var(--fh);font-size:28px;font-weight:800;color:var(--sb);line-height:1;}
+.cr-ib-txt{font-family:var(--fh);font-size:11px;font-weight:600;color:var(--tm);line-height:1.3;}
+.cr-section-label{
+  font-family:var(--fh);font-size:11px;font-weight:700;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--lo);margin-bottom:12px;display:block;
+}
+.cr-section-title{
+  font-family:var(--fh);font-size:clamp(24px,3vw,42px);
+  font-weight:800;color:var(--td);line-height:1.12;
+  letter-spacing:-.8px;margin-bottom:16px;
+}
+.cr-section-title .tb{color:var(--sb);}
+.cr-section-title .to{color:var(--lo);}
+.cr-section-body{font-size:15.5px;color:var(--tm);line-height:1.8;margin-bottom:22px;}
+.cr-divider{width:60px;height:3px;background:linear-gradient(to right,var(--lo),var(--lg));border-radius:2px;margin-bottom:22px;}
+
+/* ── Services Grid ── */
+.cr-services{padding:80px 5%;background:var(--sg);}
+.cr-services-inner{max-width:1200px;margin:0 auto;}
+.cr-shdr{text-align:center;margin-bottom:52px;}
+.cr-shdr .cr-section-title{color:var(--td);}
+.cr-shdr p{font-size:16px;color:var(--tm);max-width:520px;margin:0 auto;line-height:1.7;}
+.cr-sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.cr-scard{
+  background:white;border-radius:18px;
+  padding:30px 24px;border:1px solid var(--gb);
+  transition:var(--tr);position:relative;overflow:hidden;
+}
+.cr-scard::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(to right,var(--sb),var(--lo));
+  transform:scaleX(0);transform-origin:left;transition:transform .4s ease;
+}
+.cr-scard:hover{transform:translateY(-8px);box-shadow:var(--shh);}
+.cr-scard:hover::before{transform:scaleX(1);}
+.cr-scard-icon{
+  width:54px;height:54px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;margin-bottom:16px;
+}
+.ci-blue{background:rgba(10,76,127,.1);}
+.ci-orange{background:rgba(255,168,102,.12);}
+.ci-green{background:rgba(76,175,136,.12);}
+.ci-dark{background:rgba(6,27,51,.08);}
+.ci-teal{background:rgba(44,127,184,.12);}
+.ci-gold{background:rgba(255,193,7,.12);}
+.cr-scard h3{
+  font-family:var(--fh);font-size:16px;font-weight:700;
+  color:var(--td);margin-bottom:8px;
+}
+.cr-scard p{font-size:13.5px;color:var(--tm);line-height:1.65;margin-bottom:14px;}
+.cr-scard-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.cr-tag{
+  font-size:11px;background:var(--bt);color:var(--sb);
+  padding:3px 11px;border-radius:20px;
+  font-family:var(--fh);font-weight:600;
+}
+
+/* ── Process ── */
+.cr-process{
+  padding:80px 5%;
+  background:linear-gradient(135deg,var(--sd) 0%,var(--sm) 100%);
+}
+.cr-process-inner{max-width:1200px;margin:0 auto;}
+.cr-pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:50px;}
+.cr-pcard{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+  padding:30px 22px;
+  position:relative;
+  transition:var(--tr);
+}
+.cr-pcard:hover{background:rgba(255,168,102,.1);border-color:rgba(255,168,102,.25);}
+.cr-pcard:first-child{border-radius:16px 0 0 16px;}
+.cr-pcard:last-child{border-radius:0 16px 16px 0;}
+.cr-pnum{
+  width:38px;height:38px;border-radius:10px;
+  background:linear-gradient(135deg,var(--lo),var(--lod));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-weight:800;font-size:15px;
+  color:white;margin-bottom:16px;
+}
+.cr-pcard h4{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--sw);margin-bottom:7px;}
+.cr-pcard p{font-size:12.5px;color:var(--gw);line-height:1.6;}
+.cr-parrow{
+  position:absolute;right:-14px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;border-radius:50%;
+  background:var(--lo);color:white;
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;z-index:2;
+}
+.cr-pcard:last-child .cr-parrow{display:none;}
+
+/* ── Portfolio ── */
+.cr-portfolio{padding:80px 5%;background:var(--wh);}
+.cr-portfolio-inner{max-width:1200px;margin:0 auto;}
+.cr-pgallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:auto auto;
+  gap:16px;margin-top:48px;
+}
+.cr-gitem{
+  border-radius:16px;overflow:hidden;
+  position:relative;cursor:pointer;
+  background:var(--sg);
+}
+.cr-gitem.tall{grid-row:span 2;}
+.cr-gitem-img{
+  width:100%;height:100%;min-height:200px;
+  background-size:cover;background-position:center;
+  transition:transform .55s ease;
+}
+.cr-gitem.tall .cr-gitem-img{min-height:420px;}
+.cr-gitem:hover .cr-gitem-img{transform:scale(1.06);}
+.cr-gitem-ov{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(6,27,51,.8) 0%,transparent 60%);
+  opacity:0;transition:opacity .3s;
+  display:flex;align-items:flex-end;padding:20px;
+}
+.cr-gitem:hover .cr-gitem-ov{opacity:1;}
+.cr-gitem-label{
+  font-family:var(--fh);font-size:13px;font-weight:700;
+  color:white;
+}
+.cr-gitem-sub{font-size:11px;color:var(--gw);margin-top:2px;}
+
+/* ── CTA ── */
+.cr-cta{
+  padding:90px 5%;
+  background:linear-gradient(135deg,var(--sb) 0%,var(--sm) 100%);
+  text-align:center;
+}
+.cr-cta h2{
+  font-family:var(--fh);font-size:clamp(26px,4vw,50px);
+  font-weight:800;color:var(--sw);line-height:1.1;
+  letter-spacing:-1px;margin-bottom:14px;
+}
+.cr-cta p{
+  font-size:16.5px;color:var(--mw);margin-bottom:34px;
+  max-width:480px;margin-left:auto;margin-right:auto;
+}
+.cr-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn-wh{
+  display:inline-flex;align-items:center;gap:8px;
+  background:white;color:var(--sb);
+  padding:13px 28px;border-radius:var(--r);
+  font-family:var(--fh);font-weight:700;font-size:14px;
+  text-decoration:none;border:2px solid white;
+  transition:var(--tr);
+}
+.btn-wh:hover{background:transparent;color:white;transform:translateY(-2px);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .cr-intro-grid{grid-template-columns:1fr;gap:40px;}
+  .cr-intro-img{height:300px;}
+  .cr-intro-img-badge{left:12px;bottom:-16px;}
+  .cr-sgrid{grid-template-columns:1fr 1fr;}
+  .cr-pgrid{grid-template-columns:1fr 1fr;}
+  .cr-pcard:first-child{border-radius:16px 16px 0 0;}
+  .cr-pcard:last-child{border-radius:0 0 16px 16px;}
+  .cr-parrow{display:none;}
+  .cr-pgallery{grid-template-columns:1fr 1fr;}
+  .cr-gitem.tall{grid-row:auto;}
+}
+@media(max-width:600px){
+  .cr-sgrid{grid-template-columns:1fr;}
+  .cr-pgrid{grid-template-columns:1fr;}
+  .cr-pgallery{grid-template-columns:1fr;}
+  .cr-hero-btns{flex-direction:column;}
+  .cr-hero-btns a{text-align:center;justify-content:center;}
+  .cr-cta-btns{flex-direction:column;align-items:center;}
+}
+
+[id]{scroll-margin-top:124px}
+</style>
+
+<div class="cr-wrap">
+
+  <!-- Back -->
+
+
+  <!-- Hero -->
+  <section class="cr-hero">
+    <div class="cr-hero-grid"></div>
+    <div class="cr-hero-inner">
+      <div class="cr-hero-tag"><span class="cr-hero-dot"></span>Creative Studio</div>
+      <h1>Visual <span class="ao">Creatives</span><br>That <span class="ag">Convert.</span></h1>
+      <p class="cr-hero-sub">From social media graphics to full brand campaigns — we design creatives that stop the scroll, tell your story, and drive real results.</p>
+      <div class="cr-hero-btns">
+        <a href="/contact/" class="btn-o">Start a Project &#8594;</a>
+        <a href="#services" class="btn-ghost">View Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <div style="background:var(--wh);padding:80px 5% 0;">
+  <div class="cr-intro-grid" style="max-width:1200px;margin:0 auto;">
+    <div class="cr-intro-img">
+      <div class="cr-intro-img-badge">
+        <div class="cr-ib-num">500+</div>
+        <div class="cr-ib-txt">Creatives<br>Delivered</div>
+      </div>
+    </div>
+    <div>
+      <span class="cr-section-label">Who We Are</span>
+      <div class="cr-divider"></div>
+      <h2 class="cr-section-title">Creativity That <span class="tb">Speaks</span> Louder</h2>
+      <p class="cr-section-body">Our creative team blends strategic thinking with bold visual execution. Every piece we produce is purpose-built — designed not just to look good, but to communicate, persuade and perform across every channel.</p>
+      <p class="cr-section-body">Whether you need a single social post or a full quarterly campaign, we deliver designs that carry your message with clarity and impact.</p>
+      <a href="/contact/" class="btn-o">Get a Free Quote &#8594;</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Services -->
+  <section class="cr-services" id="services">
+    <div class="cr-services-inner">
+      <div class="cr-shdr">
+        <span class="cr-section-label">What We Create</span>
+        <h2 class="cr-section-title">Our Creative <span style="color:var(--lo)">Offerings</span></h2>
+        <p>Everything your brand needs to show up professionally across every touchpoint.</p>
+      </div>
+      <div class="cr-sgrid">
+        <div class="cr-scard">
+          <div class="cr-scard-icon ci-orange">&#128247;</div>
+          <h3>Social Media Graphics</h3>
+          <p>Scroll-stopping posts, stories, reels covers and banners sized perfectly for every platform.</p>
+          <div class="cr-scard-tags"><span class="cr-tag">Instagram</span><span class="cr-tag">Facebook</span><span class="cr-tag">LinkedIn</span></div>
+        </div>
+        <div class="cr-scard">
+          <div class="cr-scard-icon ci-blue">&#128196;</div>
+          <h3>Flyers &amp; Posters</h3>
+          <p>High-impact print and digital flyers for events, promotions, product launches and announcements.</p>
+          <div class="cr-scard-tags"><span class="cr-tag">A4 / A3</span><span class="cr-tag">Digital</span><span class="cr-tag">Print-Ready</span></div>
+        </div>
+        <div class="cr-scard">
+          <div class="cr-scard-icon ci-green">&#127775;</div>
+          <h3>Banners &amp; Billboards</h3>
+          <p>Large-format outdoor and indoor advertising visuals designed for maximum visibility and impact.</p>
+          <div class="cr-scard-tags"><span class="cr-tag">Outdoor</span><span class="cr-tag">Indoor</span><span class="cr-tag">Digital</span></div>
+        </div>
+        <div class="cr-scard">
+          <div class="cr-scard-icon ci-teal">&#128214;</div>
+          <h3>Brochures &amp; Catalogues</h3>
+          <p>Professional multi-page layouts for product catalogues, company profiles and service brochures.</p>
+          <div class="cr-scard-tags"><span class="cr-tag">Bi-fold</span><span class="cr-tag">Tri-fold</span><span class="cr-tag">Booklet</span></div>
+        </div>
+        <div class="cr-scard">
+          <div class="cr-scard-icon ci-gold">&#127873;</div>
+          <h3>Promotional Materials</h3>
+          <p>Birthday cards, invitations, thank-you notes and custom celebration designs for any occasion.</p>
+          <div class="cr-scard-tags"><span class="cr-tag">Cards</span><span class="cr-tag">Invites</span><span class="cr-tag">Certificates</span></div>
+        </div>
+        <div class="cr-scard">
+          <div class="cr-scard-icon ci-dark">&#128083;</div>
+          <h3>Presentation Design</h3>
+          <p>Pitch decks, investor presentations and PowerPoint redesigns that command attention in the room.</p>
+          <div class="cr-scard-tags"><span class="cr-tag">PowerPoint</span><span class="cr-tag">Google Slides</span><span class="cr-tag">PDF</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="cr-process">
+    <div class="cr-process-inner">
+      <div style="text-align:center;margin-bottom:0;">
+        <span class="cr-section-label" style="color:var(--lo);">Our Process</span>
+        <h2 class="cr-section-title" style="color:var(--sw);">Simple. Fast. <span style="color:var(--lo)">Brilliant.</span></h2>
+      </div>
+      <div class="cr-pgrid">
+        <div class="cr-pcard">
+          <div class="cr-pnum">01</div>
+          <h4>Brief</h4>
+          <p>You share your goals, target audience and any existing brand assets or references.</p>
+          <div class="cr-parrow">&#8594;</div>
+        </div>
+        <div class="cr-pcard">
+          <div class="cr-pnum">02</div>
+          <h4>Concept</h4>
+          <p>Our designers develop creative directions and initial concepts for your review.</p>
+          <div class="cr-parrow">&#8594;</div>
+        </div>
+        <div class="cr-pcard">
+          <div class="cr-pnum">03</div>
+          <h4>Refine</h4>
+          <p>You provide feedback and we refine until the design is exactly right.</p>
+          <div class="cr-parrow">&#8594;</div>
+        </div>
+        <div class="cr-pcard">
+          <div class="cr-pnum">04</div>
+          <h4>Deliver</h4>
+          <p>Final files delivered in all required formats — print-ready and digital-ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="cr-portfolio">
+    <div class="cr-portfolio-inner">
+      <div style="text-align:center;">
+        <span class="cr-section-label">Portfolio</span>
+        <h2 class="cr-section-title">Recent <span style="color:var(--lo)">Work</span></h2>
+      </div>
+      <div class="cr-pgallery">
+        <div class="cr-gitem tall">
+          <div class="cr-gitem-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/slide1.jpg');"></div>
+          <div class="cr-gitem-ov"><div><div class="cr-gitem-label">Brand Campaign</div><div class="cr-gitem-sub">Social + Print</div></div></div>
+        </div>
+        <div class="cr-gitem">
+          <div class="cr-gitem-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/pullupbanners.jpg');min-height:200px;"></div>
+          <div class="cr-gitem-ov"><div><div class="cr-gitem-label">Apparel Branding</div><div class="cr-gitem-sub">Print Design</div></div></div>
+        </div>
+        <div class="cr-gitem">
+          <div class="cr-gitem-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/download.webp');min-height:200px;"></div>
+          <div class="cr-gitem-ov"><div><div class="cr-gitem-label">Event Flyer</div><div class="cr-gitem-sub">Digital Creative</div></div></div>
+        </div>
+        <div class="cr-gitem">
+          <div class="cr-gitem-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/obituary.jpg');min-height:200px;"></div>
+          <div class="cr-gitem-ov"><div><div class="cr-gitem-label">Corporate Profile</div><div class="cr-gitem-sub">Brochure Design</div></div></div>
+        </div>
+        <div class="cr-gitem">
+          <div class="cr-gitem-img" style="background-image:url('https://tgnenewsite.tgnesolutions.com/wp-content/uploads/2026/03/BNB.jpg');min-height:200px;"></div>
+          <div class="cr-gitem-ov"><div><div class="cr-gitem-label">Awards Design</div><div class="cr-gitem-sub">Event Material</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cr-cta">
+    <h2>Ready to Create<br>Something <span style="color:var(--lo)">Remarkable?</span></h2>
+    <p>Tell us about your project and we'll get back to you within 24 hours with a free quote.</p>
+    <div class="cr-cta-btns">
+      <a href="/contact/" class="btn-wh">Get a Free Quote</a>
+      <a href="https://wa.me/233558122767" class="btn-ghost" target="_blank" rel="noopener">&#128172; WhatsApp Us</a>
+    </div>
+  </section>
+
+</div>

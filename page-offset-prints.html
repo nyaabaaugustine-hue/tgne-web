@@ -1,0 +1,171 @@
+<!-- ═══════════════════════════════════════════════════════
+  TGNE Solutions — OFFSET PRINTS PAGE
+  Paste into: Elementor → HTML Widget
+  ═══════════════════════════════════════════════════════ -->
+<style>
+/* ═══ TGNE ELEMENTOR WIDGET ISOLATION v2 ═══
+   Prevents WordPress/Elementor styles from squeezing widget content.
+   DO NOT REMOVE — required for pixel-perfect match to standalone HTML. */
+.elementor-widget-html,.elementor-widget-html>.elementor-widget-container{
+  padding:0!important;margin:0!important;
+  max-width:100%!important;width:100%!important;overflow:visible!important}
+#preloader{display:none!important;opacity:0!important;visibility:hidden!important}
+
+/* ── SHARED PRINT PAGE STYLES (used by all 3 print pages) ── */
+:root{--sb:#0A4C7F;--sd:#061B33;--sm:#0D5E9E;--slb:#2C7FB8;--lg:#4CAF88;--lgd:#389E6F;--lo:#FFA866;--lod:#E8914A;--wh:#FFFFFF;--sg:#F5F6F8;--gb:#E2E8F0;--bt:#EAF3FB;--td:#1A1A2E;--tm:#4A5568;--sw:#D8E4F0;--mw:#C8D8E8;--gw:#B0C4D8;--fh:'Poppins',sans-serif;--fb:'Inter',sans-serif;--r:14px;--shh:0 20px 50px rgba(10,76,127,.18);--tr:all .35s cubic-bezier(.4,0,.2,1);}
+/* ── Standalone nav hidden inside WordPress (TGNE header used) ── */
+.elementor-widget-html nav:not(#tgne-nav),
+nav:not(#tgne-nav){display:none!important}
+
+*{box-sizing:border-box;margin:0;padding:0}
+.pp-wrap{font-family:var(--fb);color:var(--td);overflow-x:hidden}
+.pp-back{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-size:13px;font-weight:600;color:var(--lo);text-decoration:none;padding:14px 5%;background:var(--sd);width:100%;border-bottom:1px solid rgba(255,255,255,.06);transition:gap .2s;}
+.pp-back:hover{gap:12px;}
+.btn-o{display:inline-flex;align-items:center;gap:8px;background:var(--lo);color:white;padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid var(--lo);transition:var(--tr);}
+.btn-o:hover{background:var(--lod);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,168,102,.4)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--sw);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid rgba(216,228,240,.35);transition:var(--tr);}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:var(--sw);transform:translateY(-2px)}
+.btn-wh{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--sb);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:700;font-size:14px;text-decoration:none;border:2px solid white;transition:var(--tr);}
+.btn-wh:hover{background:transparent;color:white;transform:translateY(-2px)}
+.sec-label{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--lo);margin-bottom:12px;display:block;}
+.sec-title{font-family:var(--fh);font-size:clamp(24px,3vw,42px);font-weight:800;line-height:1.12;letter-spacing:-.8px;margin-bottom:14px;}
+.sec-divider{width:60px;height:3px;background:linear-gradient(to right,var(--lo),var(--lg));border-radius:2px;margin-bottom:20px;}
+
+/* Hero */
+.pp-hero{position:relative;padding:90px 5% 80px;overflow:hidden;}
+.pp-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;z-index:0;}
+.pp-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;}
+.pp-hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,168,102,.15);border:1px solid rgba(255,168,102,.35);color:var(--lo);padding:6px 16px;border-radius:40px;font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:22px;}
+.pp-dot{width:6px;height:6px;background:var(--lo);border-radius:50%;animation:ppp 2s infinite;}
+@keyframes ppp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+.pp-hero h1{font-family:var(--fh);font-size:clamp(30px,4.8vw,64px);font-weight:900;color:var(--sw);line-height:1.06;letter-spacing:-2px;margin-bottom:20px;}
+.pp-hero h1 .ao{color:var(--lo);} .pp-hero h1 .ag{color:var(--lg);}
+.pp-hero-sub{font-size:17px;color:var(--mw);max-width:560px;line-height:1.78;margin-bottom:36px;}
+.pp-hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+
+/* Products grid */
+.pp-products{padding:80px 5%;background:var(--sg);}
+.pp-products-inner{max-width:1200px;margin:0 auto;}
+.pp-pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px;}
+.pp-pcard{background:white;border-radius:18px;padding:26px 22px;border:1px solid var(--gb);transition:var(--tr);position:relative;overflow:hidden;}
+.pp-pcard::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--sb),var(--lo));transform:scaleX(0);transform-origin:left;transition:transform .4s ease;}
+.pp-pcard:hover{transform:translateY(-7px);box-shadow:var(--shh);}
+.pp-pcard:hover::after{transform:scaleX(1);}
+.pp-pcard-icon{font-size:36px;margin-bottom:14px;}
+.pp-pcard h3{font-family:var(--fh);font-size:16px;font-weight:700;color:var(--td);margin-bottom:7px;}
+.pp-pcard p{font-size:13.5px;color:var(--tm);line-height:1.65;margin-bottom:14px;}
+.pp-pcard-specs{display:flex;flex-wrap:wrap;gap:6px;}
+.pp-spec{font-size:11px;background:var(--bt);color:var(--sb);padding:3px 10px;border-radius:20px;font-family:var(--fh);font-weight:600;}
+
+/* Why choose us */
+.pp-why{padding:80px 5%;background:var(--wh);}
+.pp-why-inner{max-width:1200px;margin:0 auto;}
+.pp-why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px;}
+.pp-why-card{background:var(--sg);border-radius:16px;padding:28px 20px;text-align:center;border:1px solid var(--gb);transition:var(--tr);}
+.pp-why-card:hover{background:white;box-shadow:var(--shh);transform:translateY(-6px);}
+.pp-why-icon{font-size:36px;margin-bottom:12px;}
+.pp-why-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--td);margin-bottom:6px;}
+.pp-why-desc{font-size:12.5px;color:var(--tm);line-height:1.6;}
+
+/* How to order */
+.pp-order{padding:80px 5%;background:linear-gradient(135deg,var(--sd) 0%,var(--sm) 100%);}
+.pp-order-inner{max-width:1200px;margin:0 auto;}
+.pp-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;position:relative;}
+.pp-steps::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--lo),var(--lg));z-index:0;}
+.pp-step{text-align:center;position:relative;z-index:1;padding:0 8px;}
+.pp-step-num{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--lo),var(--lod));display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:800;font-size:18px;color:white;margin:0 auto 14px;}
+.pp-step h4{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--sw);margin-bottom:5px;}
+.pp-step p{font-size:11.5px;color:var(--gw);line-height:1.5;}
+
+/* CTA */
+.pp-cta{padding:90px 5%;background:linear-gradient(135deg,var(--sb) 0%,var(--sm) 100%);text-align:center;}
+.pp-cta h2{font-family:var(--fh);font-size:clamp(26px,4vw,50px);font-weight:800;color:var(--sw);line-height:1.1;letter-spacing:-1px;margin-bottom:14px;}
+.pp-cta p{font-size:16px;color:var(--mw);margin-bottom:34px;max-width:480px;margin-left:auto;margin-right:auto;}
+.pp-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+@media(max-width:900px){.pp-pgrid{grid-template-columns:1fr 1fr;}.pp-why-grid{grid-template-columns:1fr 1fr;}.pp-steps{grid-template-columns:1fr 1fr;}.pp-steps::before{display:none;}}
+@media(max-width:600px){.pp-pgrid{grid-template-columns:1fr;}.pp-why-grid{grid-template-columns:1fr 1fr;}.pp-hero-btns{flex-direction:column;}.pp-cta-btns{flex-direction:column;align-items:center;}.pp-steps{grid-template-columns:1fr 1fr;}}
+@media(max-width:420px){.pp-why-grid{grid-template-columns:1fr;}.pp-steps{grid-template-columns:1fr;}}
+
+[id]{scroll-margin-top:124px}
+</style>
+
+<div class="pp-wrap">
+
+  <!-- Hero -->
+  <section class="pp-hero" style="background:linear-gradient(135deg,#0D1B2A 0%,var(--sd) 40%,#0A3060 100%);">
+    <div class="pp-hero-grid"></div>
+    <div class="pp-hero-inner">
+      <div class="pp-hero-tag"><span class="pp-dot"></span>Offset Printing</div>
+      <h1>Offset Prints —<br><span class="ao">Quality</span> at <span class="ag">Scale.</span></h1>
+      <p class="pp-hero-sub">Premium offset printing for bulk orders where colour accuracy, sharpness and consistency are non-negotiable. Trusted by businesses across Ghana.</p>
+      <div class="pp-hero-btns">
+        <a href="/contact/" class="btn-o">Get a Print Quote &#8594;</a>
+        <a href="#products" class="btn-ghost">Browse Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="pp-products" id="products">
+    <div class="pp-products-inner">
+      <div style="text-align:center;">
+        <span class="sec-label">What We Print</span>
+        <h2 class="sec-title" style="color:var(--td);">Offset Print <span style="color:var(--lo)">Products</span></h2>
+        <p style="font-size:15px;color:var(--tm);max-width:520px;margin:0 auto 0;line-height:1.7;">High-quality lithographic printing for large runs where precision and vibrancy matter most.</p>
+      </div>
+      <div class="pp-pgrid">
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#128198;</div><h3>Business Cards</h3><p>Premium business cards with spot UV, lamination, embossing and die-cut options. Minimum 100 copies.</p><div class="pp-pcard-specs"><span class="pp-spec">85×55mm</span><span class="pp-spec">Matt / Gloss</span><span class="pp-spec">Spot UV</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#128196;</div><h3>Letterheads &amp; Envelopes</h3><p>Branded company stationery printed on premium 100gsm paper. Consistent colour match guaranteed.</p><div class="pp-pcard-specs"><span class="pp-spec">A4 / A5</span><span class="pp-spec">DL Envelope</span><span class="pp-spec">100gsm+</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#128214;</div><h3>Brochures &amp; Catalogues</h3><p>Multi-page saddle-stitched or perfect-bound brochures with full-bleed photography and vibrant colours.</p><div class="pp-pcard-specs"><span class="pp-spec">A4 / A5</span><span class="pp-spec">Saddle Stitch</span><span class="pp-spec">Perfect Bind</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#128210;</div><h3>Booklets &amp; Magazines</h3><p>Professionally printed booklets, company magazines, annual reports and conference programmes.</p><div class="pp-pcard-specs"><span class="pp-spec">8–200pp</span><span class="pp-spec">CMYK</span><span class="pp-spec">Gloss/Matt</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#127978;</div><h3>Posters &amp; Flyers</h3><p>High-run flyers and posters for campaigns, events and promotions. From A6 to A0 sizes.</p><div class="pp-pcard-specs"><span class="pp-spec">A6–A0</span><span class="pp-spec">130–350gsm</span><span class="pp-spec">Single/Double-sided</span></div></div>
+        <div class="pp-pcard"><div class="pp-pcard-icon">&#127873;</div><h3>Calendars &amp; Diaries</h3><p>Custom wall calendars, desk calendars and branded diaries — perfect for corporate gifting.</p><div class="pp-pcard-specs"><span class="pp-spec">A2 / A3 / A4</span><span class="pp-spec">Wire-O</span><span class="pp-spec">Custom Cover</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section class="pp-why">
+    <div class="pp-why-inner">
+      <div style="text-align:center;">
+        <span class="sec-label">Why Offset?</span>
+        <h2 class="sec-title" style="color:var(--td);">The <span style="color:var(--sb)">Professional</span> Choice</h2>
+      </div>
+      <div class="pp-why-grid">
+        <div class="pp-why-card"><div class="pp-why-icon">&#127752;</div><div class="pp-why-title">Colour Accuracy</div><div class="pp-why-desc">Pantone-matched inks produce vibrant, consistent colour across every sheet.</div></div>
+        <div class="pp-why-card"><div class="pp-why-icon">&#128181;</div><div class="pp-why-title">Cost-Effective at Scale</div><div class="pp-why-desc">Unit cost drops significantly for large runs — ideal for 500+ copies.</div></div>
+        <div class="pp-why-card"><div class="pp-why-icon">&#128202;</div><div class="pp-why-title">Sharp Detail</div><div class="pp-why-desc">Fine lines, small text and detailed images reproduce with precision.</div></div>
+        <div class="pp-why-card"><div class="pp-why-icon">&#127775;</div><div class="pp-why-title">Premium Finishes</div><div class="pp-why-desc">Spot UV, lamination, embossing, foiling and die-cutting available.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to order -->
+  <section class="pp-order">
+    <div class="pp-order-inner">
+      <div style="text-align:center;">
+        <span class="sec-label" style="color:var(--lo);">Simple Process</span>
+        <h2 class="sec-title" style="color:var(--sw);">How to <span style="color:var(--lo)">Order</span></h2>
+      </div>
+      <div class="pp-steps">
+        <div class="pp-step"><div class="pp-step-num">1</div><h4>Send Brief</h4><p>Tell us what you need, quantities and deadline.</p></div>
+        <div class="pp-step"><div class="pp-step-num">2</div><h4>Get Quote</h4><p>We send a detailed quote within a few hours.</p></div>
+        <div class="pp-step"><div class="pp-step-num">3</div><h4>Approve Design</h4><p>Share your artwork or we design it for you.</p></div>
+        <div class="pp-step"><div class="pp-step-num">4</div><h4>Print</h4><p>We print with quality checks at every stage.</p></div>
+        <div class="pp-step"><div class="pp-step-num">5</div><h4>Deliver</h4><p>Collect or we deliver to your location.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="pp-cta">
+    <h2>Ready to Print?<br>Let's <span style="color:var(--lo)">Get Started.</span></h2>
+    <p>Request a quote today. We respond within 2 hours on working days.</p>
+    <div class="pp-cta-btns">
+      <a href="/contact/" class="btn-wh">Request a Quote</a>
+      <a href="https://wa.me/233558122767" class="btn-ghost" target="_blank" rel="noopener">&#128172; WhatsApp Us</a>
+    </div>
+  </section>
+
+</div>

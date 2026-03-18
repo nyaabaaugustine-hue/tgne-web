@@ -1,0 +1,273 @@
+<!-- ═══════════════════════════════════════════
+  TGNE Solutions — LOGOS PAGE
+  Paste into: Elementor → HTML Widget
+  ═══════════════════════════════════════════ -->
+<style>
+/* ═══ TGNE ELEMENTOR WIDGET ISOLATION v2 ═══
+   Prevents WordPress/Elementor styles from squeezing widget content.
+   DO NOT REMOVE — required for pixel-perfect match to standalone HTML. */
+.elementor-widget-html,.elementor-widget-html>.elementor-widget-container{
+  padding:0!important;margin:0!important;
+  max-width:100%!important;width:100%!important;overflow:visible!important}
+#preloader{display:none!important;opacity:0!important;visibility:hidden!important}
+
+:root{
+  --sb:#0A4C7F;--sd:#061B33;--sm:#0D5E9E;--slb:#2C7FB8;
+  --lg:#4CAF88;--lgd:#389E6F;
+  --lo:#FFA866;--lod:#E8914A;
+  --wh:#FFFFFF;--sg:#F5F6F8;--gb:#E2E8F0;
+  --bt:#EAF3FB;--td:#1A1A2E;--tm:#4A5568;
+  --sw:#D8E4F0;--mw:#C8D8E8;--gw:#B0C4D8;
+  --fh:'Poppins',sans-serif;--fb:'Inter',sans-serif;
+  --r:14px;--shh:0 20px 50px rgba(10,76,127,.18);
+  --tr:all .35s cubic-bezier(.4,0,.2,1);
+}
+/* ── Standalone <nav> hidden inside WordPress (TGNE header used instead) ── */
+.elementor-widget-html nav:not(#tgne-nav),
+nav:not(#tgne-nav){display:none!important}
+
+*{box-sizing:border-box;margin:0;padding:0}
+.lg-wrap{font-family:var(--fb);color:var(--td);overflow-x:hidden}
+
+.lg-back{display:inline-flex;align-items:center;gap:8px;font-family:var(--fh);font-size:13px;font-weight:600;color:var(--lo);text-decoration:none;padding:14px 5%;background:var(--sd);width:100%;border-bottom:1px solid rgba(255,255,255,.06);transition:gap .2s;}
+.lg-back:hover{gap:12px;}
+
+/* Hero */
+.lg-hero{position:relative;padding:90px 5% 80px;background:linear-gradient(135deg,#0D1B2A 0%,var(--sd) 40%,#0A3060 100%);overflow:hidden;}
+.lg-hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,168,102,.15) 1px,transparent 1px);background-size:40px 40px;z-index:0;}
+.lg-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.lg-hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,168,102,.15);border:1px solid rgba(255,168,102,.35);color:var(--lo);padding:6px 16px;border-radius:40px;font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:22px;}
+.lg-hero-dot{width:6px;height:6px;background:var(--lo);border-radius:50%;animation:lgp 2s infinite;}
+@keyframes lgp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+.lg-hero h1{font-family:var(--fh);font-size:clamp(30px,4.8vw,64px);font-weight:900;color:var(--sw);line-height:1.06;letter-spacing:-2px;margin-bottom:20px;}
+.lg-hero h1 .ao{color:var(--lo);} .lg-hero h1 .ag{color:var(--lg);}
+.lg-hero-sub{font-size:16.5px;color:var(--mw);max-width:500px;line-height:1.78;margin-bottom:34px;}
+.lg-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-o{display:inline-flex;align-items:center;gap:8px;background:var(--lo);color:white;padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid var(--lo);transition:var(--tr);}
+.btn-o:hover{background:var(--lod);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,168,102,.4)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--sw);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:600;font-size:14px;text-decoration:none;border:2px solid rgba(216,228,240,.35);transition:var(--tr);}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:var(--sw);transform:translateY(-2px)}
+.btn-wh{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--sb);padding:13px 28px;border-radius:var(--r);font-family:var(--fh);font-weight:700;font-size:14px;text-decoration:none;border:2px solid white;transition:var(--tr);}
+.btn-wh:hover{background:transparent;color:white;transform:translateY(-2px)}
+
+/* Hero visual panel */
+.lg-hero-visual{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:30px;backdrop-filter:blur(14px);}
+.lg-logo-showcase{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.lg-logo-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:22px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;transition:var(--tr);cursor:default;}
+.lg-logo-item:hover{background:rgba(255,168,102,.12);border-color:rgba(255,168,102,.3);transform:translateY(-3px);}
+.lg-logo-item .lg-logo-circle{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:800;font-size:18px;color:white;}
+.lg-logo-item span{font-family:var(--fh);font-size:11px;font-weight:600;color:var(--gw);text-transform:uppercase;letter-spacing:1px;}
+.lc1{background:linear-gradient(135deg,var(--sb),var(--slb));}
+.lc2{background:linear-gradient(135deg,var(--lg),var(--lgd));}
+.lc3{background:linear-gradient(135deg,var(--lo),var(--lod));}
+.lc4{background:linear-gradient(135deg,#8B5CF6,#6D28D9);}
+
+/* Packages */
+.lg-packages{padding:80px 5%;background:var(--sg);}
+.lg-packages-inner{max-width:1200px;margin:0 auto;}
+.sec-label{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--lo);margin-bottom:12px;display:block;}
+.sec-title{font-family:var(--fh);font-size:clamp(24px,3vw,42px);font-weight:800;color:var(--td);line-height:1.12;letter-spacing:-.8px;margin-bottom:12px;}
+.sec-title .to{color:var(--lo);} .sec-title .tb{color:var(--sb);}
+.sec-divider{width:60px;height:3px;background:linear-gradient(to right,var(--lo),var(--lg));border-radius:2px;margin-bottom:0;}
+.lg-pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.lg-pkg{
+  background:white;border-radius:20px;padding:32px 28px;
+  border:2px solid var(--gb);transition:var(--tr);
+  position:relative;overflow:hidden;
+}
+.lg-pkg.featured{border-color:var(--lo);box-shadow:0 0 0 4px rgba(255,168,102,.12);}
+.lg-pkg-badge{
+  position:absolute;top:16px;right:16px;
+  background:var(--lo);color:white;
+  font-family:var(--fh);font-size:10px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  padding:4px 12px;border-radius:20px;
+}
+.lg-pkg:hover{transform:translateY(-8px);box-shadow:var(--shh);}
+.lg-pkg-icon{font-size:40px;margin-bottom:14px;}
+.lg-pkg-name{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--td);margin-bottom:5px;}
+.lg-pkg-tagline{font-size:13px;color:var(--tm);margin-bottom:20px;}
+.lg-pkg-price{
+  font-family:var(--fh);font-size:32px;font-weight:800;
+  color:var(--sb);line-height:1;margin-bottom:20px;
+}
+.lg-pkg-price span{font-size:14px;font-weight:500;color:var(--tm);}
+.lg-pkg-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:26px;}
+.lg-pkg-features li{
+  display:flex;align-items:center;gap:9px;
+  font-size:13.5px;color:var(--td);
+}
+.lg-pkg-features li::before{
+  content:'✓';
+  width:20px;height:20px;border-radius:50%;
+  background:rgba(76,175,136,.15);color:var(--lg);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:700;flex-shrink:0;
+}
+.lg-pkg-features li.muted{color:var(--tm);}
+.lg-pkg-features li.muted::before{background:var(--sg);color:var(--gb);}
+.lg-pkg-cta{
+  width:100%;padding:12px;
+  font-family:var(--fh);font-weight:600;font-size:14px;
+  border-radius:10px;cursor:pointer;transition:var(--tr);
+  text-decoration:none;display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.lg-pkg-cta.primary{background:var(--lo);color:white;border:2px solid var(--lo);}
+.lg-pkg-cta.primary:hover{background:var(--lod);transform:translateY(-1px);}
+.lg-pkg-cta.secondary{background:transparent;color:var(--sb);border:2px solid var(--gb);}
+.lg-pkg-cta.secondary:hover{border-color:var(--sb);background:var(--bt);}
+
+/* What's included */
+.lg-includes{padding:80px 5%;background:var(--wh);}
+.lg-includes-inner{max-width:1200px;margin:0 auto;}
+.lg-inc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px;}
+.lg-inc-card{
+  background:var(--sg);border-radius:16px;padding:26px 20px;
+  border:1px solid var(--gb);text-align:center;transition:var(--tr);
+}
+.lg-inc-card:hover{background:white;box-shadow:var(--shh);transform:translateY(-6px);}
+.lg-inc-icon{font-size:32px;margin-bottom:12px;}
+.lg-inc-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--td);margin-bottom:6px;}
+.lg-inc-desc{font-size:12.5px;color:var(--tm);line-height:1.6;}
+
+/* CTA */
+.lg-cta{padding:90px 5%;background:linear-gradient(135deg,var(--sb) 0%,var(--sm) 100%);text-align:center;}
+.lg-cta h2{font-family:var(--fh);font-size:clamp(26px,4vw,50px);font-weight:800;color:var(--sw);line-height:1.1;letter-spacing:-1px;margin-bottom:14px;}
+.lg-cta p{font-size:16px;color:var(--mw);margin-bottom:34px;max-width:480px;margin-left:auto;margin-right:auto;}
+.lg-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+@media(max-width:1024px){.lg-hero-inner{grid-template-columns:1fr;}.lg-hero-visual{display:none;}}
+@media(max-width:768px){.lg-pkg-grid{grid-template-columns:1fr;}.lg-inc-grid{grid-template-columns:1fr 1fr;}.lg-btns{flex-direction:column;}}
+@media(max-width:480px){.lg-inc-grid{grid-template-columns:1fr;}.lg-cta-btns{flex-direction:column;align-items:center;}}
+
+[id]{scroll-margin-top:124px}
+</style>
+
+<div class="lg-wrap">
+
+  <!-- Hero -->
+  <section class="lg-hero">
+    <div class="lg-hero-dots"></div>
+    <div class="lg-hero-inner">
+      <div>
+        <div class="lg-hero-tag"><span class="lg-hero-dot"></span>Logo Design Studio</div>
+        <h1>Logos That <span class="ao">Define</span><br>Your <span class="ag">Identity.</span></h1>
+        <p class="lg-hero-sub">A great logo is the cornerstone of every powerful brand. We craft distinctive, timeless marks that make your business instantly recognisable.</p>
+        <div class="lg-btns">
+          <a href="/contact/" class="btn-o">Order Your Logo &#8594;</a>
+          <a href="#packages" class="btn-ghost">See Packages</a>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="lg-packages" id="packages">
+    <div class="lg-packages-inner">
+      <div style="text-align:center;margin-bottom:0">
+        <span class="sec-label">Pricing Packages</span>
+        <h2 class="sec-title">Choose Your <span class="to">Logo Package</span></h2>
+        <p style="font-size:15.5px;color:var(--tm);max-width:500px;margin:12px auto 0;line-height:1.7;">Simple, transparent pricing. All packages include unlimited revisions until you're 100% happy.</p>
+      </div>
+      <div class="lg-pkg-grid">
+
+        <div class="lg-pkg">
+          <div class="lg-pkg-icon">&#127775;</div>
+          <div class="lg-pkg-name">Starter</div>
+          <div class="lg-pkg-tagline">Perfect for new businesses</div>
+          <div class="lg-pkg-price">Custom<span> / quote</span></div>
+          <ul class="lg-pkg-features">
+            <li>1 Logo Concept</li>
+            <li>3 Revision Rounds</li>
+            <li>PNG &amp; JPG Files</li>
+            <li>Black &amp; White Version</li>
+            <li class="muted">Vector (AI/EPS) Files</li>
+            <li class="muted">Brand Style Guide</li>
+            <li class="muted">Social Media Kit</li>
+          </ul>
+          <a href="/contact/" class="lg-pkg-cta secondary">Get a Quote &#8594;</a>
+        </div>
+
+        <div class="lg-pkg featured">
+          <div class="lg-pkg-badge">Most Popular</div>
+          <div class="lg-pkg-icon">&#128081;</div>
+          <div class="lg-pkg-name">Professional</div>
+          <div class="lg-pkg-tagline">For growing brands</div>
+          <div class="lg-pkg-price">Custom<span> / quote</span></div>
+          <ul class="lg-pkg-features">
+            <li>3 Logo Concepts</li>
+            <li>Unlimited Revisions</li>
+            <li>PNG, JPG &amp; PDF</li>
+            <li>Vector (AI/EPS) Files</li>
+            <li>Black &amp; White Version</li>
+            <li>Social Media Kit</li>
+            <li class="muted">Brand Style Guide</li>
+          </ul>
+          <a href="/contact/" class="lg-pkg-cta primary">Order Now &#8594;</a>
+        </div>
+
+        <div class="lg-pkg">
+          <div class="lg-pkg-icon">&#128142;</div>
+          <div class="lg-pkg-name">Brand Identity</div>
+          <div class="lg-pkg-tagline">Full brand experience</div>
+          <div class="lg-pkg-price">Custom<span> / quote</span></div>
+          <ul class="lg-pkg-features">
+            <li>5 Logo Concepts</li>
+            <li>Unlimited Revisions</li>
+            <li>All File Formats</li>
+            <li>Full Brand Style Guide</li>
+            <li>Social Media Kit</li>
+            <li>Business Card Design</li>
+            <li>Letterhead Design</li>
+          </ul>
+          <a href="/contact/" class="lg-pkg-cta secondary">Get a Quote &#8594;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What's included -->
+  <section class="lg-includes">
+    <div class="lg-includes-inner">
+      <div style="text-align:center;">
+        <span class="sec-label">Every Logo Includes</span>
+        <h2 class="sec-title">What You <span class="tb">Always Get</span></h2>
+      </div>
+      <div class="lg-inc-grid">
+        <div class="lg-inc-card">
+          <div class="lg-inc-icon">&#128196;</div>
+          <div class="lg-inc-title">Multiple File Formats</div>
+          <div class="lg-inc-desc">PNG, JPG, PDF and vector formats ready for print and digital use.</div>
+        </div>
+        <div class="lg-inc-card">
+          <div class="lg-inc-icon">&#127747;</div>
+          <div class="lg-inc-title">Colour Variations</div>
+          <div class="lg-inc-desc">Full colour, black, white and reversed versions of your logo.</div>
+        </div>
+        <div class="lg-inc-card">
+          <div class="lg-inc-icon">&#128247;</div>
+          <div class="lg-inc-title">Social Media Sizes</div>
+          <div class="lg-inc-desc">Profile pictures and cover versions sized for all major platforms.</div>
+        </div>
+        <div class="lg-inc-card">
+          <div class="lg-inc-icon">&#9989;</div>
+          <div class="lg-inc-title">Full Ownership</div>
+          <div class="lg-inc-desc">100% ownership of your logo — commercial rights included, no royalties.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="lg-cta">
+    <h2>Build a Brand That <span style="color:var(--lo)">People Remember.</span></h2>
+    <p>Start with a logo that reflects who you are. Get a free consultation today.</p>
+    <div class="lg-cta-btns">
+      <a href="/contact/" class="btn-wh">Order Your Logo</a>
+      <a href="https://wa.me/233558122767" class="btn-ghost" target="_blank" rel="noopener">&#128172; Chat on WhatsApp</a>
+    </div>
+  </section>
+
+</div>
